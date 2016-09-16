@@ -1,0 +1,14 @@
+<!DOCTYPE html(lang='en')><html><head><link rel="stylesheet" href="/assets/css/blossom.css"/><script src="//code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script><script src="//code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script><script src="/assets/js/hover3d.min.js"></script></head><body><div class="contain" id="app"><section class="hero module text-center"><h2 class="text-white"> What separates design from art is that design is meant to be... functional.</h2><h5 class="text-grey">I&#39;m a dedicated back-end web developer with a passion for design and eye for detail. <br/> I mean, who doesn&#39;t love modern user-friendly interfaces?</h5><p class="idea text-grey">Got an awesome idea? <a class="dashed">Let&#39;s talk</a></p></section><section class="module grid-row work"><div class="xs-12 m-6"><div class="project"><div class="project__card grid work-tapi"><div class="project__detail"><h4 class="project__title">Twitch API Docs</h4><p>Redesigned live Twitch API documentation</p></div><div class="project__image"><div class="project__inner righter"><img src="/assets/images/preview_twitchapi.png"/></div></div><div class="project__learn"><a>Learn more</a></div></div></div></div><div class="xs-12 m-6"><div class="project"><div class="project__card grid work-apse"><div class="project__detail"><h4 class="project__title">Apse <span class="label black">Alpha</span></h4><p>A modern screenshotting tool for all OS platforms</p></div><div class="project__image"><div class="project__inner righter"><img src="/assets/images/preview_apse.png"/></div></div><div class="project__learn"><a>Learn more</a></div></div></div></div><div class="xs-12 m-8"><div class="project"><div class="project__card grid work-blossom"><div class="project__detail"><h4 class="project__title">Blossom UI</h4><p>A free open-source design framework for the modern web</p></div><div class="project__image"><div class="project__inner"><img src="/assets/images/preview_blossom.png"/></div></div><div class="project__learn"><a>Learn more</a></div></div></div></div><div class="xs-12 m-4"><div class="project"><div class="project__card grid text-center"><div class="project__detail nogutter full"><h4 class="project__title">Taskful</h4><p>Coming soon</p></div></div></div></div></section></div><script>$(()=> {
+	thisT = null
+	$(".project").hover3d({
+		selector: ".project__card"
+	})
+	$(".project").hover((e) => {
+		console.log()
+		thisT = $(e.target).parent().find('.project__learn')
+		thisT.show("slide", { direction: "down" }, 100);
+	}, ()=> {
+		thisT.hide("slide", { direction: "down" }, 100);
+
+	})
+})</script></body></html>

@@ -1,0 +1,120 @@
+body
+	background-color #000
+
+.idea
+	margin-top 4em
+	font-weight 300
+	color
+	a
+		margin-left .2em
+
+a.dashed
+	position relative
+	color #fff
+	display inline-block
+	&:after
+		width 100%
+		display block
+		absolute bottom -2px left 0
+		border-bottom 1px dashed #fff
+		content ''
+	&:hover
+		&:after
+			border-bottom 1px solid #fff
+
+.grid
+	height 17em
+	background-color #000
+	text-align left
+.work
+	& > *
+		margin-top 2em
+	&-blossom
+		background-color #0673FF
+		border 2px solid darken(#0673FF, 15%)
+	&-tapi
+		background-color #3d454e
+		border 2px solid darken(#3d454e, 10%)
+	&-apse
+		background-color #f76161
+		border 2px solid darken(#f76161, 10%)
+
+.project
+	transform translateZ(0)
+	h4
+		font-weight 400
+		color #fff
+		letter-spacing -0.8
+		opacity 0.9
+		font-size 1.6em
+		margin-bottom .1em
+		pointer-events none
+		text-shadow 1px 1px 1px rgba(0,0,0,.2)
+		will-change transform
+		transition all 0.14s ease
+	p
+		color #fff
+		opacity 0.6
+		pointer-events none
+		font-weight 300
+		font-size 1em
+		transition all 0.14s ease
+
+
+	.label
+		font-size 0.45em
+		vertical-align middle
+		line-height 1.4em
+		padding .325em .7em .3em .7em
+		margin-left .475em
+		letter-spacing 0
+		font-weight 400
+		opacity 0.8
+		pointer-events none
+	&:hover
+		cursor pointer
+		.project__detail
+			h4, p
+				transform translateY(-16px)
+	&__card
+		position relative
+	&__detail
+		max-width 60%
+		transform translateZ(40px)
+		padding-left 4em
+		height 100%
+		display flex
+		flex-direction column
+		justify-content center
+		&.full
+			max-width 100%
+	&__image
+		position relative
+		width 100%
+		height 100%
+		display block
+		absolute top left
+		overflow hidden
+	&__learn
+		absolute bottom .3em left 0
+		width 100%
+		transform translateZ(40px)
+		background-color rgba(0,0,0,.4)
+		padding 1em 0 1.3em 0
+		text-align center
+		pointer-events none
+		display none
+
+		a
+			color #fff !important
+			font-size 0.8em
+			font-weight 300
+	&__inner
+		pointer-events none
+		absolute bottom -25% right -25%
+		&.righter
+			right -40%
+		img
+			height 100%
+			box-shadow 0 10px 20px rgba(0, 0, 0, 0.4)
+			width auto
