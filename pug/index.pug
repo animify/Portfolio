@@ -6,6 +6,7 @@ html
 		script(src="//code.jquery.com/jquery-3.1.0.min.js", integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=", crossorigin="anonymous")
 		script(src="//code.jquery.com/ui/1.12.1/jquery-ui.js", integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=", crossorigin="anonymous")
 		script(src="/assets/js/hover3d.min.js")
+		script(src="/assets/js/gradient.js")
 	body
 		div#app.contain
 			section.hero.module.text-center
@@ -13,8 +14,8 @@ html
 				h5.text-grey I&#39;m a dedicated back-end web developer with a passion for design and eye for detail. #[br] I mean, who doesn&#39;t love modern user-friendly interfaces?
 				p.idea.text-grey Got an awesome idea? #[a.dashed Let&#39;s talk]
 			section.module.grid-row.work
-				.xs-12.m-6
-					.project
+				.xs-12.l-6
+					.project(href="http://twitchapi.com/")
 						.project__card.grid.work-tapi
 							.project__detail
 								h4.project__title Twitch API Docs
@@ -25,8 +26,8 @@ html
 							.project__learn
 								a Start reading #[i.ion-chevron-right]
 
-				.xs-12.m-6
-					.project
+				.xs-12.l-6
+					.project(href="http://getblossom.io/")
 						.project__card.grid.work-blossom
 							.project__detail
 								h4.project__title Blossom UI
@@ -36,7 +37,7 @@ html
 									img(src="/assets/images/preview_blossom.png")
 							.project__learn
 								a Get designing #[i.ion-chevron-right]
-				.xs-12.m-5
+				.xs-12.l-5
 					.project.cs
 						.project__card.grid.work-apse
 							.project__detail
@@ -47,19 +48,19 @@ html
 									img(src="/assets/images/preview_apse.png")
 							.project__learn
 								a Invite only #[i.ion-android-sad]
-				.xs-12.m-7
-					.project
+				.xs-12.l-7
+					.project(href="http://totsandteddies.com/")
 						.project__card.grid.work-tots
 							.project__detail
 								h4.project__title Tots & Teddies
-								p Singapore's best quality bilingual childcare centre.
+								p Singapore's best quality bilingual childcare centre
 							.project__image
 								.project__inner
 									img(src="/assets/images/preview_tots.png")
 							.project__learn
 								a Got a child? #[i.ion-chevron-right]
 				.xs-12
-					.project
+					.project.cs
 						.project__card.grid.text-center.work-taskful
 							.project__detail.nogutter.full
 								h4.project__title Taskful
@@ -67,12 +68,14 @@ html
 
 			footer.footer
 				.social
-					a.item(href="https://www.facebook.com/aotik7")
-						i.ion-social-facebook
 					a.item(href="https://twitter.com/aotik")
 						i.ion-social-twitter
+					a.item(href="https://www.facebook.com/aotik7")
+						i.ion-social-facebook
 					a.item(href="https://github.com/Aotik")
 						i.ion-social-github
+					a.item(href="https://dribbble.com/Aotik")
+						i.ion-social-dribbble
 					a.item(href="https://www.twitch.tv/aotik")
 						i.ion-social-twitch
 					a.item(href="https://www.linkedin.com/in/aotik")
@@ -87,12 +90,19 @@ html
 				})
 				$(".project").hover((e) => {
 					console.log()
-					thisT = $(e.target).parent().find('.project__learn')
-					thisA = $(e.target).parent().find('.project__learn a')
+					thisT = $(e.target).closest('.project').find('.project__learn')
+					thisA = $(e.target).closest('.project').find('.project__learn a')
 					thisT.show("slide", { direction: "down" }, 100)
 					thisA.delay(100).fadeIn('fast')
 				}, ()=> {
 					thisT.hide("slide", { direction: "down" }, 100)
 					thisA.hide()
+				})
+				$(".project").bind("click", (e)=> {
+					thisP = $(e.target).closest('.project')
+					console.log($(thisP))
+					if($(thisP).attr('href') !== undefined) {
+						window.location = $(thisP).attr('href')
+					}
 				})
 			})

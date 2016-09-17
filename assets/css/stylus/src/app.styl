@@ -1,5 +1,10 @@
+html
+	min-height 100%
 body
 	background-color #000
+	min-height 100%
+	margin 0
+	padding 0
 
 .idea
 	margin-top 4em
@@ -22,36 +27,78 @@ a.dashed
 		&:after
 			border-bottom 1px solid #fff
 
+.hero
+	h2
+		animation-name dropHeader
+		animation-iteration-count 1
+		animation-timing-function ease-in
+		animation-duration 400ms
+	h5
+		animation-name liftDesc
+		animation-iteration-count 1
+		animation-timing-function ease-in
+		animation-duration 400ms
+		animation-delay 400ms
+		animation-fill-mode forwards
+		opacity 0
+	p
+		animation-name dropHeader
+		animation-iteration-count 1
+		animation-timing-function ease-in
+		animation-duration 300ms
+		animation-delay 1200ms
+		animation-fill-mode forwards
+		opacity 0
+
+.module.grid-row
+	position relative
+	z-index 4000
+.module.grid-row, footer.footer
+	animation-name getWork
+	animation-iteration-count 1
+	animation-timing-function ease-in
+	animation-duration 300ms
+	animation-delay 800ms
+	animation-fill-mode forwards
+	opacity 0
+	z-index 10
+
 .grid
 	height 17em
 	background-color #000
 	text-align left
+
 .work
 	& > *
 		margin-top 2em
 	&-blossom
 		background center no-repeat url('/assets/images/overlay_blossom.png')
+		background-size 90%
 		border 3px rgba(#FFF,.09) solid
 		&:hover
 			border-color #0673FF
 	&-tapi
 		background center no-repeat url('/assets/images/overlay_twitch.png')
+		background-size 90%
 		border 3px rgba(#FFF,.09) solid
 		&:hover
 			border-color #289CF4
 	&-apse
 		background center no-repeat url('/assets/images/overlay_apse.png')
+		background-size 90%
 		border 3px rgba(#FFF,.09) solid
 		&:hover
 			border-color #f76161
 	&-tots
 		background center no-repeat url('/assets/images/overlay_tots.png')
+		background-size 90%
 		border 3px rgba(#FFF,.09) solid
 		&:hover
 			border-color #D41C5B
 	&-taskful
 		background #000 center no-repeat url('/assets/images/overlay_taskful.png')
 		background-size 70%
+
 .project
 	transform translateZ(0)
 	h4
@@ -86,8 +133,10 @@ a.dashed
 		pointer-events none
 	&:not(.cs):hover
 		cursor pointer
+	&:hover
 		.project__detail
 			h4, p
+				transform-style preserve-3d
 				transform translateY(-16px)
 		.project__image
 			opacity 1
@@ -111,6 +160,7 @@ a.dashed
 		absolute top left
 		overflow hidden
 		opacity .7
+		z-index 2
 	&__learn
 		absolute bottom .3em left 0
 		width 100%
@@ -146,12 +196,14 @@ a.dashed
 
 footer.footer
 	text-align center
+	animation-name dropHeader
+	animation-delay 1200ms
 	padding 1em 0 8em 0
 	.item
 		& + .item
 			margin-left 4.3em
 		i
-			color rgba(255,255,255,.3)
+			color rgba(255,255,255,.24)
 			font-size 3em
 			&:before
 				@extend .transitionDuration-m
@@ -164,9 +216,18 @@ footer.footer
 					color #00aced
 				&.ion-social-github:before
 					color #fff
+				&.ion-social-dribbble:before
+					color #ea4c89
 				&.ion-social-twitch:before
 					color #6441A5
 				&.ion-social-linkedin:before
 					color #007bb6
 				&:before
 					transform scale(1.6)
+
+#gradient
+	content ''
+	display block
+	width 100%
+	height 3px
+	opacity 0.7
