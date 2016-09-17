@@ -2,6 +2,7 @@ doctype html(lang='en')
 html
 	head
 		link(rel="stylesheet", href="/assets/css/blossom.css")
+		link(rel="stylesheet", href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css")
 		script(src="//code.jquery.com/jquery-3.1.0.min.js", integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=", crossorigin="anonymous")
 		script(src="//code.jquery.com/ui/1.12.1/jquery-ui.js", integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=", crossorigin="anonymous")
 		script(src="/assets/js/hover3d.min.js")
@@ -22,48 +23,76 @@ html
 								.project__inner.righter
 									img(src="/assets/images/preview_twitchapi.png")
 							.project__learn
-								a Learn more
+								a Start reading #[i.ion-chevron-right]
+
 				.xs-12.m-6
-					.project
-						.project__card.grid.work-apse
-							.project__detail
-								h4.project__title Apse #[span.label.black Alpha]
-								p A modern screenshotting tool for all OS platforms
-							.project__image
-								.project__inner.righter
-									img(src="/assets/images/preview_apse.png")
-							.project__learn
-								a Learn more
-				.xs-12.m-8
 					.project
 						.project__card.grid.work-blossom
 							.project__detail
 								h4.project__title Blossom UI
 								p A free open-source design framework for the modern web
 							.project__image
-								.project__inner
+								.project__inner.righter
 									img(src="/assets/images/preview_blossom.png")
 							.project__learn
-								a Learn more
-				.xs-12.m-4
+								a Get designing #[i.ion-chevron-right]
+				.xs-12.m-5
+					.project.cs
+						.project__card.grid.work-apse
+							.project__detail
+								h4.project__title Apse #[span.label.primary Alpha]
+								p A modern screenshotting tool for all OS platforms
+							.project__image
+								.project__inner.rightest
+									img(src="/assets/images/preview_apse.png")
+							.project__learn
+								a Invite only #[i.ion-android-sad]
+				.xs-12.m-7
 					.project
-						.project__card.grid.text-center
+						.project__card.grid.work-tots
+							.project__detail
+								h4.project__title Tots & Teddies
+								p Singapore's best quality bilingual childcare centre.
+							.project__image
+								.project__inner
+									img(src="/assets/images/preview_tots.png")
+							.project__learn
+								a Got a child? #[i.ion-chevron-right]
+				.xs-12
+					.project
+						.project__card.grid.text-center.work-taskful
 							.project__detail.nogutter.full
 								h4.project__title Taskful
-								p Coming soon
+								p Coming soon 2016
+
+			footer.footer
+				.social
+					a.item(href="https://www.facebook.com/aotik7")
+						i.ion-social-facebook
+					a.item(href="https://twitter.com/aotik")
+						i.ion-social-twitter
+					a.item(href="https://github.com/Aotik")
+						i.ion-social-github
+					a.item(href="https://www.twitch.tv/aotik")
+						i.ion-social-twitch
+					a.item(href="https://www.linkedin.com/in/aotik")
+						i.ion-social-linkedin
 
 		script.
 			$(()=> {
 				thisT = null
+				thisA = null
 				$(".project").hover3d({
 					selector: ".project__card"
 				})
 				$(".project").hover((e) => {
 					console.log()
 					thisT = $(e.target).parent().find('.project__learn')
-					thisT.show("slide", { direction: "down" }, 100);
+					thisA = $(e.target).parent().find('.project__learn a')
+					thisT.show("slide", { direction: "down" }, 100)
+					thisA.delay(100).fadeIn('fast')
 				}, ()=> {
-					thisT.hide("slide", { direction: "down" }, 100);
-
+					thisT.hide("slide", { direction: "down" }, 100)
+					thisA.hide()
 				})
 			})

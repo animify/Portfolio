@@ -30,15 +30,28 @@ a.dashed
 	& > *
 		margin-top 2em
 	&-blossom
-		background-color #0673FF
-		border 2px solid darken(#0673FF, 15%)
+		background center no-repeat url('/assets/images/overlay_blossom.png')
+		border 3px rgba(#FFF,.09) solid
+		&:hover
+			border-color #0673FF
 	&-tapi
-		background-color #3d454e
-		border 2px solid darken(#3d454e, 10%)
+		background center no-repeat url('/assets/images/overlay_twitch.png')
+		border 3px rgba(#FFF,.09) solid
+		&:hover
+			border-color #289CF4
 	&-apse
-		background-color #f76161
-		border 2px solid darken(#f76161, 10%)
-
+		background center no-repeat url('/assets/images/overlay_apse.png')
+		border 3px rgba(#FFF,.09) solid
+		&:hover
+			border-color #f76161
+	&-tots
+		background center no-repeat url('/assets/images/overlay_tots.png')
+		border 3px rgba(#FFF,.09) solid
+		&:hover
+			border-color #D41C5B
+	&-taskful
+		background #000 center no-repeat url('/assets/images/overlay_taskful.png')
+		background-size 70%
 .project
 	transform translateZ(0)
 	h4
@@ -71,11 +84,13 @@ a.dashed
 		font-weight 400
 		opacity 0.8
 		pointer-events none
-	&:hover
+	&:not(.cs):hover
 		cursor pointer
 		.project__detail
 			h4, p
 				transform translateY(-16px)
+		.project__image
+			opacity 1
 	&__card
 		position relative
 	&__detail
@@ -95,26 +110,63 @@ a.dashed
 		display block
 		absolute top left
 		overflow hidden
+		opacity .7
 	&__learn
 		absolute bottom .3em left 0
 		width 100%
-		transform translateZ(40px)
+		transform translateZ(30px)
 		background-color rgba(0,0,0,.4)
 		padding 1em 0 1.3em 0
 		text-align center
 		pointer-events none
 		display none
-
 		a
 			color #fff !important
-			font-size 0.8em
+			font-size .825em
 			font-weight 300
+			display none
+			i
+				font-size .775em
+				margin-left .24em
+				&.ion-android-sad
+					font-size 1.3em
+					color #f76161
+					relative top 1px
 	&__inner
 		pointer-events none
 		absolute bottom -25% right -25%
 		&.righter
 			right -40%
+		&.rightest
+			right -60%
 		img
 			height 100%
 			box-shadow 0 10px 20px rgba(0, 0, 0, 0.4)
 			width auto
+
+footer.footer
+	text-align center
+	padding 1em 0 8em 0
+	.item
+		& + .item
+			margin-left 4.3em
+		i
+			color rgba(255,255,255,.3)
+			font-size 3em
+			&:before
+				@extend .transitionDuration-m
+				@extend .transitionType-bounce
+				transition-property transform
+			&:hover
+				&.ion-social-facebook:before
+					color #3b5998
+				&.ion-social-twitter:before
+					color #00aced
+				&.ion-social-github:before
+					color #fff
+				&.ion-social-twitch:before
+					color #6441A5
+				&.ion-social-linkedin:before
+					color #007bb6
+				&:before
+					transform scale(1.6)

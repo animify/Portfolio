@@ -3486,7 +3486,8 @@ p code {
   -ms-transition-duration: 0.08s;
   transition-duration: 0.08s;
 }
-.transitionDuration-m {
+.transitionDuration-m,
+footer.footer .item i:before {
   -webkit-transition-duration: 0.18s;
   -moz-transition-duration: 0.18s;
   -o-transition-duration: 0.18s;
@@ -3549,7 +3550,8 @@ p code {
   -ms-transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
-.transitionType-bounce {
+.transitionType-bounce,
+footer.footer .item i:before {
   -webkit-transition-timing-function: cubic-bezier(0.04, 0.89, 0.76, 1.74);
   -moz-transition-timing-function: cubic-bezier(0.04, 0.89, 0.76, 1.74);
   -o-transition-timing-function: cubic-bezier(0.04, 0.89, 0.76, 1.74);
@@ -3621,16 +3623,38 @@ a.dashed:hover:after {
   margin-top: 2em;
 }
 .work-blossom {
-  background-color: #0673ff;
-  border: 2px solid #0061de;
+  background: center no-repeat url("/assets/images/overlay_blossom.png");
+  border: 3px rgba(255,255,255,0.09) solid;
+}
+.work-blossom:hover {
+  border-color: #0673ff;
 }
 .work-tapi {
-  background-color: #3d454e;
-  border: 2px solid #373e46;
+  background: center no-repeat url("/assets/images/overlay_twitch.png");
+  border: 3px rgba(255,255,255,0.09) solid;
+}
+.work-tapi:hover {
+  border-color: #289cf4;
 }
 .work-apse {
-  background-color: #f76161;
-  border: 2px solid #f54040;
+  background: center no-repeat url("/assets/images/overlay_apse.png");
+  border: 3px rgba(255,255,255,0.09) solid;
+}
+.work-apse:hover {
+  border-color: #f76161;
+}
+.work-tots {
+  background: center no-repeat url("/assets/images/overlay_tots.png");
+  border: 3px rgba(255,255,255,0.09) solid;
+}
+.work-tots:hover {
+  border-color: #d41c5b;
+}
+.work-taskful {
+  background: #000 center no-repeat url("/assets/images/overlay_taskful.png");
+  -webkit-background-size: 70%;
+  -moz-background-size: 70%;
+  background-size: 70%;
 }
 .project {
   -webkit-transform: translateZ(0);
@@ -3684,16 +3708,21 @@ a.dashed:hover:after {
   filter: alpha(opacity=80);
   pointer-events: none;
 }
-.project:hover {
+.project:not(.cs):hover {
   cursor: pointer;
 }
-.project:hover .project__detail h4,
-.project:hover .project__detail p {
+.project:not(.cs):hover .project__detail h4,
+.project:not(.cs):hover .project__detail p {
   -webkit-transform: translateY(-16px);
   -moz-transform: translateY(-16px);
   -o-transform: translateY(-16px);
   -ms-transform: translateY(-16px);
   transform: translateY(-16px);
+}
+.project:not(.cs):hover .project__image {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
 }
 .project__card {
   position: relative;
@@ -3738,17 +3767,20 @@ a.dashed:hover:after {
   top: 0;
   left: 0;
   overflow: hidden;
+  opacity: 0.7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  filter: alpha(opacity=70);
 }
 .project__learn {
   position: absolute;
   bottom: 0.3em;
   left: 0;
   width: 100%;
-  -webkit-transform: translateZ(40px);
-  -moz-transform: translateZ(40px);
-  -o-transform: translateZ(40px);
-  -ms-transform: translateZ(40px);
-  transform: translateZ(40px);
+  -webkit-transform: translateZ(30px);
+  -moz-transform: translateZ(30px);
+  -o-transform: translateZ(30px);
+  -ms-transform: translateZ(30px);
+  transform: translateZ(30px);
   background-color: rgba(0,0,0,0.4);
   padding: 1em 0 1.3em 0;
   text-align: center;
@@ -3757,8 +3789,19 @@ a.dashed:hover:after {
 }
 .project__learn a {
   color: #fff !important;
-  font-size: 0.8em;
+  font-size: 0.825em;
   font-weight: 300;
+  display: none;
+}
+.project__learn a i {
+  font-size: 0.775em;
+  margin-left: 0.24em;
+}
+.project__learn a i.ion-android-sad {
+  font-size: 1.3em;
+  color: #f76161;
+  position: relative;
+  top: 1px;
 }
 .project__inner {
   pointer-events: none;
@@ -3769,9 +3812,52 @@ a.dashed:hover:after {
 .project__inner.righter {
   right: -40%;
 }
+.project__inner.rightest {
+  right: -60%;
+}
 .project__inner img {
   height: 100%;
   -webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.4);
   box-shadow: 0 10px 20px rgba(0,0,0,0.4);
   width: auto;
+}
+footer.footer {
+  text-align: center;
+  padding: 1em 0 8em 0;
+}
+footer.footer .item + .item {
+  margin-left: 4.3em;
+}
+footer.footer .item i {
+  color: rgba(255,255,255,0.3);
+  font-size: 3em;
+}
+footer.footer .item i:before {
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  -ms-transition-property: -ms-transform;
+  transition-property: transform;
+}
+footer.footer .item i:hover.ion-social-facebook:before {
+  color: #3b5998;
+}
+footer.footer .item i:hover.ion-social-twitter:before {
+  color: #00aced;
+}
+footer.footer .item i:hover.ion-social-github:before {
+  color: #fff;
+}
+footer.footer .item i:hover.ion-social-twitch:before {
+  color: #6441a5;
+}
+footer.footer .item i:hover.ion-social-linkedin:before {
+  color: #007bb6;
+}
+footer.footer .item i:hover:before {
+  -webkit-transform: scale(1.6);
+  -moz-transform: scale(1.6);
+  -o-transform: scale(1.6);
+  -ms-transform: scale(1.6);
+  transform: scale(1.6);
 }
