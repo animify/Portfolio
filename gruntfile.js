@@ -1,3 +1,4 @@
+
 module.exports = function(grunt) {
 
 	grunt.initConfig({
@@ -15,15 +16,14 @@ module.exports = function(grunt) {
 		},
 		watch: {
 			scripts: {
-				files: 'pug/*.pug',
+				files: ['pug/*.pug', 'assets/css/stylus/src/*.styl'],
 				tasks: ['default'],
 			}
 		}
-	});
+	})
 
-	grunt.loadNpmTasks('grunt-contrib-pug');
-	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-pug')
+	grunt.loadNpmTasks('grunt-contrib-watch')
+	grunt.registerTask('default', ['pug'])
 
-	grunt.registerTask('default', ['pug']);
-
-};
+}

@@ -1,267 +1,177 @@
 html
 	min-height 100%
 body
-	background-color #000
-	min-height 100%
+	height 100%
 	margin 0
 	padding 0
 
-.idea
-	margin-top 4em
-	font-weight 300
-	color
-	a
-		margin-left .2em
+.portfolio
+	min-height 100%
 
-.dashed
-	color #fff
-	position relative
-	&:after
-		width 100%
-		display block
-		absolute bottom -2px left 0
-		border-bottom .05em dashed #fff
-		content ''
-	&:hover
-		color #fff
-		&:after
-			border-bottom .05em solid #fff
-
-.hero
-	h2
-		animation-name dropHeader
-		animation-iteration-count 1
-		animation-timing-function ease-in
-		animation-duration 400ms
-	h5
-		animation-name liftDesc
-		animation-iteration-count 1
-		animation-timing-function ease-in
-		animation-duration 400ms
-		animation-delay 400ms
-		animation-fill-mode forwards
-		opacity 0
-	p
-		animation-name dropHeader
-		animation-iteration-count 1
-		animation-timing-function ease-in
-		animation-duration 300ms
-		animation-delay 1200ms
-		animation-fill-mode forwards
-		opacity 0
-
-.module.grid-row
-	position relative
-	z-index 4000
-	@media only screen and (max-device-width: 880px)
-		font-size 1.45em
-
-.module.grid-row, footer.footer
-	animation-name getWork
-	animation-iteration-count 1
-	animation-timing-function ease-in
-	animation-duration 300ms
-	animation-delay 800ms
-	animation-fill-mode forwards
-	opacity 0
-	z-index 10
-
-.grid
-	height 17em
-	background-color #000
-	text-align left
-	+below('s')
-		text-align center
-
-
-header.head
-	padding 3em 0 0 0
-	text-align center
-	img
-		pointer-events none
-		opacity .2
-		user-select none
-		height 44px
-		width auto
-		transform scale(0)
-		animation-name scaleMark
-		animation-iteration-count 1
-		animation-timing-function ease-in
-		animation-duration 400ms
-		animation-delay 300ms
-		animation-fill-mode forwards
-		opacity 0
-.work
-	& > *
-		margin-top 2em
-	&-blossom
-		background center no-repeat url('/assets/images/overlay_blossom.png')
-		background-size 90%
-		border 3px rgba(#FFF,.09) solid
-		&:hover
-			border-color #0673FF
-	&-tapi
-		background center no-repeat url('/assets/images/overlay_twitch.png')
-		background-size 90%
-		border 3px rgba(#FFF,.09) solid
-		&:hover
-			border-color #289CF4
-	&-apse
-		background center no-repeat url('/assets/images/overlay_apse.png')
-		background-size 90%
-		border 3px rgba(#FFF,.09) solid
-		&:hover
-			border-color #f76161
-	&-tots
-		background center no-repeat url('/assets/images/overlay_tots.png')
-		background-size 90%
-		border 3px rgba(#FFF,.09) solid
-		&:hover
-			border-color #D41C5B
-	&-taskful
-		background #000 center no-repeat url('/assets/images/overlay_taskful.png')
-		background-size 70%
-
-.project
-	transform translateZ(0)
-	h4
-		font-weight 400
-		color #fff
-		letter-spacing -0.8
-		opacity 0.9
-		font-size 1.6em
-		margin-bottom .1em
-		pointer-events none
-		text-shadow 1px 1px 1px rgba(0,0,0,.2)
-		will-change transform
-		transition all 0.14s ease
-	p
-		color #fff
-		opacity 0.6
-		pointer-events none
-		font-weight 300
-		font-size 1em
-		transition all 0.14s ease
-
-
-	.label
-		font-size 0.45em
-		vertical-align middle
-		line-height 1.4em
-		padding .325em .7em .3em .7em
-		margin-left .475em
-		letter-spacing 0
-		font-weight 400
-		opacity 0.8
-		pointer-events none
-	&:not(.cs):hover
-		cursor pointer
-	&:hover
-		.project__detail
-			h4, p
-				transform-style preserve-3d
-				transform translateY(-16px)
-		.project__image
-			opacity 1
-	&__card
-		position relative
-	&__detail
-		max-width 54%
-		transform translateZ(40px)
-		padding-left 4em
-		height 100%
-		display flex
-		flex-direction column
-		justify-content center
-		+below('l')
-			padding-left 5em
-		+below('s')
-			max-width 100%
-			padding-left 0
-		&.full
-			max-width 100%
-	&__image
-		position relative
-		width 100%
-		height 100%
-		display block
-		absolute top left
-		overflow hidden
-		opacity .7
-		z-index 2
-	&__learn
-		absolute bottom .3em left 0
-		width 100%
-		transform translateZ(30px)
-		background-color rgba(0,0,0,.4)
-		padding 1em 0 1.3em 0
-		text-align center
-		pointer-events none
-		display none
-		a
-			color #fff !important
-			font-size .825em
-			font-weight 300
-			display none
-			i
-				font-size .775em
-				margin-left .24em
-				&.ion-android-sad
-					font-size 1.3em
-					color #f76161
-					relative top 1px
-	&__inner
-		pointer-events none
-		absolute bottom -25% right -25%
-		&.righter
-			right -40%
-		&.rightest
-			right -60%
-		+below('m')
-			right -18% !important
-		img
-			height 100%
-			box-shadow 0 10px 20px rgba(0, 0, 0, 0.4)
-			width auto
-
-footer.footer
-	text-align center
-	animation-name dropHeader
-	animation-delay 1200ms
-	padding 1em 0 8em 0
-	.item
-		& + .item
-			margin-left 4.3em
-			+below('s')
-				margin-left 2.8em
-		i
-			color rgba(255,255,255,.2)
-			font-size 3em
-			+below('s')
-				font-size 2.5em
-			&:before
-				@extend .transitionDuration-m
-				@extend .transitionType-bounce
-				transition-property transform
-			&:hover
-				&.ion-social-facebook:before
-					color #3b5998
-				&.ion-social-twitter:before
-					color #00aced
-				&.ion-social-github:before
-					color #fff
-				&.ion-social-dribbble:before
-					color #ea4c89
-				&.ion-social-twitch:before
-					color #6441A5
-				&.ion-social-linkedin:before
-					color #007bb6
-				&:before
-					transform scale(1.6)
-
-#gradient
-	content ''
-	display block
+header
+	fixed top left
+	z-index 1000
+	background linear-gradient(top, rgba(0,0,0,.74), rgba(0,0,0,0))
 	width 100%
-	height 3px
-	opacity 0.7
+	height 6rem
+	padding 0 3rem
+	line-height 5.8rem
+	display flex
+	justify-content space-between
+	.logo
+		color #fff
+		font-weight 600
+		font-size 1.2rem
+		user-select none
+		pointer-events none
+	nav
+		position relative
+
+		a
+			color #fff
+			font-weight 600
+			font-size 1.2rem
+			& + a
+				margin-left 3rem
+	+below('m')
+		&.desktop
+			display none
+.hero
+	background-color #000
+	display flex
+	align-items center
+	justify-content left
+	min-height 100vh
+	width 100%
+	fixed top left
+	&--content
+		max-width 100%
+		padding 0 10%
+		h1
+			font-weight 800
+			color #fff
+			display inline-block
+			vertical-align top
+			line-height 1.4em
+			font-size 5em
+			&.highlight
+				background #fff
+				padding 0 8px
+				color #000
+				margin-left 1rem
+		h4
+			color text-grey
+			display block
+			margin-top 1rem
+			font-weight 500
+			font-size 2em
+			line-height 1.7em
+			& + h4
+				margin-top 0
+		+below('m')
+			text-align center
+			h1
+				font-size 3.4em
+				display block
+				width 100%
+				&.highlight
+					margin-left 0
+			h4
+				font-size 1.34em
+
+.projects
+	width 100%
+	height 100%
+	background-color #000
+	relative top 100vh
+	.project
+		width 100%
+		height 22rem
+		position relative
+		display block
+		&-overlay
+			height 100%
+			width 100%
+			position relative
+			display flex
+			justify-content flex-end
+			flex-direction row
+			align-items center
+			padding 0 3rem
+			.description
+				max-width 100%
+				text-align right
+				display block
+				h2, h5
+					color #fff
+					font-weight 800
+					line-height 1.4em
+					transition opacity .14s ease
+				h2
+					font-size 3.4rem
+					opacity .9
+					background-color #fff
+					padding 0 8px
+					display inline-block
+				h5
+					font-size 2.4rem
+					opacity .7
+					margin-top .4rem
+		for project in ('trackful' 'unload' 'blossom' 'twitch' 'prowl' 'slant' 'maddie')
+			&--{project}
+				background-color lighten(lookup('color-' + project), 5%)
+				.description
+					h2
+						color lighten(lookup('color-' + project), 5%)
+				&:hover
+					background-color lookup('color-' + project)
+					.description
+						h2
+							color lookup('color-' + project)
+					.project-overlay
+						background-color rgba(lookup('color-' + project), .95)
+		&:hover
+			.description
+				h2
+					opacity 1
+				h5
+					opacity .8
+	+below('m')
+		.project
+			&-overlay
+				justify-content center
+				.description
+					text-align center
+					h2
+						font-size 2.4rem
+					h5
+						font-size 1.8rem
+
+
+.scroll
+	width 100%
+	text-align center
+	absolute left bottom 3rem
+	color text-grey
+	font-size 1.2em
+	span
+		width 24px
+		height 24px
+		border-left 2px solid #fff
+		border-bottom 2px solid #fff
+		transform rotate(-45deg)
+		animation scrollDown 1.4s infinite
+		box-sizing border-box
+		position relative
+		display block
+		margin 0 auto
+		top -2.4rem
+		border-radius 0 0 0 3px
+
+@keyframes scrollDown
+	0%
+		transform rotate(-45deg) translate(0, 0)
+	30%
+		transform rotate(-45deg) translate(-10px, 10px)
+	70%
+		transform rotate(-45deg) translate(0, 0)
