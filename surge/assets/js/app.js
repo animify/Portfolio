@@ -1,6 +1,6 @@
 let highlightCounter = 0
 
-const words = ['experiences', "platforms", 'interfaces', 'brands', 'frameworks', 'functionality', 'applications']
+const words = ['experiences', "API's", 'interfaces', 'brands', 'frameworks', 'functionality']
 
 $(() => {
 	transitionHighlight = () => {

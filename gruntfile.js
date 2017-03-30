@@ -16,7 +16,7 @@ module.exports = function(grunt) {
 		},
 		watch: {
 			scripts: {
-				files: ['pug/*.pug', 'assets/css/stylus/src/*.styl'],
+				files: ['pug/*.pug'],
 				tasks: ['default'],
 			}
 		}

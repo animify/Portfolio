@@ -1,33 +1,37 @@
 doctype html(lang='en')
 html
 	head
+		title Stefan Mansson
 		meta(charset="UTF-8")
 		meta(name="description", content="Stefan Mansson's personal portfolio.")
 		meta(name="keywords", content="stefan mansson, poftfolio, software engineer")
 		meta(name="author", content="Stefan Mansson")
 		meta(name="robots", content="index, follow")
 		meta(name="viewport", content="width=device-width, initial-scale=1")
+		link(rel="icon", type="image/x-icon", href="/assets/images/favicon.png")
 		link(rel="stylesheet", href="//fast.fonts.net/cssapi/3e6e5f22-9eec-4237-b6d4-23622646fc0c.css")
-		link(rel="stylesheet", href="/assets/css/blossom.css")
+		link(rel="stylesheet", href="/assets/css/app.min.css")
 		link(rel="stylesheet", href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css")
+
 	body
 		.portfolio
-			header.desktop
-				.logo Stefan Mansson
+			header.desktop.fadeInUp
+				.logo #[img(src="/assets/images/logo.png")]
 				nav
-					a.link About me
-					a.link Resume
-					a.link Contact
+					a.link(target="_blank", rel="noreferrer noopener", href="https://www.linkedin.com/in/smansson/") Resumé
+					a.link(href="mailto:st.mansson@icloud.com") Get in touch
+			header.mobile.fadeInUp
+				.logo #[img(src="/assets/images/logo.png")]
 			.bind
 				section.hero
-					.hero--content
+					.hero--content.fadeInDown
 						h1 Building
 						h1.highlight experiences
 						h4 Hi I'm Stefan, a front &amp; back end web developer from Cyprus.
 						h4 Psst, I'm also the founder of #[a.cindr(target="_blank", rel="noreferrer noopener", href="https://cindr.io") #[img(src="/assets/images/cindr.png")]]
-						.scroll
-							span
-							| Projects
+					.scroll.fadeInDown
+						span
+						| Projects
 				section.projects
 					a.project(target="_blank", rel="noreferrer noopener" href="https://trackful.io")
 						.project--trackful
