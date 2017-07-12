@@ -1,0 +1,91 @@
+doctype html
+html(lang='en')
+  head
+    title Stefan's Portfolio
+    meta(charset="UTF-8")
+    meta(name="description", content="Stefan's Portfolio")
+    meta(name="robots", content="index, follow")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="icon", type="image/png", href="/assets/images/favicon.png")
+    link(rel="stylesheet", href="//fast.fonts.net/cssapi/bf1e60cd-68e6-4b10-a217-0d1cb3de28d2.css")
+    link(rel="stylesheet", href="/assets/css/blossom.css")
+    script(src="//unpkg.com/feather-icons")
+  body
+    .wrapper
+      section.intro
+        .contain
+          .headers
+            h1 Stefan Mansson
+            h1.light Software Engineer, Proto.io
+        
+      section.project
+        .contain
+          .row.project
+            .col.xs-12.m-4.description
+              small Framework
+              h4 Blossom UI
+              p Beautiful, lightweight and open-source design framework built with Stylus, for the modern web with over 80 components and features.
+              .highlight
+                a Check out project #[i(data-feather="chevron-right")]
+            .col.xs-12.m-8
+              .feature.blossom
+          .row.project
+            .col.xs-12.m-8
+              .feature.kiteshare
+            .col.xs-12.m-4.description
+              small Desktop app
+              h4 Kiteshare
+              p Multi-platform and open-source desktop app allowing for rapidly taking &amp; sharing of screenshots via clipboard or Imgur.
+              .highlight
+                a Check out project #[i(data-feather="chevron-right")]
+          .row.project
+            .col.xs-12.m-4.description
+              small Framework
+              h4 Prowl JS
+              p Fully featured and open-source jQuery plugin that integrates a customizable and responsive modal framework for any web platform.
+              .highlight
+                a Check out project #[i(data-feather="chevron-right")]
+            .col.xs-12.m-8
+              .feature.prowl
+          .row.project
+            .col.xs-12.m-8
+              .feature.unload
+            .col.xs-12.m-4.description
+              small Web platform
+              h4 Unload.io
+              p Ephemeral web code sharing with support for automatic and custom sytax highlighting; free and no account needed.
+              .highlight
+                a Check out project #[i(data-feather="chevron-right")]
+          .row.project
+            .col.xs-12.m-4.description
+              small Web platform
+              h4 Slant.tv
+              p The movie search engine that doesn't suck. Lightning fast TV series and movie results displayed on a light and clean user interface.
+              .highlight
+                a Check out project #[i(data-feather="chevron-right")]
+            .col.xs-12.m-8
+              .feature.slant
+          .row.project
+            .col.xs-12.m-8
+              .feature.trackful
+            .col.xs-12.m-4.description
+              small Web platform
+              h4 Trackful
+              p A clean and intuitive web analytics platform for admins to analyze and track user-driven statistics for their web applications.
+              .highlight
+                a Check out project #[i(data-feather="chevron-right")]
+          .row.project
+            .col.xs-12.m-4.description
+              small Service
+              h4 Maddie
+              p Simple but powerful Discord bot with a vast array of features to meet even the neediest channels out there. #[strong Coming soon.]
+              .highlight
+                a Check out project #[i(data-feather="chevron-right")]
+            .col.xs-12.m-8
+              .feature.maddie
+    script(src="//code.jquery.com/jquery-3.1.0.min.js", integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=", crossorigin="anonymous")
+    script(src="//code.jquery.com/ui/1.12.1/jquery-ui.js", integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=", crossorigin="anonymous")
+    script(src="/assets/js/blossom.min.js")
+    script(src="/assets/js/app.js")
+    script.
+      feather.replace()

@@ -1,27 +1,39 @@
 {
   "name": "portfolio",
-  "version": "0.0.1",
-  "description": "Stefan Manssons Portfolio",
-  "main": "gruntfile.js",
+  "version": "1.1.3",
+  "description": "Stefan Mansson's portfolio",
+  "main": "gulpfile.js",
   "scripts": {
-    "start": "node dev.js"
+    "start": "gulp dev"
   },
-  "author": "Stefan Mansson <st.mansson@icloud.com> (http://aotik.io)",
-  "license": "ISC",
+  "author": "Stefan Mansson <st.mansson@icloud.com> (http://mansson.io)",
+  "repository": "https://github.com/aotik/portfolio",
+  "license": "MIT",
   "devDependencies": {
-    "connect": "^3.5.0",
+    "browser-sync": "^2.18.8",
+    "extend": "^3.0.0",
     "grunt": "^1.0.1",
     "grunt-contrib-pug": "^1.0.0",
     "grunt-contrib-stylus": "^1.2.0",
     "grunt-contrib-watch": "^1.0.0",
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-pug": "^3.3.0",
+    "gulp-stylus": "^2.6.0",
+    "gulp-uglify": "^2.1.2",
+    "gulp-util": "^3.0.8",
+    "gulp-watch": "^4.3.11",
     "jeet": "^6.1.1",
+    "minimist": "^1.2.0",
     "nib": "^1.1.2",
-    "rupture": "^0.6.2",
-    "serve-static": "^1.11.1"
+    "pump": "^1.0.2",
+    "run-sequence": "^1.2.2",
+    "rupture": "^0.6.2"
   },
   "dependencies": {
-    "jeet": "^6.1.1",
-    "nib": "^1.1.2",
-    "rupture": "^0.6.2"
+    "connect": "^3.6.0",
+    "fs-jetpack": "^0.13.3",
+    "serve-static": "^1.12.1"
   }
 }
