@@ -4981,9 +4981,6 @@ p code {
 .project .link.cr a svg {
   left: -4px;
 }
-.project .link.cr a:hover svg {
-  left: -0.5rem;
-}
 .project .link a {
   font-size: 0.9rem;
   padding: 0.42rem 0;
@@ -4991,26 +4988,28 @@ p code {
 .project .link a span {
   position: relative;
   left: 12px;
-  -webkit-transition: left 150ms ease;
-  -moz-transition: left 150ms ease;
-  -o-transition: left 150ms ease;
-  -ms-transition: left 150ms ease;
-  transition: left 150ms ease;
+  -webkit-transition: left 250ms ease;
+  -moz-transition: left 250ms ease;
+  -o-transition: left 250ms ease;
+  -ms-transition: left 250ms ease;
+  transition: left 250ms ease;
   color: #16181e;
   font-weight: 500;
+  will-change: left;
 }
 .project .link a svg {
   color: #83878f;
   position: relative;
   top: 5px;
   left: 0;
-  -webkit-transition: all 150ms ease;
-  -moz-transition: all 150ms ease;
-  -o-transition: all 150ms ease;
-  -ms-transition: all 150ms ease;
-  transition: all 150ms ease;
+  -webkit-transition: left 250ms ease;
+  -moz-transition: left 250ms ease;
+  -o-transition: left 250ms ease;
+  -ms-transition: left 250ms ease;
+  transition: left 250ms ease;
   height: 21px;
   width: 21px;
+  will-change: left;
 }
 .project .link a:after {
   height: 2.2rem;
@@ -5022,25 +5021,30 @@ p code {
   content: ' ';
   background-color: #f1f3f7;
   z-index: -1;
-  -webkit-transition: width 150ms ease, left 150ms ease, opacity 150ms ease;
-  -moz-transition: width 150ms ease, left 150ms ease, opacity 150ms ease;
-  -o-transition: width 150ms ease, left 150ms ease, opacity 150ms ease;
-  -ms-transition: width 150ms ease, left 150ms ease, opacity 150ms ease;
-  transition: width 150ms ease, left 150ms ease, opacity 150ms ease;
+  will-change: width, left, opacity;
+  -webkit-transform: translate3d(0, 0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0, 0);
+  -o-transform: translate3d(0, 0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0, 0);
+  transform: translate3d(0, 0, 0, 0);
+  -webkit-transition: width 200ms ease-in-out, left 250ms ease, opacity 250ms ease;
+  -moz-transition: width 200ms ease-in-out, left 250ms ease, opacity 250ms ease;
+  -o-transition: width 200ms ease-in-out, left 250ms ease, opacity 250ms ease;
+  -ms-transition: width 200ms ease-in-out, left 250ms ease, opacity 250ms ease;
+  transition: width 200ms ease-in-out, left 250ms ease, opacity 250ms ease;
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
   border-radius: 4px;
 }
 .project .link a:hover span {
-  left: 1rem;
+  left: 1.8rem;
 }
 .project .link a:hover svg {
-  left: -0.3rem;
+  left: 0.8rem;
 }
 .project .link a:hover:after {
-  left: -1.2rem;
-  width: 140%;
+  width: 134%;
   opacity: 1;
   -ms-filter: none;
   filter: none;
