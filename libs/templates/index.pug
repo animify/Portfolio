@@ -7,82 +7,98 @@ html(lang='en')
     meta(name="robots", content="index, follow")
     meta(name="viewport", content="width=device-width, initial-scale=1")
     link(rel="icon", type="image/png", href="/assets/images/favicon.png")
-    link(rel="stylesheet", href="//fast.fonts.net/cssapi/bf1e60cd-68e6-4b10-a217-0d1cb3de28d2.css")
     link(rel="stylesheet", href="/assets/css/blossom.css")
     script(src="//unpkg.com/feather-icons")
   body
-    .wrapper
-      section.intro
+    .bind
         .contain
-          .headers
-            h1 Stefan Mansson
-            h1.light Software Engineer, Proto.io
+          #introduction
+              .inner
+                .heading
+                  h2.landing-ascend Hello, I'm Stefan Mansson. Aspiring full-stack developer, design lover, labrador owner.
+                  h5.landing-descend BSc. Computer Science. Currently @ #[a(href="https://proto.io/", target="_blank", rel="noopener noreferrer") Proto.io]. Founder @ #[a(href="https://cindr.io/", target="_blank", rel="noopener noreferrer") Cindr.io].
+          #projects
+            .inner
+              .heading
+                h2 Meet some of my projects.
+                h5 In my spare time, I like to be creative with design &amp; development. Listed below are the solo-projects I’ve transformed from a basic idea to a composite product.
+              .listings
+                .row.project
+                  .col.xs-12.m-6
+                    small Cindr.io
+                    h4 Blossom
+                    p The free, open-source, design framework for the modern web with over 7,000 package downloads on NPM and counting.
+                    .link
+                      a(href="https://getblossom.io/", target="_blank", rel="noopener noreferrer") #[i(data-feather="chevron-right")]
+                        span Go to Blossom
+                  .col.xs-12.m-6
+                    small Cindr.io
+                    h4 Feedlist
+                    p Large-scale, meaningful web analytics and story-telling for developers &amp; project managers; formerly Trackful.
+                    .na
+                      a.disabled #[i(data-feather="package")] Under development
+                .row.project
+                  .col.xs-12.m-6
+                    small Personal
+                    h4 Unload
+                    p Transitory code sharing platform for designers &amp; developers.
+                    .link
+                      a(href="http://unload.io/", target="_blank", rel="noopener noreferrer")  #[i(data-feather="chevron-right")]
+                        span Go to Unload.io
+                  .col.xs-12.m-6
+                    small Cindr.io
+                    h4 Kiteshare
+                    p Effortless screen capturing and sharing tool for macOS and Windows.
+                    .link
+                      a(href="http://kiteshare.io/", target="_blank", rel="noopener noreferrer") #[i(data-feather="chevron-right")]
+                        span Go to Kiteshare.io
+                .row.project
+                  .col.xs-12.m-6
+                    small Personal
+                    h4 Prowl JS
+                    p Extensive framework for embeddable modals, served as a plugin for jQuery.
+                    .link
+                      a(href="http://prowl.io/", target="_blank", rel="noopener noreferrer") #[i(data-feather="chevron-right")]
+                        span Go to Prowl.io
+                  .col.xs-12.m-6
+                    small Personal
+                    h4 Slant.tv
+                    p Quick movie &amp; tv-series information search engine powered by OMDB.
+                    .link
+                      a(href="http://slant.tv/", target="_blank", rel="noopener noreferrer") #[i(data-feather="chevron-right")]
+                        span Go to Slant.tv
+                .row.project
+                  .col.xs-12.m-6
+                    small Personal
+                    h4 Maddie
+                    p Lightning fast bot for Discord, providing meaningful game data feeds &amp; services. 
+                    .link
+                      a(href="http://maddie.one/", target="_blank", rel="noopener noreferrer") #[i(data-feather="chevron-right")]
+                        span Go to Maddie.one
+          #tools
+            .inner
+              .heading
+                h2 Some useful tools I’ve built.
+                h5 During the development process we all come across hurdles. I like to overcome them by creating a tool tailored to the issue and releasing it to the open-source world.
+              .listings
+                .row.project
+                  .col.xs-12
+                    h4 Webpack, React, Express boilerplate
+                    p Incorporating Webpack, React and Express into this boilerplate, the hassle of building a client &amp; server development environment is over. Easy to get started from scratch or implement an existing project.
+                .row.project
+                  .col.xs-12
+                    h4 Blossom boilerplate
+                    p Set up static websites styled by Stylus, templated by PugJS utilizing Browser Sync and Gulp for development. Made production ready by compressing HTML &amp; CSS, optimizing images and uglifying JS.
+                .row.project
+                  .col.xs-12
+                    h4 Darken.io
+                    p Content delivery network for Cindr.io and associated platforms, using the fastest content distribution methods available.
+                .row.project
+                  .col.xs-12
+                    h4 Loona syntax &amp; UI theme
+                    p Minimal, vivid syntax &amp; UI theme packages for Atom, based off One Dark with newly added Tree-View features (under development). 
+
         
-      section.project
-        .contain
-          .row.project
-            .col.xs-12.m-4.description
-              small Framework
-              h4 Blossom UI
-              p Beautiful, lightweight and open-source design framework built with Stylus, for the modern web with over 80 components and features.
-              .highlight
-                a Check out project #[i(data-feather="chevron-right")]
-            .col.xs-12.m-8
-              .feature.blossom
-          .row.project
-            .col.xs-12.m-8
-              .feature.kiteshare
-            .col.xs-12.m-4.description
-              small Desktop app
-              h4 Kiteshare
-              p Multi-platform and open-source desktop app allowing for rapidly taking &amp; sharing of screenshots via clipboard or Imgur.
-              .highlight
-                a Check out project #[i(data-feather="chevron-right")]
-          .row.project
-            .col.xs-12.m-4.description
-              small Framework
-              h4 Prowl JS
-              p Fully featured and open-source jQuery plugin that integrates a customizable and responsive modal framework for any web platform.
-              .highlight
-                a Check out project #[i(data-feather="chevron-right")]
-            .col.xs-12.m-8
-              .feature.prowl
-          .row.project
-            .col.xs-12.m-8
-              .feature.unload
-            .col.xs-12.m-4.description
-              small Web platform
-              h4 Unload.io
-              p Ephemeral web code sharing with support for automatic and custom sytax highlighting; free and no account needed.
-              .highlight
-                a Check out project #[i(data-feather="chevron-right")]
-          .row.project
-            .col.xs-12.m-4.description
-              small Web platform
-              h4 Slant.tv
-              p The movie search engine that doesn't suck. Lightning fast TV series and movie results displayed on a light and clean user interface.
-              .highlight
-                a Check out project #[i(data-feather="chevron-right")]
-            .col.xs-12.m-8
-              .feature.slant
-          .row.project
-            .col.xs-12.m-8
-              .feature.trackful
-            .col.xs-12.m-4.description
-              small Web platform
-              h4 Trackful
-              p A clean and intuitive web analytics platform for admins to analyze and track user-driven statistics for their web applications.
-              .highlight
-                a Check out project #[i(data-feather="chevron-right")]
-          .row.project
-            .col.xs-12.m-4.description
-              small Service
-              h4 Maddie
-              p Simple but powerful Discord bot with a vast array of features to meet even the neediest channels out there. #[strong Coming soon.]
-              .highlight
-                a Check out project #[i(data-feather="chevron-right")]
-            .col.xs-12.m-8
-              .feature.maddie
     script(src="//code.jquery.com/jquery-3.1.0.min.js", integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=", crossorigin="anonymous")
     script(src="//code.jquery.com/ui/1.12.1/jquery-ui.js", integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=", crossorigin="anonymous")
     script(src="/assets/js/blossom.min.js")

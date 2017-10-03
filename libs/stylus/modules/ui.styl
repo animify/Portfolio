@@ -22,7 +22,7 @@ for h in (1..6)
   h{h}
     line-height 1.8em
     font-size lookup('font-size-h' + h)
-    font-weight 200
+    font-weight 500
     letter-spacing -.03em
     color color-heading
     font-family font-family-heading
@@ -36,47 +36,19 @@ for h in (1..6)
 
 a
   color #000
-  text-decoration none
   cursor pointer
   position relative
+  text-decoration none
   &:hover
     color darken(color-primary, 10%)
-
-.highlight
-  a
-    color #000
-    font-weight 600
-    font-size .86rem
-    transition all .3s ease
-    svg
-      relative top 4px
-      transition all .3s ease
-      height 1rem
-      width 1rem
-    &:after
-      width 142px
-      height 22px
-      display block
-      content ' '
-      background-color #F4F4F4
-      absolute top 6px left .5rem
-      z-index -1
-      transition all .3s ease
-    &:hover
-      margin-left 1.5rem
-      svg
-        margin-left .5rem
-      &:after
-        width 195px
-        left -1.5rem
-
 
 li > a
   &:hover
     text-decoration none
 p
-  line-height 1.6em
+  line-height 1.8em
   color text-default
+  font-size 1.1rem
 
 b, strong, .strong
   font-weight 600

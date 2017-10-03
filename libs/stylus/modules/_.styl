@@ -1,28 +1,94 @@
-section
-  .project
-    cf()
-    h4
-      margin-top -.4rem
-    .highlight
-      display block
-      padding .5rem 0
-  .feature
-    width 100%
-    height 20rem
-    background-color #F4F4F4
-    content ' '
-    display block
-    cf()
-    transition transform .3s ease
-    &:hover
-      transform scale(.97)
-  .description
-    align-self flex-end
-  .feature, .description
-    margin-top 2rem
+#introduction
+  display flex
+  width 100%
+  padding 10rem 0
+  h2
+    line-height 1.3em
+  h2 + h5
+    margin-top 1.5rem
 
-section.intro
-  padding 11rem 0
-  .headers
-    h1
-      line-height 1.14em
+.inner .heading
+  h2, h5
+    display block
+  h5
+    color color-subheading
+    font-weight 400
+    letter-spacing 0
+
+  a
+    &:after
+      absolute bottom -2px left
+      border-bottom 1px dashed color-heading
+      width 100%
+      height 1px
+      display block
+      content ' '
+    &:hover
+      &:after
+        border-bottom 1px solid color-primary
+
+.project
+  .col
+    margin-top 3rem
+  small
+    text-transform uppercase
+    font-weight 500
+    letter-spacing .7px
+    color color-pink
+  h4 + p
+    margin-top .5rem
+
+  .na
+    font-weight 500
+    display block
+    padding 1.2rem 0
+    font-size .9rem
+    a
+      svg
+        color text-light
+        relative top 5px left
+        margin-right 8px
+        height 21px
+        width 21px
+
+  .link
+    display block
+    padding 1.2rem 0
+    a
+      font-size .9rem
+      padding .42rem 0
+      span
+        relative left 4px
+        transition left 150ms ease
+        color color-heading
+        font-weight 500
+      svg
+        color text-light
+        relative top 5px left -4px
+        transition all 150ms ease
+        height 21px
+        width 21px
+      &:after
+        height 2.2rem
+        absolute left 0 top
+        width 0%
+        display block
+        content ' '
+        background-color background-lighter-grey
+        z-index -1
+        transition width 150ms ease, left 150ms ease, opacity 150ms ease
+        opacity 0
+        border-radius border-radius-normal
+      &:hover
+        span
+          left 1rem
+        svg
+          left -.5rem
+          color color-pink
+        &:after
+          left -1.2rem
+          width 150%
+          opacity 1
+
+#projects + #tools
+  margin-top 10rem
