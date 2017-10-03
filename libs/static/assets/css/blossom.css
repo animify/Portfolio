@@ -4975,13 +4975,22 @@ p code {
   display: block;
   padding: 1.2rem 0;
 }
+.project .link.cr a span {
+  left: 4px;
+}
+.project .link.cr a svg {
+  left: -4px;
+}
+.project .link.cr a:hover svg {
+  left: -0.5rem;
+}
 .project .link a {
   font-size: 0.9rem;
   padding: 0.42rem 0;
 }
 .project .link a span {
   position: relative;
-  left: 4px;
+  left: 12px;
   -webkit-transition: left 150ms ease;
   -moz-transition: left 150ms ease;
   -o-transition: left 150ms ease;
@@ -4994,7 +5003,7 @@ p code {
   color: #83878f;
   position: relative;
   top: 5px;
-  left: -4px;
+  left: 0;
   -webkit-transition: all 150ms ease;
   -moz-transition: all 150ms ease;
   -o-transition: all 150ms ease;
@@ -5027,12 +5036,11 @@ p code {
   left: 1rem;
 }
 .project .link a:hover svg {
-  left: -0.5rem;
-  color: #fb0d68;
+  left: -0.3rem;
 }
 .project .link a:hover:after {
   left: -1.2rem;
-  width: 150%;
+  width: 140%;
   opacity: 1;
   -ms-filter: none;
   filter: none;

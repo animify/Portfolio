@@ -54,17 +54,27 @@
   .link
     display block
     padding 1.2rem 0
+    &.cr
+      a
+        span
+          left 4px
+        svg
+          left -4px
+        &:hover
+          svg
+            left -.5rem
+
     a
       font-size .9rem
       padding .42rem 0
       span
-        relative left 4px
+        relative left 12px
         transition left 150ms ease
         color color-heading
         font-weight 500
       svg
         color text-light
-        relative top 5px left -4px
+        relative top 5px left 0
         transition all 150ms ease
         height 21px
         width 21px
@@ -83,11 +93,10 @@
         span
           left 1rem
         svg
-          left -.5rem
-          color color-pink
+          left -.3rem
         &:after
           left -1.2rem
-          width 150%
+          width 140%
           opacity 1
 
 #projects + #tools
