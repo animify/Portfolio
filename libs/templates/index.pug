@@ -12,11 +12,15 @@ html(lang='en')
   body
     .bind
         .contain
+          nav#header
+            p Stefan Mansson
+            
           #introduction
               .inner
                 .heading
-                  h2.landing-ascend Hello, I'm Stefan Mansson. Aspiring full-stack developer, design lover, labrador owner.
+                  h2.landing-ascend Hello, I'm Stefan Mansson. Aspiring full-stack developer, design lover, Labrador owner.
                   h5.landing-descend BSc. Computer Science. Currently @ #[a(href="https://proto.io/", target="_blank", rel="noopener noreferrer") Proto.io]. Founder @ #[a(href="https://cindr.io/", target="_blank", rel="noopener noreferrer") Cindr.io].
+                  
           #projects
             .inner
               .heading
@@ -26,7 +30,7 @@ html(lang='en')
                 .row.project
                   .col.xs-12.m-6
                     small Cindr.io
-                    h4 Blossom
+                    h4 Blossom UI
                     p The free, open-source, design framework for the modern web with over 7,000 package downloads on NPM and counting.
                     .link.cr
                       a(href="https://getblossom.io/", target="_blank", rel="noopener noreferrer") #[i(data-feather="chevron-right")]
@@ -75,6 +79,7 @@ html(lang='en')
                     .link.cr
                       a(href="http://maddie.one/", target="_blank", rel="noopener noreferrer") #[i(data-feather="chevron-right")]
                         span Go to Maddie.one
+                        
           #tools
             .inner
               .heading
@@ -109,7 +114,9 @@ html(lang='en')
                     .link
                       a(href="http://maddie.one/", target="_blank", rel="noopener noreferrer") #[i(data-feather="github")]
                         span Explore repository
-
+                        
+          #footer
+            p Footer
         
     script(src="//code.jquery.com/jquery-3.1.0.min.js", integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=", crossorigin="anonymous")
     script(src="//code.jquery.com/ui/1.12.1/jquery-ui.js", integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=", crossorigin="anonymous")
