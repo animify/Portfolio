@@ -8,12 +8,16 @@
   display flex
   width 100%
   padding 10rem 0 14rem 0
+  +below('m')
+    padding 2rem 0 6rem 0
   h2 + h5
     margin-top 1.5rem
 
 .inner .heading
   h2
     line-height 1.3em
+    +below('m')
+      font-size 2rem
   h2, h5
     display block
   h5
@@ -21,7 +25,8 @@
     font-weight 400
     letter-spacing 0
     margin 1rem 0
-
+    +below('m')
+      font-size 1.3rem
   a
     &:after
       absolute bottom -2px left
@@ -124,6 +129,9 @@
       &:hover
         color color-primary
     .item
+      +below('m')
+        text-align center
+        padding 1rem 0
       .heart
         backface-visibility hidden
         will-change transform

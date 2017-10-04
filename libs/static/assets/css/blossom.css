@@ -5230,11 +5230,21 @@ p code {
   width: 100%;
   padding: 10rem 0 14rem 0;
 }
+@media only screen and (max-width: 1024px) {
+  #introduction {
+    padding: 2rem 0 6rem 0;
+  }
+}
 #introduction h2 + h5 {
   margin-top: 1.5rem;
 }
 .inner .heading h2 {
   line-height: 1.3em;
+}
+@media only screen and (max-width: 1024px) {
+  .inner .heading h2 {
+    font-size: 2rem;
+  }
 }
 .inner .heading h2,
 .inner .heading h5 {
@@ -5245,6 +5255,11 @@ p code {
   font-weight: 400;
   letter-spacing: 0;
   margin: 1rem 0;
+}
+@media only screen and (max-width: 1024px) {
+  .inner .heading h5 {
+    font-size: 1.3rem;
+  }
 }
 .inner .heading a:after {
   position: absolute;
@@ -5397,6 +5412,12 @@ p code {
 }
 #footer .inner a.item:hover {
   color: #ff0060;
+}
+@media only screen and (max-width: 1024px) {
+  #footer .inner .item {
+    text-align: center;
+    padding: 1rem 0;
+  }
 }
 #footer .inner .item .heart {
   -webkit-backface-visibility: hidden;
