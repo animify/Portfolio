@@ -115,3 +115,26 @@
   flex 0 0 100%
   padding 2rem 0
   margin-top 6rem
+  .inner
+    width 100%
+    .float-right
+      relative top -2px
+    a.item
+      color text-default
+      &:hover
+        color color-primary
+    .item
+      .heart
+        backface-visibility hidden
+        will-change transform
+        height 20px
+        width 20px
+        color color-primary
+        fill color-primary
+        relative top 3px
+      code
+        relative top -1px
+        padding .2rem .4rem
+        border 1px solid border-grey
+        background-color transparent
+        color color-heading
