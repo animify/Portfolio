@@ -75,7 +75,6 @@
 
     a
       font-size .9rem
-      padding .42rem 0
       span
         relative left 12px
         transition left 250ms ease
@@ -91,7 +90,7 @@
         will-change left
       &:after
         height 2.2rem
-        absolute left 0 top
+        absolute left 0 top -.45rem
         width 0%
         display block
         content ' '
@@ -108,7 +107,7 @@
         svg
           left .8rem
         &:after
-          width 134%
+          width calc(100% + 2.9rem)
           opacity 1
 
 #projects + #tools

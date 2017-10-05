@@ -5313,7 +5313,6 @@ p code {
 }
 .project .link a {
   font-size: 0.9rem;
-  padding: 0.42rem 0;
 }
 .project .link a span {
   position: relative;
@@ -5345,7 +5344,7 @@ p code {
   height: 2.2rem;
   position: absolute;
   left: 0;
-  top: 0;
+  top: -0.45rem;
   width: 0%;
   display: block;
   content: ' ';
@@ -5374,7 +5373,7 @@ p code {
   left: 0.8rem;
 }
 .project .link a:hover:after {
-  width: 134%;
+  width: calc(100% + 2.9rem);
   opacity: 1;
   -ms-filter: none;
   filter: none;
