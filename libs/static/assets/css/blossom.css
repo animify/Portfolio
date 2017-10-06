@@ -5319,11 +5319,12 @@ p code {
 }
 .project .link a {
   font-size: 0.9rem;
+  display: inline-block;
 }
 .project .link a span {
   position: relative;
   left: 1.8rem;
-  top: -1px;
+  top: 2px;
   -webkit-transition: left 250ms ease;
   -moz-transition: left 250ms ease;
   -o-transition: left 250ms ease;
@@ -5332,6 +5333,7 @@ p code {
   color: #16181e;
   font-weight: 500;
   will-change: left;
+  line-height: 1rem;
 }
 .project .link a svg {
   color: #83878f;
@@ -5343,8 +5345,8 @@ p code {
   -o-transition: left 250ms ease;
   -ms-transition: left 250ms ease;
   transition: left 250ms ease;
-  height: 21px;
-  width: 21px;
+  height: 22px;
+  width: 20px;
   will-change: left;
 }
 .project .link a:after {
