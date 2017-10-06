@@ -58,10 +58,14 @@
     a
       svg
         color text-light
-        relative top 5px left
-        margin-right 8px
+        absolute top left
         height 21px
         width 21px
+      span
+        relative left 1.8rem
+        color color-heading
+        font-weight 500
+        will-change left
 
   .link
     display block
@@ -69,21 +73,22 @@
     &.cr
       a
         span
-          left 4px
+          left 1.2rem
         svg
           left -4px
 
     a
       font-size .9rem
       span
-        relative left 12px
+        relative left 1.8rem
+        top -1px
         transition left 250ms ease
         color color-heading
         font-weight 500
         will-change left
       svg
         color text-light
-        relative top 5px left 0
+        absolute top left
         transition left 250ms ease
         height 21px
         width 21px
@@ -103,11 +108,11 @@
         border-radius border-radius-normal
       &:hover
         span
-          left 1.8rem
+          left 2.8rem
         svg
           left .8rem
         &:after
-          width calc(100% + 2.9rem)
+          width calc(100% + 3.8rem)
           opacity 1
 
 #projects + #tools

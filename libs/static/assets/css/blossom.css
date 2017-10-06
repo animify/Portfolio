@@ -5294,19 +5294,25 @@ p code {
 }
 .project .na a svg {
   color: #83878f;
-  position: relative;
-  top: 5px;
+  position: absolute;
+  top: 0;
   left: 0;
-  margin-right: 8px;
   height: 21px;
   width: 21px;
+}
+.project .na a span {
+  position: relative;
+  left: 1.8rem;
+  color: #16181e;
+  font-weight: 500;
+  will-change: left;
 }
 .project .link {
   display: block;
   padding: 1.2rem 0;
 }
 .project .link.cr a span {
-  left: 4px;
+  left: 1.2rem;
 }
 .project .link.cr a svg {
   left: -4px;
@@ -5316,7 +5322,8 @@ p code {
 }
 .project .link a span {
   position: relative;
-  left: 12px;
+  left: 1.8rem;
+  top: -1px;
   -webkit-transition: left 250ms ease;
   -moz-transition: left 250ms ease;
   -o-transition: left 250ms ease;
@@ -5328,8 +5335,8 @@ p code {
 }
 .project .link a svg {
   color: #83878f;
-  position: relative;
-  top: 5px;
+  position: absolute;
+  top: 0;
   left: 0;
   -webkit-transition: left 250ms ease;
   -moz-transition: left 250ms ease;
@@ -5367,13 +5374,13 @@ p code {
   border-radius: 4px;
 }
 .project .link a:hover span {
-  left: 1.8rem;
+  left: 2.8rem;
 }
 .project .link a:hover svg {
   left: 0.8rem;
 }
 .project .link a:hover:after {
-  width: calc(100% + 2.9rem);
+  width: calc(100% + 3.8rem);
   opacity: 1;
   -ms-filter: none;
   filter: none;
