@@ -14,14 +14,14 @@ const imagesDir = libs.cwd('static/assets/images')
 const imagesDist = dist.cwd('assets/images')
 
 gulp.task('images-production', (next) => {
-	pump([
-		gulp.src([imagesDir.path('*.png'), imagesDir.path('*.jpg'), imagesDir.path('*.jpeg'), imagesDir.path('*.gif')]),
-		imagemin({
-			verbose: true
-		}),
-		gulp.dest(imagesDist.path())
-	], () => {
-		util.log(util.colors.underline.bold.white.bgGreen('Images'), 'Images optimized and copied over')
-		next()
-	})
+  pump([
+    gulp.src([imagesDir.path('*.png'), imagesDir.path('*.jpg'), imagesDir.path('*.jpeg'), imagesDir.path('*.gif'), imagesDir.path('*.svg')]),
+    imagemin({
+      verbose: true
+    }),
+    gulp.dest(imagesDist.path())
+  ], () => {
+    util.log(util.colors.underline.bold.white.bgGreen('Images'), 'Images optimized and copied over')
+    next()
+  })
 })
