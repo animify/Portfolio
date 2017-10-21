@@ -6,8 +6,8 @@
   "scripts": {
     "start": "gulp dev"
   },
-  "author": "Stefan Mansson <st.mansson@icloud.com> (http://mansson.io)",
-  "repository": "https://github.com/aotik/portfolio",
+  "author": "Stefan Mansson <st.mansson@icloud.com> (https://mansson.io)",
+  "repository": "https://github.com/animify/portfolio",
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.18.8",

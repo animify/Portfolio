@@ -5320,6 +5320,7 @@ p code {
 .project .link a {
   font-size: 0.9rem;
   display: inline-block;
+  white-space: nowrap;
 }
 .project .link a span {
   position: relative;
@@ -5334,6 +5335,7 @@ p code {
   font-weight: 500;
   will-change: left;
   line-height: 1rem;
+  white-space: nowrap;
 }
 .project .link a svg {
   color: #83878f;
