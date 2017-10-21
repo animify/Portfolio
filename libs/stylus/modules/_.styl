@@ -4,12 +4,26 @@
   flex 0 0 100%
   padding 2rem 0
 
+#introduction, .contain
+  height 100%
+
 #introduction
   display flex
   width 100%
   padding 10rem 0 14rem 0
+  align-self center
+  -webkit-backface-visibility hidden
+  .inner
+    display flex
+    -webkit-backface-visibility hidden
+    margin-top -120px
+    .heading
+      display flex
+      align-self center
+      flex 0 0 100%
+      flex-direction column
   +below('m')
-    padding 2rem 0 6rem 0
+    padding 3rem 0 6rem 0
   h2 + h5
     margin-top 1.5rem
 
@@ -154,3 +168,9 @@
         border 1px solid border-grey
         background-color transparent
         color color-heading
+
+#content
+    display none
+
+#header, #content
+  opacity 0
