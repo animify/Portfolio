@@ -5244,6 +5244,9 @@ p code {
   -o-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
+  overflow: hidden;
+  position: relative;
+  z-index: 1000;
 }
 #introduction .inner {
   will-change: height;
@@ -5252,6 +5255,7 @@ p code {
   -o-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
+  overflow: hidden;
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -5260,6 +5264,8 @@ p code {
   display: flex;
   -webkit-backface-visibility: hidden;
   margin-top: -120px;
+  position: relative;
+  z-index: 1000;
 }
 #introduction .inner .heading {
   display: -webkit-box;
