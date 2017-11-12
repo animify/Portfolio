@@ -5316,11 +5316,12 @@ p code {
     font-size: 2rem;
   }
 }
-.inner .heading h1 {
+.inner .heading h3 {
   line-height: 1.3em;
+  margin-bottom: 0.7rem;
 }
 @media only screen and (max-width: 1024px) {
-  .inner .heading h1 {
+  .inner .heading h3 {
     font-size: 2rem;
   }
 }
