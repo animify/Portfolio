@@ -5,7 +5,7 @@
     $('#introduction').css({
       height: 'auto'
     });
-    $('#header').addClass('landing-descend');
+    $('.wave').hide();
     $('#content').show();
     $('#content').addClass('landing-ascend');
   });

@@ -13,7 +13,11 @@
   padding 10rem 0 14rem 0
   align-self center
   -webkit-backface-visibility hidden
+  will-change height
+  transform translate3d(0,0,0)
   .inner
+    will-change height
+    transform translate3d(0,0,0)
     display flex
     -webkit-backface-visibility hidden
     margin-top -120px
@@ -26,9 +30,22 @@
     padding 3rem 0 6rem 0
   h2 + h5
     margin-top 1.5rem
+  .info-small
+    padding 0 0 6rem 0
+    img
+      margin-right .5rem
+      pointer-events none
+      user-select none
+    strong
+      color color-heading
+      line-height 1.4rem
 
 .inner .heading
-  h2
+  h1
+    line-height 1.3em
+    +below('m')
+      font-size 2rem
+  h1
     line-height 1.3em
     +below('m')
       font-size 2rem
@@ -61,77 +78,35 @@
     font-weight 500
     letter-spacing .7px
     color color-pink
-  h4 + p
-    margin-top .5rem
-
-  .na
-    font-weight 500
+  h4
+    font-size 1.4rem
     display block
-    padding 1.2rem 0
-    font-size .9rem
-    a
-      svg
-        color text-light
-        absolute top left
-        height 21px
-        width 21px
-      span
-        relative left 1.8rem
-        color color-heading
-        font-weight 500
-        will-change left
+
+  .minicon
+    height 16px
+    width 16px
+    relative top 2.8px left 2px
+    stroke text-light
+    transition all 150ms ease
+
+  img
+    width 100%
+    pointer-events none
+    user-select none
+    & + h4
+      margin-top 1.5rem
 
   .link
     display block
     padding 1.2rem 0
-    &.cr
-      a
-        span
-          left 1.2rem
-        svg
-          left -4px
-
+    color text-light
     a
-      font-size .9rem
-      display inline-block
-      white-space nowrap
-      span
-        relative left 1.8rem
-        top 2px
-        transition left 250ms ease
-        color color-heading
-        font-weight 500
-        will-change left
-        line-height 1rem
-        white-space nowrap
-      svg
-        color text-light
-        absolute top left
-        transition left 250ms ease
-        height 22px
-        width 20px
-        will-change left
-      &:after
-        height 2.2rem
-        absolute left 0 top -.51rem
-        width 0%
-        display block
-        content ' '
-        background-color background-lighter-grey
-        z-index -1
-        will-change width, left, opacity
-        transform translate3d(0,0,0,0)
-        transition width 200ms ease-in-out, left 250ms ease, opacity 250ms ease
-        opacity 0
-        border-radius border-radius-normal
+      color text-light
       &:hover
-        span
-          left 2.8rem
-        svg
-          left .8rem
-        &:after
-          width calc(100% + 3.8rem)
-          opacity 1
+        color color-primary
+        .minicon
+          stroke color-primary
+          left 7px
 
 #projects + #tools
   margin-top 10rem
@@ -170,7 +145,8 @@
         color color-heading
 
 #content
-    display none
+  display none
+  transform: translateZ(0);
 
 #header, #content
   opacity 0
