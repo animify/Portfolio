@@ -1,3 +1,10 @@
+- var blossomURL = 'https://getblossom.io/'
+- var miniconsURL = 'http://minicons.io/'
+- var unloadURL = 'http://unload.io/'
+- var kiteshareURL = 'http://kiteshare.io/'
+- var prowlURL = 'http://prowl.io/'
+- var slantURL = 'https://slant.tv/'
+
 doctype html
 html(lang='en')
   head
@@ -12,7 +19,7 @@ html(lang='en')
   body
     .bind
         .contain
-          #introduction
+          section#introduction
               .inner
                 .heading
                   .info-small
@@ -22,7 +29,7 @@ html(lang='en')
                         p.landing-descend Software Engineer
                   h1.landing-ascend Aspiring Product Designer, pixel lover, labrador owner.
                   h5.landing-descend Currently getting up in the morning to craft amazing things at #[a(href="https://proto.io/", target="_blank", rel="noopener noreferrer") Proto.io]. In my free time, giving back to open-source, UI &amp; vector designing and managing #[a(href="https://cindr.io/", target="_blank", rel="noopener noreferrer") Cindr.io].
-          #content      
+          section#content      
             #projects
               .inner
                 .heading
@@ -31,65 +38,64 @@ html(lang='en')
                 .listings
                   .row.project
                     .col.xs-12.m-6
-                      img(src="/assets/images/project-03.png", alt="")
+                      a.project-image.project-image-3(href=blossomURL, target="_blank", rel="noopener noreferrer")
                       h4 Blossom UI
                       p Blossom makes it easy for anyone to build a website from scratch using beautiful building blocks.
                       .link.cr
                         span Cindr.io - 
-                        a(href="https://getblossom.io/", target="_blank", rel="noopener noreferrer") getblossom.io #[i(data-minicon="chevron-right")]
+                        a(href=blossomURL, target="_blank", rel="noopener noreferrer") getblossom.io #[i(data-minicon="chevron-right")]
 
                     .col.xs-12.m-6
-                      img(src="/assets/images/project-01.png", alt="")
+                      a.project-image.project-image-1(href=miniconsURL, target="_blank", rel="noopener noreferrer")
                       h4 Minicons
                       p Minicons are a charming, open-source SVG iconset, embeddable &amp; themeable with Javascript.
                       .link.cr
                         span Personal - 
-                        a(href="http://minicons.io/", target="_blank", rel="noopener noreferrer") minicons.io #[i(data-minicon="chevron-right")]
+                        a(href=miniconsURL, target="_blank", rel="noopener noreferrer") minicons.io #[i(data-minicon="chevron-right")]
                         
                   .row.project
                     .col.xs-12.m-6
-                      img(src="/assets/images/project-04.png", alt="")
+                      a(href=unloadURL, target="_blank", rel="noopener noreferrer").project-image.project-image-4
                       h4 Unload
                       p Unload is a transitory code sharing platform for designers &amp; developers to distribute work rapidly.
                       .link.cr
                         span Personal - 
-                        a(href="http://unload.io/", target="_blank", rel="noopener noreferrer") unload.io #[i(data-minicon="chevron-right")]
+                        a(href=unloadURL, target="_blank", rel="noopener noreferrer") unload.io #[i(data-minicon="chevron-right")]
 
                     .col.xs-12.m-6
-                      img(src="/assets/images/project-06.png", alt="")
+                      a(href=kiteshareURL, target="_blank", rel="noopener noreferrer").project-image.project-image-6
                       h4 Kiteshare
                       p Kiteshare is a cross-platform screen capturing desktop tool for users to capture &amp; share moments in seconds.
                       .link.cr
                         span Cindr.io - 
-                        a(href="http://kiteshare.io/", target="_blank", rel="noopener noreferrer") kiteshare.io #[i(data-minicon="chevron-right")]
+                        a(href=kiteshareURL, target="_blank", rel="noopener noreferrer") kiteshare.io #[i(data-minicon="chevron-right")]
 
                   .row.project
                     .col.xs-12.m-6
-                      img(src="/assets/images/project-05.png", alt="")
+                      a(href=prowlURL, target="_blank", rel="noopener noreferrer").project-image.project-image-5
                       h4 Prowl JS
                       p Prowl is a jQuery plugin that easily injects customizable modals into a website.
                       .link.cr
                         span Personal - 
-                        a(href="http://prowl.io/", target="_blank", rel="noopener noreferrer") prowl.io #[i(data-minicon="chevron-right")]
+                        a(href=prowlURL, target="_blank", rel="noopener noreferrer") prowl.io #[i(data-minicon="chevron-right")]
 
                     .col.xs-12.m-6
-                      img(src="/assets/images/project-02.png", alt="")
+                      a(href=slantURL, target="_blank", rel="noopener noreferrer").project-image.project-image-2
                       h4 Slant.tv
                       p Slant makes searching for a movie or tv-series information effortless, powered by OMDB.
                       .link.cr
                         span Personal - 
-                        a(href="https://slant.tv/", target="_blank", rel="noopener noreferrer") slant.tv #[i(data-minicon="chevron-right")]
+                        a(href=slantURL, target="_blank", rel="noopener noreferrer") slant.tv #[i(data-minicon="chevron-right")]
                         
                     .col.xs-12.m-6
-                      img(src="/assets/images/project-07.png", alt="")
+                      .project-image.project-image-7.disabled
                       h4 Feedlist
                       p Feedlist is a simplified web analytics platforms for developers &amp; project managers; formerly Trackful.
                       .link.cr
                         span Cindr.io - 
                         span.text.yellow Under development
-
                           
-            #tools
+            section#tools
               .inner
                 .heading
                   h3 Some useful tools I’ve built.
@@ -124,7 +130,7 @@ html(lang='en')
                         span Open-source - 
                          a(href="https://github.com/animify/loona-ui", target="_blank", rel="noopener noreferrer") Explore repository #[i(data-minicon="chevron-right")]
                           
-            #footer
+            footer#footer
               .inner
                 ul.list.horizontal.links.breakpoint-m-stackable
                   li

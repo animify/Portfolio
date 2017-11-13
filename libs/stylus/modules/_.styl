@@ -96,10 +96,24 @@
     stroke text-light
     transition all 150ms ease
 
-  img
+  .project-image
     width 100%
-    pointer-events none
-    user-select none
+    display block
+    padding-top 62.5%
+    transition all 140ms ease-in
+    background-size cover
+    background-position 50% 50%
+    transform translateZ(0)
+    &.disabled
+      user-select none
+      pointer-events none
+      opacity .5
+    for num in (1..7)
+      &-{num}
+        background-image url('/assets/images/project-0' + num + '.png')
+        &:hover
+          transform perspective(600px) rotateX(10deg)
+          transform-style preserve-3d
     & + h4
       margin-top 1.5rem
 
@@ -152,7 +166,6 @@
         color color-heading
 
 #content
-  display none
   transform translateZ(0)
 
 #header, #content
