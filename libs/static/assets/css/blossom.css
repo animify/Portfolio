@@ -113,7 +113,7 @@ a img {
 html {
   height: 100%;
   width: 100%;
-  font-size: 16px;
+  font-size: 18px;
 }
 body {
   font-family: 'Graphik', sans-serif;
@@ -128,7 +128,7 @@ body {
 }
 h1 {
   line-height: 1.8em;
-  font-size: 3.1rem;
+  font-size: 2.8rem;
   font-weight: 500;
   letter-spacing: -0.03em;
   color: #252525;
@@ -194,7 +194,7 @@ li > a:hover {
   text-decoration: none;
 }
 p {
-  line-height: 1.6em;
+  line-height: 1.7em;
   color: #757575;
 }
 b,
@@ -2087,7 +2087,7 @@ small {
 .dropdown li.header {
   color: #757575;
   padding: 0.5rem 1.4rem 0.5rem 1.4rem;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
 }
 .dropdown li:hover a {
@@ -2249,7 +2249,7 @@ small {
   text-align: center;
   border: 0;
   line-height: 1.125;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   cursor: pointer;
   -webkit-transition: all 0.2s ease;
@@ -2598,7 +2598,7 @@ ol.list {
   list-style: none;
 }
 .list {
-  font-size: 16px;
+  font-size: 18px;
 }
 .list li,
 .list .item {
@@ -2801,7 +2801,7 @@ ol.ordered li[value]:before {
 .divider {
   margin: 1rem 0;
   color: #757575;
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
 }
 .divider:not(.vertical):not(.horizontal) {
@@ -2866,10 +2866,10 @@ ol.ordered li[value]:before {
 .input input[type="number"],
 .input textarea {
   font-family: 'Graphik', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   color: #757575;
   margin: 0;
-  font-size: 16px;
+  font-size: 18px;
   max-width: 100%;
   line-height: 1.125;
   padding: 0.75rem 1rem;
@@ -2926,7 +2926,7 @@ ol.ordered li[value]:before {
 }
 .input .checkbox,
 .input .radio {
-  font-size: 16px;
+  font-size: 18px;
 }
 .input .checkbox label,
 .input .radio label {
@@ -3058,14 +3058,14 @@ ol.ordered li[value]:before {
   border-radius: 0 4px 4px 0;
   display: inline-block;
   vertical-align: top;
-  font-size: 16px;
+  font-size: 18px;
   margin-left: -1px;
 }
 .action .button {
   border-radius: 4px 0 0 4px;
   display: inline-block;
   vertical-align: top;
-  font-size: 16px;
+  font-size: 18px;
 }
 .action .button + input {
   border-radius: 0 4px 4px 0;
@@ -3928,7 +3928,7 @@ ol.ordered li[value]:before {
 .stages .stage .header {
   display: block;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   color: #252525;
 }
 .stages .stage:last-child:before,
@@ -5303,7 +5303,7 @@ p code {
   padding: 0 0 6rem 0;
 }
 #introduction .info-small img {
-  margin-right: 0.5rem;
+  margin-right: 0.8rem;
   pointer-events: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -5369,7 +5369,7 @@ p code {
   color: #ff0060;
 }
 .project h4 {
-  font-size: 1.4rem;
+  font-size: 1.34rem;
   display: block;
 }
 .project .minicon {
@@ -5528,7 +5528,7 @@ p code {
   color: #959595;
 }
 .project .link a {
-  color: #959595;
+  color: #252525;
 }
 .project .link a:hover {
   color: #ff0060;
