@@ -1,9 +1,11 @@
+- var colorbookURL = 'https://colorbook.me/'
 - var blossomURL = 'https://getblossom.io/'
 - var miniconsURL = 'http://minicons.io/'
 - var unloadURL = 'http://unload.io/'
 - var kiteshareURL = 'http://kiteshare.io/'
 - var prowlURL = 'http://prowl.io/'
 - var slantURL = 'https://slant.tv/'
+- var productHuntColorbookURL = 'https://www.producthunt.com/posts/the-colorbook'
 
 doctype html
 html(lang='en')
@@ -38,12 +40,12 @@ html(lang='en')
                 .listings
                   .row.project
                     .col.xs-12.m-6
-                      a.project-image.project-image-3(href=blossomURL, target="_blank", rel="noopener noreferrer")
-                      h4 Blossom UI
-                      p Blossom makes it easy to build a website from scratch using beautiful building blocks.
+                      a.project-image.project-image-8(href=blossomURL, target="_blank", rel="noopener noreferrer")
+                      h4 The Colorbook
+                      p A timeline of the trendiest color palettes from Dribbble, as seen on #[a.ph-link(href=productHuntColorbookURL, target="_blank", rel="noopener noreferrer") Product Hunt].
                       .link.cr
-                        span Cindr.io - 
-                        a(href=blossomURL, target="_blank", rel="noopener noreferrer") getblossom.io #[i(data-minicon="chevron-right")]
+                        span Personal - 
+                        a(href=colorbookURL, target="_blank", rel="noopener noreferrer") colorbook.me #[i(data-minicon="chevron-right")]
 
                     .col.xs-12.m-6
                       a.project-image.project-image-1(href=miniconsURL, target="_blank", rel="noopener noreferrer")
@@ -52,8 +54,16 @@ html(lang='en')
                       .link.cr
                         span Personal - 
                         a(href=miniconsURL, target="_blank", rel="noopener noreferrer") minicons.io #[i(data-minicon="chevron-right")]
-                        
+
                   .row.project
+                    .col.xs-12.m-6
+                      a.project-image.project-image-3(href=blossomURL, target="_blank", rel="noopener noreferrer")
+                      h4 Blossom UI
+                      p Blossom makes it easy to build a website from scratch using beautiful building blocks.
+                      .link.cr
+                        span Cindr.io - 
+                        a(href=blossomURL, target="_blank", rel="noopener noreferrer") getblossom.io #[i(data-minicon="chevron-right")]
+                        
                     .col.xs-12.m-6
                       a(href=unloadURL, target="_blank", rel="noopener noreferrer").project-image.project-image-4
                       h4 Unload
@@ -62,6 +72,7 @@ html(lang='en')
                         span Personal - 
                         a(href=unloadURL, target="_blank", rel="noopener noreferrer") unload.io #[i(data-minicon="chevron-right")]
 
+                  .row.project
                     .col.xs-12.m-6
                       a(href=kiteshareURL, target="_blank", rel="noopener noreferrer").project-image.project-image-6
                       h4 Kiteshare
@@ -70,7 +81,6 @@ html(lang='en')
                         span Cindr.io - 
                         a(href=kiteshareURL, target="_blank", rel="noopener noreferrer") kiteshare.io #[i(data-minicon="chevron-right")]
 
-                  .row.project
                     .col.xs-12.m-6
                       a(href=prowlURL, target="_blank", rel="noopener noreferrer").project-image.project-image-5
                       h4 Prowl JS
@@ -79,6 +89,7 @@ html(lang='en')
                         span Personal - 
                         a(href=prowlURL, target="_blank", rel="noopener noreferrer") prowl.io #[i(data-minicon="chevron-right")]
 
+                  .row.project
                     .col.xs-12.m-6
                       a(href=slantURL, target="_blank", rel="noopener noreferrer").project-image.project-image-2
                       h4 Slant.tv

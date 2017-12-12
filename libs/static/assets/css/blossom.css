@@ -1,18 +1,16 @@
 @font-face {
   font-family: 'Graphik';
-  src: url("../fonts/Graphik-Medium-Web.eot");
-  src: url("../fonts/Graphik-Medium-Web.eot?#iefix") format('embedded-opentype'), url("../fonts/Graphik-Medium-Web.woff2") format('woff2'), url("../fonts/Graphik-Medium-Web.woff") format('woff');
+  src: url("../fonts/Graphik-fded951322c4098de46b626c10d2a262.eot");
+  src: url("../fonts/Graphik-fded951322c4098de46b626c10d2a262.eot?#iefix") format('embedded-opentype'), url("../fonts/Graphik-fded951322c4098de46b626c10d2a262.woff2") format('woff2'), url("../fonts/Graphik-fded951322c4098de46b626c10d2a262.woff") format('woff'), url("../fonts/Graphik-fded951322c4098de46b626c10d2a262.ttf") format('truetype'), url("../fonts/Graphik-fded951322c4098de46b626c10d2a262.svg#.") format('svg');
   font-weight: 500;
   font-style: normal;
-  font-stretch: normal;
 }
 @font-face {
   font-family: 'Graphik';
-  src: url("../fonts/Graphik-Regular-Web.eot");
-  src: url("../fonts/Graphik-Regular-Web.eot?#iefix") format('embedded-opentype'), url("../fonts/Graphik-Regular-Web.woff2") format('woff2'), url("../fonts/Graphik-Regular-Web.woff") format('woff');
-  font-weight: 400;
+  src: url("../fonts/Graphik-dc89f2d41668adb3db6d650c7b34c527.eot");
+  src: url("../fonts/Graphik-dc89f2d41668adb3db6d650c7b34c527.eot?#iefix") format('embedded-opentype'), url("../fonts/Graphik-dc89f2d41668adb3db6d650c7b34c527.woff2") format('woff2'), url("../fonts/Graphik-dc89f2d41668adb3db6d650c7b34c527.woff") format('woff'), url("../fonts/Graphik-dc89f2d41668adb3db6d650c7b34c527.ttf") format('truetype'), url("../fonts/Graphik-dc89f2d41668adb3db6d650c7b34c527.svg#.") format('svg');
+  font-weight: normal;
   font-style: normal;
-  font-stretch: normal;
 }
 * {
   -webkit-box-sizing: border-box;
@@ -189,6 +187,12 @@ a {
 }
 a:hover {
   color: #e60056;
+}
+a.ph-link {
+  color: #da552f;
+}
+a.ph-link:hover {
+  color: #d64d26;
 }
 li > a:hover {
   text-decoration: none;
@@ -531,7 +535,8 @@ small {
 .bind {
   height: 100%;
   width: 100%;
-  overflow-y: auto;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 .bind::-webkit-scrollbar {
   display: none;
@@ -5519,6 +5524,21 @@ p code {
   -ms-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
+.project .project-image-8 {
+  background-image: url("/assets/images/project-08.png");
+}
+.project .project-image-8:hover {
+  -webkit-transform: perspective(600px) rotateX(10deg);
+  -moz-transform: perspective(600px) rotateX(10deg);
+  -o-transform: perspective(600px) rotateX(10deg);
+  -ms-transform: perspective(600px) rotateX(10deg);
+  transform: perspective(600px) rotateX(10deg);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
 .project .project-image + h4 {
   margin-top: 1.5rem;
 }
@@ -5529,6 +5549,7 @@ p code {
 }
 .project .link a {
   color: #252525;
+  white-space: nowrap;
 }
 .project .link a:hover {
   color: #ff0060;
