@@ -10,19 +10,17 @@
 #introduction
   display: flex;
   width: 100%;
-  padding: 10rem 0 14rem;
+  padding: 8rem 0 12rem;
   align-self: center;
   -webkit-backface-visibility: hidden;
   will-change: height;
   transform: translate3d(0, 0, 0);
-  overflow: hidden;
   position: relative;
   z-index: 1000;
 
   .inner
     will-change: height;
     transform: translate3d(0, 0, 0);
-    overflow: hidden;
     display: flex;
     -webkit-backface-visibility: hidden;
     margin-top: -120px;
@@ -45,13 +43,13 @@
     padding: 0 0 6rem;
 
     img
-      margin-right: .8rem;
+      margin-right: .6rem;
       pointer-events: none;
       user-select: none;
+      relative: top -1px;
 
     strong
       color: color-heading;
-      line-height: 1.4rem;
 
 .inner .heading
   h1
@@ -79,6 +77,7 @@
     +below('m')
       font-size: 1.3rem;
 
+#introduction .inner .heading
   a
     &:after
       absolute: bottom -2px left;
@@ -141,18 +140,21 @@
   .link
     display: block;
     padding: 1.2rem 0;
-    color: text-light;
+    color: #000;
 
     a
       color: color-heading;
       white-space: nowrap;
+
+      .minicon
+        left: -1px;
 
       &:hover
         color: color-primary;
 
         .minicon
           stroke: color-primary;
-          left: 7px;
+          left: 4px;
 
 #projects + #tools
   margin-top: 10rem;
@@ -171,8 +173,6 @@
       relative: top -3px;
 
     a.item
-      color: text-default;
-
       &:hover
         color: color-primary;
 

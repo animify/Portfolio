@@ -185,6 +185,7 @@ a {
   cursor: pointer;
   position: relative;
   text-decoration: none;
+  font-weight: 600;
 }
 a:hover {
   color: #e60056;
@@ -2652,11 +2653,9 @@ ol.ordered li[value]:before {
   color: text-lighter-grey;
   padding: 0.5rem 0.86rem;
   display: inline-block;
-  font-size: 0.7em;
   line-height: 0.76em;
   border-radius: 4px;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-weight: 400;
   overflow: hidden;
 }
 .label.circular {
@@ -4815,7 +4814,7 @@ p code {
   display: box;
   display: flex;
   width: 100%;
-  padding: 10rem 0 14rem;
+  padding: 8rem 0 12rem;
   -webkit-align-self: center;
   align-self: center;
   -ms-flex-item-align: center;
@@ -4826,7 +4825,6 @@ p code {
   -o-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
-  overflow: hidden;
   position: relative;
   z-index: 1000;
 }
@@ -4837,7 +4835,6 @@ p code {
   -o-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
-  overflow: hidden;
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -4885,16 +4882,17 @@ p code {
   padding: 0 0 6rem;
 }
 #introduction .info-small img {
-  margin-right: 0.8rem;
+  margin-right: 0.6rem;
   pointer-events: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  position: relative;
+  top: -1px;
 }
 #introduction .info-small strong {
   color: #252525;
-  line-height: 1.4rem;
 }
 .inner .heading h1 {
   line-height: 1.3em;
@@ -4928,7 +4926,7 @@ p code {
     font-size: 1.3rem;
   }
 }
-.inner .heading a:after {
+#introduction .inner .heading a:after {
   position: absolute;
   bottom: -2px;
   left: 0;
@@ -4938,7 +4936,7 @@ p code {
   display: block;
   content: ' ';
 }
-.inner .heading a:hover:after {
+#introduction .inner .heading a:hover:after {
   border-bottom: 1px solid #ff0060;
 }
 .project .col {
@@ -5122,18 +5120,21 @@ p code {
 .project .link {
   display: block;
   padding: 1.2rem 0;
-  color: #959595;
+  color: #000;
 }
 .project .link a {
   color: #252525;
   white-space: nowrap;
+}
+.project .link a .minicon {
+  left: -1px;
 }
 .project .link a:hover {
   color: #ff0060;
 }
 .project .link a:hover .minicon {
   stroke: #ff0060;
-  left: 7px;
+  left: 4px;
 }
 #projects + #tools {
   margin-top: 10rem;
@@ -5162,9 +5163,6 @@ p code {
 #footer .inner .float-right {
   position: relative;
   top: -3px;
-}
-#footer .inner a.item {
-  color: #757575;
 }
 #footer .inner a.item:hover {
   color: #ff0060;
