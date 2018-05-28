@@ -509,7 +509,7 @@ small {
 .contain {
   *zoom: 1;
   width: auto;
-  max-width: 1010px;
+  max-width: 1020px;
   float: none;
   display: block;
   margin-right: auto;
@@ -4814,7 +4814,7 @@ p code {
   display: box;
   display: flex;
   width: 100%;
-  padding: 8rem 0 12rem;
+  padding: 8rem 0 10rem;
   -webkit-align-self: center;
   align-self: center;
   -ms-flex-item-align: center;
@@ -4949,7 +4949,7 @@ p code {
   color: #ff0060;
 }
 .project h4 {
-  font-size: 1.34rem;
+  font-size: 1.325rem;
   display: block;
 }
 .project .minicon {
@@ -5194,7 +5194,8 @@ p code {
   top: -1px;
   margin-left: 0.2rem;
   padding: 0.2rem 0.4rem;
-  background-color: rgba(255,255,255,0.2);
+  background-color: rgba(34,31,31,0.08);
+  font-weight: 600;
   color: #0e2032;
 }
 #content {
