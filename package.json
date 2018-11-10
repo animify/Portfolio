@@ -1,39 +1,15 @@
 {
   "name": "portfolio",
-  "version": "1.1.3",
+  "version": "2.0.0",
   "description": "Stefan Mansson's portfolio",
-  "main": "gulpfile.js",
   "scripts": {
-    "start": "gulp dev"
   },
   "author": "Stefan Mansson <st.mansson@icloud.com> (https://mansson.io)",
   "repository": "https://github.com/animify/portfolio",
   "license": "MIT",
   "devDependencies": {
-    "browser-sync": "^2.18.8",
-    "extend": "^3.0.0",
-    "grunt": "^1.0.1",
-    "grunt-contrib-pug": "^1.0.0",
-    "grunt-contrib-stylus": "^1.2.0",
-    "grunt-contrib-watch": "^1.0.0",
-    "gulp": "^3.9.1",
-    "gulp-imagemin": "^3.2.0",
-    "gulp-nodemon": "^2.2.1",
-    "gulp-pug": "^3.3.0",
-    "gulp-stylus": "^2.6.0",
-    "gulp-uglify": "^2.1.2",
-    "gulp-util": "^3.0.8",
-    "gulp-watch": "^4.3.11",
-    "jeet": "^6.1.1",
-    "minimist": "^1.2.0",
-    "nib": "^1.1.2",
-    "pump": "^1.0.2",
-    "run-sequence": "^1.2.2",
-    "rupture": "^0.6.2"
+
   },
   "dependencies": {
-    "connect": "^3.6.0",
-    "fs-jetpack": "^0.13.3",
-    "serve-static": "^1.12.1"
   }
 }
