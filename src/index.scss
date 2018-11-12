@@ -1,0 +1,174 @@
+@import url("https://rsms.me/inter/inter-ui.css");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 15px;
+  line-height: 22px;
+  background-color: rgb(246, 247, 248);
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  max-width: 780px;
+  width: 100%;
+  padding: 64px 32px;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: -0.4px;
+  line-height: 44px;
+  margin: 0 0 8px 0;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  margin: 0 0 4px 0;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  margin: 0 0 8px 0;
+  color: #555;
+}
+
+p {
+  margin: 0;
+  color: #555;
+}
+
+small {
+  margin: 0;
+  font-size: 12px;
+  color: #757575;
+}
+
+.main {
+  padding-bottom: 42px;
+
+  h3 {
+    font-weight: 400;
+  }
+}
+
+.info {
+  margin-bottom: 24px;
+
+  h3 {
+    font-weight: 400;
+  }
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 32px;
+  grid-row-gap: 32px;
+
+  + .info {
+    margin-top: 64px;
+  }
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 8px;
+
+  .img {
+    height: 200px;
+    background-size: cover;
+    background-position: top center;
+    width: 100%;
+    content: " ";
+    border-radius: 8px 8px 0 0;
+  }
+
+  .desc {
+    padding: 16px;
+
+    h3 {
+      color: #252525;
+      font-weight: 600;
+      margin: 0 0 4px 0;
+    }
+
+    a {
+      display: flex;
+      margin-top: 16px;
+      text-decoration: none;
+      color: #757575;
+    }
+  }
+}
+
+.sideproject {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 8px;
+
+  .desc {
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+      color: #252525;
+    }
+
+    small {
+      margin: 0 0 2px 0;
+    }
+  }
+
+  .actions {
+    display: flex;
+    margin-top: 16px;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+.tags {
+  display: flex;
+  align-items: center;
+
+  .tag {
+    padding: 4px 6px;
+    font-size: 12px;
+    border-radius: 4px;
+    font-weight: 600;
+    color: #4500ff;
+    background-color: rgba(133, 115, 255, 0.14);
+    + .tag {
+      margin-left: 8px;
+    }
+  }
+}
+
+.button {
+  text-decoration: none;
+  background-color: #f1f2f3;
+  color: #252525;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
