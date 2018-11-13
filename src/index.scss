@@ -1,5 +1,9 @@
 @import url("https://rsms.me/inter/inter-ui.css");
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -15,32 +19,32 @@ body {
   display: flex;
   margin: 0 auto;
   flex-direction: column;
-  max-width: 780px;
+  max-width: 880px;
   width: 100%;
   padding: 64px 32px;
 }
 
 h1 {
-  font-size: 30px;
-  font-weight: 500;
-  letter-spacing: -0.4px;
-  line-height: 44px;
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: -0.6px;
+  line-height: 48px;
   margin: 0 0 8px 0;
   color: #000;
 }
 
 h2 {
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 36px;
-  margin: 0 0 4px 0;
+  margin: 0 0 0 0;
   color: #000;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
-  line-height: 26px;
+  line-height: 32px;
   margin: 0 0 8px 0;
   color: #555;
 }
@@ -56,8 +60,33 @@ small {
   color: #757575;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 24px 24px;
+  width: 100%;
+  z-index: 20;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      font-weight: 500;
+
+      + a {
+        margin-left: 24px;
+      }
+    }
+  }
+}
+
 .main {
-  padding-bottom: 42px;
+  padding-top: 128px;
+  padding-bottom: 80px;
 
   h3 {
     font-weight: 400;
@@ -133,10 +162,6 @@ small {
     h3 {
       color: #252525;
     }
-
-    small {
-      margin: 0 0 2px 0;
-    }
   }
 
   .actions {
@@ -171,4 +196,48 @@ small {
   font-weight: 600;
   padding: 8px 16px;
   border-radius: 20px;
+}
+
+.waves {
+  width: 100%;
+  height: 600px;
+  top: 0;
+  left: 0;
+  position: fixed;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  z-index: -1;
+
+  .wave {
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background: rgba(0, 0, 0, 0.05);
+    width: 800px;
+    height: 800px;
+    margin-left: -400px;
+    margin-top: -400px;
+    transform-origin: 50% 48%;
+    border-radius: 42%;
+    animation: rotate 4000ms infinite linear;
+
+    &.two {
+      opacity: 0.1;
+      margin-top: -400px;
+    }
+
+    &.three {
+      animation: rotate 6000ms infinite linear;
+    }
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  from {
+    transform: rotate(360deg);
+  }
 }
