@@ -214,6 +214,7 @@ header {
   font-weight: 600;
   padding: 8px 16px;
   border-radius: 20px;
+  text-align: center;
 }
 
 .waves {
@@ -334,5 +335,20 @@ p {
   100% {
     opacity: 1;
     transform: translateY(0px);
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .projects {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .project.side {
+    .button {
+      width: 100%;
+    }
+    .tags {
+      display: none;
+    }
   }
 }
