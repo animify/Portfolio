@@ -72,6 +72,8 @@ header {
   padding: 24px 24px;
   width: 100%;
   z-index: 20;
+  opacity: 0;
+  animation: fadeDown 1000ms 400ms ease forwards;
 
   nav {
     display: flex;
@@ -92,16 +94,27 @@ header {
 .main {
   padding-top: 128px;
   padding-bottom: 80px;
+  animation: fadeDown 1000ms ease forwards;
 
   h3 {
     font-weight: 400;
   }
 }
 
+.content {
+  opacity: 0;
+  animation: fadeUp 1000ms 200ms ease forwards;
+}
+
 .info {
   margin-bottom: 24px;
 
+  h2 {
+    line-height: 1.2;
+  }
+
   h3 {
+    margin-top: 4px;
     font-weight: 400;
   }
 }
@@ -244,5 +257,82 @@ header {
   }
   from {
     transform: rotate(360deg);
+  }
+}
+
+h1,
+h2,
+h3,
+small,
+.tag,
+.button,
+p {
+  position: relative;
+  width: fit-content;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    will-change: width;
+    transform: translateZ(0);
+    animation: animateRect 500ms 1000ms cubic-bezier(0.075, 0.82, 0.165, 1)
+      forwards;
+  }
+}
+
+@keyframes animateRect {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}
+
+.main {
+  h1::after {
+    animation-delay: 500ms;
+  }
+  h3::after {
+    animation-delay: 700ms;
+  }
+}
+
+.project {
+  small::after,
+  p::after {
+    animation-delay: 1200ms;
+  }
+  p.url::after {
+    animation-delay: 1400ms;
+  }
+}
+
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
