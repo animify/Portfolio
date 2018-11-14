@@ -1,7 +1,7 @@
 import React from "react";
 
 const SideProject = ({ header, desc, date, url, tags }) => (
-  <div className="sideproject">
+  <div className="project side">
     <div className="desc">
       <small>{date}</small>
       <h3>{header}</h3>

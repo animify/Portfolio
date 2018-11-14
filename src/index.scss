@@ -49,6 +49,11 @@ h3 {
   color: #555;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 p {
   margin: 0;
   color: #555;
@@ -118,18 +123,25 @@ header {
   border-radius: 8px;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 8px;
+  will-change: box-shadow, transform;
+  transition: box-shadow 140ms ease, transform 140ms ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 8px 24px;
+  }
 
   .img {
     height: 200px;
     background-size: cover;
     background-position: top center;
     width: 100%;
-    content: " ";
     border-radius: 8px 8px 0 0;
   }
 
   .desc {
-    padding: 16px;
+    padding: 20px;
+    flex-grow: 1;
 
     h3 {
       color: #252525;
@@ -137,31 +149,24 @@ header {
       margin: 0 0 4px 0;
     }
 
-    a {
+    .url {
       display: flex;
-      margin-top: 16px;
+      padding-top: 16px;
+      margin-top: auto;
       text-decoration: none;
       color: #757575;
     }
   }
 }
 
-.sideproject {
-  display: flex;
-  flex-direction: column;
+.project.side {
   justify-content: space-between;
-  padding: 16px;
-  border-radius: 8px;
-  background-color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 8px;
+  padding: 20px;
 
   .desc {
     display: flex;
     flex-direction: column;
-
-    h3 {
-      color: #252525;
-    }
+    padding: 0;
   }
 
   .actions {
@@ -181,8 +186,8 @@ header {
     font-size: 12px;
     border-radius: 4px;
     font-weight: 600;
-    color: #4500ff;
-    background-color: rgba(133, 115, 255, 0.14);
+    color: rgba(#4500ff, 0.7);
+    background-color: rgba(133, 115, 255, 0.1);
     + .tag {
       margin-left: 8px;
     }
@@ -191,8 +196,8 @@ header {
 
 .button {
   text-decoration: none;
-  background-color: #f1f2f3;
-  color: #252525;
+  background-color: #000;
+  color: #fff;
   font-weight: 600;
   padding: 8px 16px;
   border-radius: 20px;

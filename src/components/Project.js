@@ -1,7 +1,7 @@
 import React from "react";
 
 const Project = ({ header, desc, url, urlText, image }) => (
-  <div className="project">
+  <a href={url} target="_blank" rel="noopener noreferrer" className="project">
     <div
       className="img"
       style={{ backgroundImage: `url(${require(`../assets/${image}.png`)})` }}
@@ -9,9 +9,9 @@ const Project = ({ header, desc, url, urlText, image }) => (
     <div className="desc">
       <h3>{header}</h3>
       <p>{desc}</p>
-      <a href={url}>{urlText}</a>
+      <p className="url">{urlText}</p>
     </div>
-  </div>
+  </a>
 );
 
 export default Project;

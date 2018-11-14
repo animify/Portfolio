@@ -34,7 +34,7 @@ class App extends Component {
           </div>
           <div className="info">
             <h2>Digital works</h2>
-            <h3>A couple things I've made</h3>
+            <h3>A couple things I've made.</h3>
           </div>
           <div className="projects">
             <Project
@@ -82,7 +82,7 @@ class App extends Component {
           </div>
           <div className="info">
             <h2>Side projects</h2>
-            <h3>Open source tools I've worked on</h3>
+            <h3>Open source tools I've worked on.</h3>
           </div>
           <div className="projects">
             <SideProject
@@ -94,8 +94,8 @@ class App extends Component {
             />
             <SideProject
               date="Sep 2017"
-              header="Webpack, React, Express boilerplate"
-              desc="A basic Webpack, React and Express boilerplate to get a project up and running."
+              header="Webpack, React, Express"
+              desc="A basic Webpack, React and Express boilerplate to get a quick client &amp; server project up and running."
               url="https://github.com/animify/"
               tags={["CSS4", "Javascript"]}
             />
