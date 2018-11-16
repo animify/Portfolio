@@ -12,7 +12,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 15px;
   line-height: 22px;
-  background-color: rgb(246, 247, 248);
+  background-color: #000;
 }
 
 .container {
@@ -25,20 +25,21 @@ body {
 }
 
 h1 {
-  font-size: 36px;
-  font-weight: 600;
+  font-size: 42px;
+  font-weight: 700;
   letter-spacing: -0.6px;
-  line-height: 48px;
+  line-height: 54px;
   margin: 0 0 8px 0;
-  color: #000;
+  color: #fff;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 600;
+  letter-spacing: -0.2px;
   line-height: 36px;
   margin: 0 0 0 0;
-  color: #000;
+  color: #fff;
 }
 
 h3 {
@@ -46,7 +47,7 @@ h3 {
   font-weight: 500;
   line-height: 32px;
   margin: 0 0 8px 0;
-  color: #555;
+  color: #afafaf;
 }
 
 a {
@@ -56,7 +57,7 @@ a {
 
 p {
   margin: 0;
-  color: #555;
+  color: #afafaf;
 }
 
 small {
@@ -69,16 +70,16 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  padding: 24px 24px;
+  padding: 28px 32px;
   width: 100%;
   z-index: 20;
   opacity: 0;
   animation: fadeDown 1000ms 400ms ease forwards;
-
   nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: #fff;
 
     a {
       text-decoration: none;
@@ -126,7 +127,7 @@ header {
   grid-row-gap: 32px;
 
   + .info {
-    margin-top: 64px;
+    margin-top: 72px;
   }
 }
 
@@ -134,14 +135,11 @@ header {
   display: flex;
   flex-direction: column;
   border-radius: 8px;
-  background-color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 8px;
-  will-change: box-shadow, transform;
-  transition: box-shadow 140ms ease, transform 140ms ease;
+  background-color: #212121;
+  will-change: transform;
 
   &:hover {
     transform: translateY(-4px);
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 8px 24px;
   }
 
   .img {
@@ -157,7 +155,7 @@ header {
     flex-grow: 1;
 
     h3 {
-      color: #252525;
+      color: #fff;
       font-weight: 600;
       margin: 0 0 4px 0;
     }
@@ -199,8 +197,8 @@ header {
     font-size: 12px;
     border-radius: 4px;
     font-weight: 600;
-    color: rgba(#4500ff, 0.7);
-    background-color: rgba(133, 115, 255, 0.1);
+    color: rgba(250, 255, 100, 0.6);
+    background-color: rgba(247, 255, 182, 0.1);
     + .tag {
       margin-left: 8px;
     }
@@ -232,18 +230,18 @@ header {
     position: absolute;
     top: 0;
     left: 50%;
-    background: rgba(0, 0, 0, 0.05);
-    width: 800px;
-    height: 800px;
-    margin-left: -400px;
-    margin-top: -400px;
+    background: rgba(255, 255, 255, 0.08);
+    width: 1000px;
+    height: 1000px;
+    margin-left: -500px;
+    margin-top: -500px;
     transform-origin: 50% 48%;
     border-radius: 42%;
     animation: rotate 4000ms infinite linear;
 
     &.two {
-      opacity: 0.1;
-      margin-top: -400px;
+      opacity: 0.3;
+      margin-top: -500px;
     }
 
     &.three {
