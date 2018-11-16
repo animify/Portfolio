@@ -64,6 +64,7 @@ small {
   margin: 0;
   font-size: 12px;
   color: #757575;
+  font-weight: 500;
 }
 
 header {
@@ -94,7 +95,7 @@ header {
 
 .main {
   padding-top: 128px;
-  padding-bottom: 80px;
+  padding-bottom: 64px;
   animation: fadeDown 1000ms ease forwards;
 
   h3 {
@@ -208,11 +209,28 @@ header {
 .button {
   text-decoration: none;
   background-color: #000;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.8);
   font-weight: 600;
   padding: 8px 16px;
   border-radius: 20px;
   text-align: center;
+
+  &.grey {
+    background-color: rgba(#212121, 0.8);
+    color: rgba(255, 255, 255, 0.8);
+
+    &:hover {
+      background-color: rgba(#212121, 1);
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+
+  &.full {
+    padding: 12px 24px;
+    width: 100%;
+    margin-top: 32px;
+    border-radius: 8px;
+  }
 }
 
 .waves {
@@ -347,6 +365,28 @@ p {
     }
     .tags {
       display: none;
+    }
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row !important;
+  width: 100%;
+  padding: 0 32px 64px !important;
+
+  .social {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  a {
+    color: #fff;
+
+    + a {
+      margin-left: 24px;
     }
   }
 }

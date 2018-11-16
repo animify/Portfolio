@@ -28,7 +28,7 @@ class App extends Component {
             </h1>
             <h3>
               Currently getting up in the morning to engineer the future of user
-              flows at Overflow. Always working on building &amp; designing
+              flows at Overflow. Always working on designing &amp; building
               something new.
             </h3>
           </div>
@@ -115,8 +115,17 @@ class App extends Component {
                 tags={["CSS4", "Javascript"]}
               />
             </div>
+            <div className="button grey full">Explore all repositories</div>
           </div>
         </main>
+        <footer className="container">
+          <div className="social">
+            <a>Github</a>
+            <a>Twitter</a>
+            <a>LinkedIn</a>
+          </div>
+          <p>Built &amp; designed with ❤️</p>
+        </footer>
       </React.Fragment>
     );
   }
