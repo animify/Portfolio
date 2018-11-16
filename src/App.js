@@ -120,11 +120,17 @@ class App extends Component {
         </main>
         <footer className="container">
           <div className="social">
-            <a>Github</a>
-            <a>Twitter</a>
-            <a>LinkedIn</a>
+            <a href="https://dribbble.com/animify">Dribbble</a>
+            <a href="https://twitter.com/_animify">Twitter</a>
+            <a href="https://github.com/animify">Github</a>
+            <a href="https://www.linkedin.com/in/smansson/">LinkedIn</a>
           </div>
-          <p>Built &amp; designed with ❤️</p>
+          <p>
+            Built &amp; designed with &nbsp;
+            <span role="img" aria-label="heart">
+              ❤️
+            </span>
+          </p>
         </footer>
       </React.Fragment>
     );
