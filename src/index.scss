@@ -13,6 +13,7 @@ body {
   font-size: 15px;
   line-height: 22px;
   background-color: #000;
+  overflow-x: hidden;
 }
 
 .container {
@@ -136,11 +137,13 @@ header {
   display: flex;
   flex-direction: column;
   border-radius: 8px;
-  background-color: #212121;
   will-change: transform;
+  background-color: rgba(#212121, .94);
 
-  &:hover {
-    transform: translateY(-4px);
+  &:not(.side):hover {
+    .desc {
+      transform: translateY(-4px);
+    }
   }
 
   .img {
@@ -154,6 +157,11 @@ header {
   .desc {
     padding: 20px;
     flex-grow: 1;
+    background-color: rgba(#212121, .94);
+    transition: transform ease 140ms, padding ease 140ms;
+    border-radius: 0 0 8px 8px;
+    display: flex;
+    flex-direction: column;
 
     h3 {
       color: #fff;
@@ -179,6 +187,7 @@ header {
     display: flex;
     flex-direction: column;
     padding: 0;
+    background-color: transparent;
   }
 
   .actions {
