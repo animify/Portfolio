@@ -98,21 +98,21 @@ class App extends Component {
                 header="Webpack, React, Express"
                 desc="A basic Webpack, React and Express boilerplate to get a quick client &amp; server project up and running."
                 url="https://github.com/animify/webpack-react-express"
-                tags={["CSS4", "Javascript"]}
+                tags={["Webpack", "React", "Express"]}
               />
               <SideProject
                 date="May 2017"
                 header="Darken.io"
                 desc="Content delivery network for Cindr.io and associated platforms, using the fastest content distribution methods available."
                 url="https://github.com/humanstack/Darken"
-                tags={["CSS4", "Javascript"]}
+                tags={["Route 53", "Gulp"]}
               />
               <SideProject
                 date="Apr 2017"
                 header="Blossom boilerplate"
                 desc="Set up static websites styled by Stylus, templated by PugJS and utilizing Browser Sync and Gulp for development."
                 url="https://github.com/animify/blossom-boilerplate"
-                tags={["CSS4", "Javascript"]}
+                tags={["Pug", "Gulp", "Stylus"]}
               />
             </div>
             <div className="button grey full">Explore all repositories</div>

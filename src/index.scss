@@ -138,7 +138,6 @@ header {
   flex-direction: column;
   border-radius: 8px;
   will-change: transform;
-  background-color: rgba(#212121, .94);
 
   &:not(.side):hover {
     .desc {
@@ -182,6 +181,7 @@ header {
 .project.side {
   justify-content: space-between;
   padding: 20px;
+  background-color: rgba(#212121, .94);
 
   .desc {
     display: flex;
