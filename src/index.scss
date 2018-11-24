@@ -146,16 +146,17 @@ header {
 
   &:not(.side):hover {
     .desc {
-      transform: translateY(-4px);
+      -webkit-font-smoothing: subpixel-antialiased;
     }
   }
 
   .img {
     height: 200px;
-    background-size: cover;
+    background-size: 100%;
     background-position: top center;
     width: 100%;
     border-radius: 8px 8px 0 0;
+    transition: all ease 140ms;
   }
 
   .desc {

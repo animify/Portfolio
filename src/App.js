@@ -2,24 +2,10 @@ import React, { Component } from "react";
 import SideProject from "./components/SideProject";
 import Project from "./components/Project";
 
-class App extends Component {
+export default class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <div class="waves">
-          <div class="wave" />
-          <div class="wave two" />
-          <div class="wave three" />
-        </div>
-        <header>
-          <nav>
-            <div className="logo">Stefan Mansson</div>
-            <div>
-              <a>About</a>
-              <a>Email</a>
-            </div>
-          </nav>
-        </header>
         <main className="container">
           <div className="main">
             <h1>
@@ -136,5 +122,3 @@ class App extends Component {
     );
   }
 }
-
-export default App;
