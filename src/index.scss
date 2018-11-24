@@ -456,7 +456,7 @@ footer {
   }
 
   footer {
-    flex-direction: column;
+    flex-direction: column !important;
 
     p {
       margin-top: 24px;
