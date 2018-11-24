@@ -101,23 +101,9 @@ export default class App extends Component {
                 tags={["Pug", "Gulp", "Stylus"]}
               />
             </div>
-            <div className="button grey full">Explore all repositories</div>
+            <a className="button grey full" target="_blank" href="https://github.com/animify?tab=repositories" rel="noreferrer noopener">Explore all repositories</a>
           </div>
         </main>
-        <footer className="container">
-          <div className="social">
-            <a href="https://dribbble.com/animify">Dribbble</a>
-            <a href="https://twitter.com/_animify">Twitter</a>
-            <a href="https://github.com/animify">Github</a>
-            <a href="https://www.linkedin.com/in/smansson/">LinkedIn</a>
-          </div>
-          <p>
-            Built &amp; designed with &nbsp;
-            <span role="img" aria-label="heart">
-              ❤️
-            </span>
-          </p>
-        </footer>
       </React.Fragment>
     );
   }

@@ -5,6 +5,7 @@ import "./index.scss";
 import App from "./App";
 import About from "./About";
 import Nav from "./Nav";
+import Footer from "./Footer";
 import * as serviceWorker from "./serviceWorker";
 
 const Routes = () => (
@@ -16,6 +17,7 @@ const Routes = () => (
                     <Route exact path="/" component={App} />
                     <Route path="/about" component={About} />
                 </Switch>
+                <Footer />
             </React.Fragment>
         </BrowserRouter>
     </main>

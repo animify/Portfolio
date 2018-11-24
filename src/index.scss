@@ -106,6 +106,33 @@ header {
 
   h3 {
     font-weight: 400;
+
+    + h3 {
+      margin-top: 20px;
+    }
+  }
+}
+
+.mentions {
+  h2 {
+    margin-bottom: 12px;
+  }
+
+  a {
+    width: 100% !important;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.75;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    color: #afafaf;
+    margin-bottom: 8px;
+  
+    span {
+      font-weight: 400;
+      color: #fff;
+    }
   }
 }
 
@@ -229,6 +256,9 @@ header {
   padding: 8px 16px;
   border-radius: 20px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &.grey {
     background-color: rgba(#212121, 0.8);
@@ -298,6 +328,7 @@ h3,
 small,
 .tag,
 .button,
+.mentions a,
 p {
   position: relative;
   width: fit-content;
@@ -369,26 +400,11 @@ p {
   }
 }
 
-@media only screen and (max-width: 880px) {
-  .projects {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .project.side {
-    .button {
-      width: 100%;
-    }
-    .tags {
-      display: none;
-    }
-  }
-}
-
 footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction: row !important;
+  flex-direction: row;
   width: 100%;
   padding: 0 32px 64px !important;
 
@@ -402,6 +418,48 @@ footer {
 
     + a {
       margin-left: 24px;
+    }
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  h1 {
+    font-size: 32px;
+    line-height: 46px;
+  }
+
+  h3, .mentions a {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .container {
+    padding-top: 14px;
+  }
+
+  header {
+    padding: 32px;
+    background-color: rgba(22, 22, 22, .96);
+  }
+
+  .projects {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .project.side {
+    .button {
+      width: 100%;
+    }
+    .tags {
+      display: none;
+    }
+  }
+
+  footer {
+    flex-direction: column;
+
+    p {
+      margin-top: 24px;
     }
   }
 }
