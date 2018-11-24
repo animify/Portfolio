@@ -1,4 +1,4 @@
-@import url("https://rsms.me/inter/inter-ui.css");
+@import './fonts';
 
 * {
   box-sizing: border-box;
@@ -404,7 +404,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction: row;
+  flex-direction: row !important;
   width: 100%;
   padding: 0 32px 64px !important;
 
