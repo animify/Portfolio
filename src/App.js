@@ -13,7 +13,7 @@ class App extends Component {
         </div>
         <header>
           <nav>
-            <div>Stefan Mansson</div>
+            <div className="logo">Stefan Mansson</div>
             <div>
               <a>About</a>
               <a>Email</a>
