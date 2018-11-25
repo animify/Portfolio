@@ -34,8 +34,8 @@ export default class App extends Component {
               <Project
                 header="Minicons"
                 desc="Minicons are a charming, open-source SVG iconset, embeddable with Javascript."
-                url="https://minicons.io"
-                urlText="Self started — minicons.io"
+                url="https://minicons.netlify.com"
+                urlText="Self started — minicons.xyz"
                 image="minicons"
               />
               <Project
@@ -62,8 +62,8 @@ export default class App extends Component {
               <Project
                 header="Slant.tv"
                 desc="Slant makes searching for a movie or tv-series information effortless, powered by OMDB."
-                url="http://slant.tv"
-                urlText="Self started — slant.tv"
+                url="https://slant.netlify.com/"
+                urlText="Self started — slant.netlify.com"
                 image="slant"
               />
             </div>
