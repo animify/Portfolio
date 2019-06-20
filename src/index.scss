@@ -1,5 +1,7 @@
 @import './fonts';
 
+$primaryColor: #1e00ff;
+
 * {
   box-sizing: border-box;
 }
@@ -12,7 +14,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 15px;
   line-height: 22px;
-  background-color: #000;
+  background-color: #fff;
   overflow-x: hidden;
 }
 
@@ -26,29 +28,29 @@ body {
 }
 
 h1 {
-  font-size: 42px;
+  font-size: 46px;
   font-weight: 700;
   letter-spacing: -0.6px;
-  line-height: 54px;
-  margin: 0 0 8px 0;
-  color: #fff;
+  line-height: 60px;
+  margin: 0 0 16px 0;
+  color: #000;
 }
 
 h2 {
   font-size: 28px;
   font-weight: 600;
   letter-spacing: -0.2px;
-  line-height: 36px;
+  line-height: 38px;
   margin: 0 0 0 0;
-  color: #fff;
+  color: #000;
 }
 
 h3 {
   font-size: 20px;
   font-weight: 500;
-  line-height: 32px;
+  line-height: 36px;
   margin: 0 0 8px 0;
-  color: #afafaf;
+  color: #555;
 }
 
 a {
@@ -58,7 +60,8 @@ a {
 
 p {
   margin: 0;
-  color: #afafaf;
+  color: #555;
+  line-height: 1.6;
 }
 
 small {
@@ -77,14 +80,16 @@ header {
   z-index: 20;
   opacity: 0;
   animation: fadeDown 1000ms 400ms ease forwards;
+
   nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #fff;
+    color: #000;
+    font-size: 16px;
 
     .logo {
-      font-weight: 600;
+      font-weight: 500;
       letter-spacing: -.6px;
     }
 
@@ -93,7 +98,7 @@ header {
       font-weight: 500;
 
       + a {
-        margin-left: 32px;
+        margin-left: 48px;
       }
     }
   }
@@ -101,7 +106,7 @@ header {
 
 .main {
   padding-top: 128px;
-  padding-bottom: 64px;
+  padding-bottom: 92px;
   animation: fadeDown 1000ms ease forwards;
 
   h3 {
@@ -115,7 +120,7 @@ header {
 
 .mentions {
   h2 {
-    margin-bottom: 12px;
+    margin-bottom: 24px;
   }
 
   a {
@@ -126,13 +131,21 @@ header {
     font-weight: 600;
     font-size: 20px;
     line-height: 32px;
-    color: #afafaf;
+    color: #757575;
     margin-bottom: 8px;
+
+    &:hover {
+      color: $primaryColor;
+    }
   
     span {
       font-weight: 400;
-      color: #fff;
+      color: #000;
     }
+  }
+
+  a + a {
+    margin-top: 24px;
   }
 }
 
@@ -143,10 +156,6 @@ header {
 
 .info {
   margin-bottom: 24px;
-
-  h2 {
-    line-height: 1.2;
-  }
 
   h3 {
     margin-top: 4px;
@@ -161,7 +170,7 @@ header {
   grid-row-gap: 32px;
 
   + .info {
-    margin-top: 72px;
+    margin-top: 92px;
   }
 }
 
@@ -170,6 +179,7 @@ header {
   flex-direction: column;
   border-radius: 8px;
   will-change: transform;
+  background-color: #fff;
 
   &:not(.side):hover {
     .desc {
@@ -187,23 +197,24 @@ header {
   }
 
   .desc {
-    padding: 20px;
+    padding: 24px;
     flex-grow: 1;
-    background-color: rgba(#212121, .94);
+    border: 1px solid #eee;
+    border-top: 0;
     transition: transform ease 140ms, padding ease 140ms;
     border-radius: 0 0 8px 8px;
     display: flex;
     flex-direction: column;
 
     h3 {
-      color: #fff;
+      color: #000;
       font-weight: 600;
       margin: 0 0 4px 0;
     }
 
     .url {
       display: flex;
-      padding-top: 16px;
+      padding-top: 24px;
       margin-top: auto;
       text-decoration: none;
       color: #757575;
@@ -213,19 +224,20 @@ header {
 
 .project.side {
   justify-content: space-between;
-  padding: 20px;
-  background-color: rgba(#212121, .94);
+  padding: 24px;
+  border: 1px solid #eee;
 
   .desc {
     display: flex;
     flex-direction: column;
     padding: 0;
     background-color: transparent;
+    border: 0;
   }
 
   .actions {
     display: flex;
-    margin-top: 16px;
+    margin-top: 24px;
     width: 100%;
     justify-content: space-between;
   }
@@ -236,12 +248,13 @@ header {
   align-items: center;
 
   .tag {
-    padding: 4px 6px;
-    font-size: 12px;
-    border-radius: 4px;
+    padding: 2px 8px;
+    font-size: 10px;
+    border-radius: 6px;
     font-weight: 600;
-    color: rgba(250, 255, 100, 0.6);
-    background-color: rgba(247, 255, 182, 0.1);
+    color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.1);
+
     + .tag {
       margin-left: 8px;
     }
@@ -250,9 +263,9 @@ header {
 
 .button {
   text-decoration: none;
-  background-color: #000;
-  color: rgba(255, 255, 255, 0.8);
-  font-weight: 600;
+  background-color: $primaryColor;
+  color: #fff;
+  font-weight: 500;
   padding: 8px 16px;
   border-radius: 20px;
   text-align: center;
@@ -261,12 +274,13 @@ header {
   align-items: center;
 
   &.grey {
-    background-color: rgba(#212121, 0.8);
-    color: rgba(255, 255, 255, 0.8);
+    border: 2px solid #eee;
+    background-color: transparent;
+    color: #000;
 
     &:hover {
-      background-color: rgba(#212121, 1);
-      color: rgba(255, 255, 255, 1);
+      background-color: #eee;
+      color: #000;
     }
   }
 
@@ -293,7 +307,7 @@ header {
     position: absolute;
     top: 0;
     left: 50%;
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(0, 0, 0, 0.04);
     width: 1000px;
     height: 1000px;
     margin-left: -500px;
@@ -407,14 +421,16 @@ footer {
   flex-direction: row !important;
   width: 100%;
   padding: 0 32px 64px !important;
+  margin-top: 32px !important;
 
   .social {
     display: flex;
     align-items: center;
     flex-direction: row;
   }
+
   a {
-    color: #fff;
+    color: #000;
 
     + a {
       margin-left: 24px;
@@ -439,7 +455,8 @@ footer {
 
   header {
     padding: 32px;
-    background-color: rgba(22, 22, 22, .96);
+    background-color: rgba(255, 255, 255, .96);
+    border-bottom: 1px solid #EEE;
   }
 
   .projects {
