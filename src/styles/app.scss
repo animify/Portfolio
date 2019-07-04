@@ -24,8 +24,27 @@ body {
   }
 }
 
-section.intro {
-  margin: 160px 0;
+.split {
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+  letter-spacing: 1px;
+
+  > span {
+    @extend .gray60\@text;
+    display: flex;
+    flex-shrink: 0;
+    margin-right: 24px;
+    font-weight: 300;
+  }
+
+  hr {
+    @extend .gray20\@bg;
+    border: none;
+    height: 1px;
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .project {
@@ -42,7 +61,7 @@ section.intro {
     }
 
     hr {
-      background-color: rgba(0, 0, 0, .2);
+      background-color: rgba(0, 0, 0, .16);
     }
   }
 
@@ -82,6 +101,14 @@ nav {
   max-width: 1120px;
   display: block;
   margin: 112px auto 0 auto;
+
+  a.logo {
+    font-family: 'DM Serif Text', serif;
+  }
+}
+
+section.intro {
+  margin: 172px 0;
 }
 
 main {

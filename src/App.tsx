@@ -3,6 +3,7 @@ import './styles/app.scss';
 import Project from './components/Project';
 import Intro from './components/Intro';
 import Nav from './components/Nav';
+import ProjectSection from './components/ProjectSection';
 
 const App: React.FC = () => {
     return (
@@ -11,6 +12,7 @@ const App: React.FC = () => {
             <main>
                 <Intro />
 
+                <ProjectSection title="Professional work" className="mb6" />
                 <Project
                     title="Overflow"
                     description="Beautiful, customizable SVG icons, based on a 24px grid. 
@@ -18,6 +20,8 @@ const App: React.FC = () => {
                     mode="dark"
                     project="overflow"
                 />
+
+                <ProjectSection title="Self-made projects" className="mb6 mt12" />
                 <Project
                     title="Figicons"
                     description="Beautiful, customizable React SVG icons, based on a 24px grid. Completely open source, MIT licensed and designed in Figma."

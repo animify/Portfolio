@@ -13,7 +13,7 @@ interface IProps {
 Figicons.setAttributes(Figicons.attributes.default);
 
 export default function Project({ mode, title, description, project }: IProps) {
-    const classes = classNames('project r2', mode, { [`${project}100@bg`]: project });
+    const classes = classNames('project r3', mode, { [`${project}100@bg`]: project });
 
     return (
         <div className={classes}>
