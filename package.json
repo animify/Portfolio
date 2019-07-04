@@ -37,6 +37,7 @@
     ]
   },
   "devDependencies": {
-    "@types/classnames": "^2.2.9"
+    "@types/classnames": "^2.2.9",
+    "tslint-react": "^4.0.0"
   }
 }

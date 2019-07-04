@@ -1,0 +1,7 @@
+parser: typescript
+printWidth: 100
+tabWidth: 4
+singleQuote: true
+jsxSingleQuote: false
+trailingComma: all
+jsx-a11y/href-no-hash: false
