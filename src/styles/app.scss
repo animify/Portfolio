@@ -105,6 +105,57 @@ nav {
   a.logo {
     font-family: 'DM Serif Text', serif;
   }
+
+  .menu {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    right: 0;
+    transition: right 800ms step-end;
+    transition-delay: 800ms;
+
+    &::before, &::after {
+      @extend .black100\@bg;
+      content: ' ';
+      display: flex;
+      width: 100%;
+      height: 2px;
+      position: absolute;
+      right: 0;
+      top: 7px;
+      border-radius: 2px;
+      transform-origin: center center;
+      transition: all 600ms ease;
+    }
+
+    &::before {
+      transition-timing-function: cubic-bezier(0.18, 0.89, 0, 2.28)
+    }
+
+    &::after {
+        transition-delay: 100ms;
+        transition-duration: 600ms;
+        top: 15px;
+        width: 70%;
+    }
+
+    &.open {
+      right: -12px;
+
+      &::before, &::after {
+        top: 12px;
+        right: 12px;
+      }
+
+      &::before {
+        transform: rotate(-45deg);
+      }
+      &::after {
+        transform: rotate(225deg);
+        width: 100%;
+      }
+    }
+  }
 }
 
 section.intro {

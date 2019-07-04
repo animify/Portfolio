@@ -21,7 +21,7 @@ const App: React.FC = () => {
                     project="overflow"
                 />
 
-                <ProjectSection title="Self-made projects" className="mb6 mt12" />
+                <ProjectSection title="Self-made work" className="mb6 mt12" />
                 <Project
                     title="Figicons"
                     description="Beautiful, customizable React SVG icons, based on a 24px grid. Completely open source, MIT licensed and designed in Figma."
