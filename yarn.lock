@@ -1244,6 +1244,11 @@
   dependencies:
     "@babel/types" "^7.3.0"
 
+"@types/classnames@^2.2.9":
+  version "2.2.9"
+  resolved "https://registry.npmjs.org/@types/classnames/-/classnames-2.2.9.tgz#d868b6febb02666330410fe7f58f3c4b8258be7b"
+  integrity sha512-MNl+rT5UmZeilaPxAVs6YaPC2m6aA8rofviZbhbxpPpl61uKodfdQVsBtgJGTqGizEf02oW3tsVe7FYB8kK14A==
+
 "@types/istanbul-lib-coverage@*", "@types/istanbul-lib-coverage@^2.0.0":
   version "2.0.1"
   resolved "https://registry.npmjs.org/@types/istanbul-lib-coverage/-/istanbul-lib-coverage-2.0.1.tgz#42995b446db9a48a11a07ec083499a860e9138ff"
@@ -2509,6 +2514,11 @@ class-utils@^0.3.5:
     define-property "^0.2.5"
     isobject "^3.0.0"
     static-extend "^0.1.1"
+
+classnames@^2.2.6:
+  version "2.2.6"
+  resolved "https://registry.npmjs.org/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
+  integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
 
 clean-css@4.2.x:
   version "4.2.1"
@@ -4178,10 +4188,10 @@ fragment-cache@^0.2.1:
   dependencies:
     map-cache "^0.2.2"
 
-framecss@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npmjs.org/framecss/-/framecss-1.1.0.tgz#7fc0173c68100b82465a9a9b97a0aad84a35ecb7"
-  integrity sha512-s9nXNNaP4FzxGoWKSk1kPawCoQXlt7hWPKVhWqgD3bDIg501O1WkTa8tdenC8MjWSyKaKd4m56DvZAJ+y0MwCA==
+framecss@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.npmjs.org/framecss/-/framecss-1.1.1.tgz#072ee98e5f2e59e2a04d5a24328b90745eec611f"
+  integrity sha512-4qq/3n4Lv7uNuKdpf1P/+KupTpPyZdCW+gLNmVpvjMFE+UA4CLfpMnzQPfrMog8gKw2a927J1E5x2pL9UfsulQ==
 
 fresh@0.5.2:
   version "0.5.2"

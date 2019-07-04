@@ -4,3 +4,16 @@ body {
   font-family: "Calibre Test";
   margin: 0;
 }
+
+.project {
+  padding: 24px;
+  border-radius: 6px;
+
+  &.light {
+    background-color: red;
+  }
+
+  &.dark {
+    background-color: #000;
+  }
+}
