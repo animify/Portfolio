@@ -4178,6 +4178,11 @@ fragment-cache@^0.2.1:
   dependencies:
     map-cache "^0.2.2"
 
+framecss@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.npmjs.org/framecss/-/framecss-1.1.0.tgz#7fc0173c68100b82465a9a9b97a0aad84a35ecb7"
+  integrity sha512-s9nXNNaP4FzxGoWKSk1kPawCoQXlt7hWPKVhWqgD3bDIg501O1WkTa8tdenC8MjWSyKaKd4m56DvZAJ+y0MwCA==
+
 fresh@0.5.2:
   version "0.5.2"
   resolved "https://registry.npmjs.org/fresh/-/fresh-0.5.2.tgz#3d8cadd90d976569fa835ab1f8e4b23a105605a7"
