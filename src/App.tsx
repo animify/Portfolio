@@ -1,6 +1,6 @@
-import React from "react";
-import "./styles/app.scss";
-import Project from "./components/Project";
+import React from 'react';
+import './styles/app.scss';
+import Project from './components/Project';
 
 const App: React.FC = () => {
     return (
