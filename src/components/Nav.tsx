@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import classNames from 'classnames';
+import SwappingText from './SwappingText';
 
 export default function Nav() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -40,9 +41,7 @@ export default function Nav() {
                 </div>
             </div>
             <div className="container flex justify-between">
-                <a className="logo" href="">
-                    Hi, I'm Stefan.
-                </a>
+                <SwappingText text={["Hi, I'm Stefan.", 'Stefan Mansson']} />
                 <div className="menutoggle">
                     <div className={toggleClasses} onClick={() => setMenuOpen(!menuOpen)} />
                 </div>

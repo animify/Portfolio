@@ -1,0 +1,35 @@
+.swapping {
+    font-family: 'DM Serif Text', serif;
+    width: fit-content;
+    display: flex;
+    flex-grow: 1;
+
+    > div {
+        transition: all 600ms ease;
+        transform: translateY(0);
+        opacity: 1;
+
+        &.swapping {
+            &-prev-leave {
+                transform: translateY(-16px);
+                opacity: 0;
+            }
+
+            &-next-leave {
+                transform: translateY(16px);
+                opacity: 0;
+            }
+
+            &-next-enter {
+                transform: translateY(16px);
+                opacity: 0;
+            }
+
+            &-next-enter-active {
+                transition-delay: 200ms;
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    }
+}
