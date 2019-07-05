@@ -1,0 +1,22 @@
+.split {
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    letter-spacing: 1px;
+
+    > span {
+        @extend .gray60\@text;
+        display: flex;
+        flex-shrink: 0;
+        margin-right: 24px;
+        font-weight: 300;
+    }
+
+    hr {
+        @extend .gray20\@bg;
+        border: none;
+        height: 1px;
+        width: 100%;
+        margin: 0;
+    }
+}

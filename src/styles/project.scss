@@ -1,0 +1,49 @@
+.project {
+    padding: 80px;
+
+    .info {
+        max-width: 440px;
+    }
+
+    hr {
+        display: inline-flex;
+        margin: 32px 0;
+        width: 148px;
+        height: 1px;
+        border: none;
+    }
+
+    &.dark {
+        h5,
+        .links {
+            @extend .black100\@text;
+        }
+
+        .info > p {
+            color: rgba(0, 0, 0, 0.8);
+        }
+
+        hr {
+            background-color: rgba(0, 0, 0, 0.16);
+        }
+    }
+
+    &.light {
+        h5,
+        .links {
+            @extend .white100\@text;
+        }
+
+        .info > p {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        hr {
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+    }
+
+    + .project {
+        margin-top: 32px;
+    }
+}

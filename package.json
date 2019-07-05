@@ -39,6 +39,7 @@
   },
   "devDependencies": {
     "@types/classnames": "^2.2.9",
+    "prettier-stylelint": "^0.4.2",
     "tslint-react": "^4.0.0"
   }
 }
