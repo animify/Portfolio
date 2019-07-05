@@ -28,6 +28,7 @@ nav {
         width: 100%;
         transform: translateZ(0);
         will-change: auto;
+        z-index: 2000;
 
         > .container {
             .split {
@@ -40,9 +41,9 @@ nav {
 
                 &::before {
                     content: ' ';
-                    margin-right: 16px;
+                    margin-right: 12px;
                     display: flex;
-                    width: 24px;
+                    width: 20px;
                     height: 1px;
                     background-color: rgba(255, 255, 255, 0.3);
                 }
@@ -72,6 +73,7 @@ nav {
         transition: right 800ms step-end;
         transition-delay: 800ms;
         top: 112px;
+        z-index: 3000;
 
         &::before,
         &::after {

@@ -2,6 +2,8 @@ import React from 'react';
 import Project from './Project';
 import ProjectSection from './ProjectSection';
 import ImageOverflow from '../images/project-overflow.png';
+import ImageColorbook from '../images/project-colorbook.png';
+import ImageBlossom from '../images/project-blossom.png';
 
 export default function Projects() {
     return (
@@ -33,6 +35,7 @@ export default function Projects() {
                 description="A timeline of the trendiest color palettes from Dribbble, as seen on Product Hunt."
                 mode="dark"
                 project="colorbook"
+                image={ImageColorbook}
             />
             <Project
                 title="Frame CSS"
@@ -42,7 +45,7 @@ export default function Projects() {
             />
             <Project
                 title="Minicons"
-                description="Over 85+ aesthetic SVG icons designed on a 24x24 grid, swapped dynamically or using the JS API."
+                description="Over 85+ aesthetic SVG icons designed on a 24x24 grid, swapped dynamically via observers or programmatically the API."
                 mode="light"
                 project="minicons"
             />
@@ -51,6 +54,7 @@ export default function Projects() {
                 description="A simply beautiful, themeable design framework built from the ground up in Stylus with performance in mind."
                 mode="light"
                 project="blossom"
+                image={ImageBlossom}
             />
         </div>
     );

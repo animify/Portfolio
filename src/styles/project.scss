@@ -1,9 +1,22 @@
 .project {
     padding: 80px;
     position: relative;
+    overflow: hidden;
+
+    &::after {
+        @extend .r3;
+        content: ' ';
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        box-shadow: 0 0 0 1px inset rgba(0, 0, 0, 0.08);
+    }
 
     .info {
-        max-width: 440px;
+        max-width: 420px;
     }
 
     hr {
@@ -53,10 +66,17 @@
         content: ' ';
         top: 0;
         right: 0;
-        height: 100%;
-        width: 44%;
+        height: 124%;
+        width: 56%;
         background-size: cover;
-        background-position: left center;
+        background-position: left -48px;
         background-repeat: no-repeat;
+        transition: 400ms ease height;
+    }
+
+    &:hover {
+        .image {
+            height: 128%;
+        }
     }
 }
