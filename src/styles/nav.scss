@@ -1,0 +1,139 @@
+nav {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  
+    .menu {
+        @extend .white100\@text;
+        background-color: #000;
+        padding: 112px 0;
+        transition: all 450ms ease-in-out;
+        will-change: height;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        position: fixed;
+        top: -100%;
+        height: 100%;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        width: 100%;
+        transform: translateZ(0);
+        will-change: auto;
+  
+        > .container {
+          .split {
+            margin-bottom: 48px;
+            position: relative;
+            color: rgba(255, 255, 255, .6);
+            transform: translateY(8px) translateZ(0);
+            opacity: 0;
+            transition: all 300ms ease;
+  
+            &::before {
+              content: ' ';
+              margin-right: 16px;
+              display: flex;
+              width: 24px;
+              height: 1px;
+              background-color: rgba(255, 255, 255, .3);
+            }
+          }
+        }
+  
+        a {
+          font-size: map-get($fontSize, 'h4');
+          font-family: 'DM Serif Text', serif;
+          opacity: 0;
+          transform: translateY(-8px) translateZ(0);
+  
+          + a {
+            margin-top: 48px;
+          }
+        }
+    }
+  
+    > .container {
+      margin-top: 112px;
+    }
+  
+    a.logo {
+      font-family: 'DM Serif Text', serif;
+    }
+  
+    .menutoggle, .toggle {
+        width: 24px;
+        height: 24px;
+    }
+
+    .toggle {
+
+      position: absolute;
+      transition: right 800ms step-end;
+      transition-delay: 800ms;
+      top: 112px;
+  
+      &::before, &::after {
+        @extend .black100\@bg;
+        content: ' ';
+        display: flex;
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        right: 0;
+        top: 7px;
+        border-radius: 2px;
+        transform-origin: center center;
+        transition: all 450ms ease;
+      }
+  
+      &::before {
+        transition-timing-function: cubic-bezier(0.18, 0.89, 0, 2.28)
+      }
+  
+      &::after {
+          transition-delay: 100ms;
+          transition-duration: 600ms;
+          top: 15px;
+          width: 64%;
+      }
+    }
+
+    &.open {
+        .menu {
+          top: 0;
+          width: 100%;
+          border-radius: 0px;
+    
+          .split {
+            opacity: 1;
+            transform: translateY(0) translateZ(0);
+            transition-delay: 450ms;
+          }
+    
+          a {
+            opacity: 1;
+            transform: translateY(0) translateZ(0);
+            transition-delay: 0ms;
+            transition: all 450ms ease;
+          }
+        }
+  
+        .toggle {
+          &::before, &::after {
+              top: 12px;
+              right: 12px;
+              @extend .white100\@bg;
+            }
+      
+            &::before {
+              transform: rotate(-45deg);
+            }
+      
+            &::after {
+              transform: rotate(225deg);
+              width: 100%;
+            }
+        }
+      }
+  }

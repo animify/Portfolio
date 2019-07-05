@@ -24,7 +24,7 @@ export default function Nav() {
     return (
         <nav className={navClasses}>
             <div className="menu">
-                <div className="inner flex flex-column">
+                <div className="container flex flex-column">
                     <p className="split">Contents</p>
 
                     {options.map((option, index) => (
@@ -34,11 +34,11 @@ export default function Nav() {
                     ))}
                 </div>
             </div>
-            <div className="inner flex justify-between">
+            <div className="container flex justify-between">
                 <a className="logo" href="">
                     Hi, I'm Stefan.
                 </a>
-                <div>
+                <div className="menutoggle">
                     <div className={toggleClasses} onClick={() => setMenuOpen(!menuOpen)} />
                 </div>
             </div>
