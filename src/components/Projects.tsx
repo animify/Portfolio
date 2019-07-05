@@ -1,6 +1,7 @@
 import React from 'react';
 import Project from './Project';
 import ProjectSection from './ProjectSection';
+import ImageOverflow from '../images/project-overflow.png';
 
 export default function Projects() {
     return (
@@ -8,10 +9,16 @@ export default function Projects() {
             <ProjectSection title="Professional work" className="mb6" />
             <Project
                 title="Overflow"
-                description="Beautiful, customizable SVG icons, based on a 24px grid. 
-Completely open source, MIT licensed and designed in Figma."
+                description="The world's first user flow diagramming tool tailored for designers, integrating with Figma, Sketch &amp; Adobe XD."
                 mode="dark"
                 project="overflow"
+                image={ImageOverflow}
+            />
+            <Project
+                title="Carpo"
+                description="The first full featured design system created for Overflow."
+                mode="light"
+                project="carpo"
             />
 
             <ProjectSection title="Self-made work" className="mb6 mt12" />
@@ -24,7 +31,7 @@ Completely open source, MIT licensed and designed in Figma."
             <Project
                 title="The Colorbook"
                 description="A timeline of the trendiest color palettes from Dribbble, as seen on Product Hunt."
-                mode="light"
+                mode="dark"
                 project="colorbook"
             />
             <Project

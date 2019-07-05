@@ -5,7 +5,12 @@ export default function Nav() {
     const [menuOpen, setMenuOpen] = useState(false);
     const toggleClasses = classNames('toggle', { open: menuOpen });
     const navClasses = classNames({ open: menuOpen });
-    const options = [{ title: 'About me' }, { title: 'Resume' }, { title: "Let's chat" }];
+    const options = [
+        { title: 'About me' },
+        { title: 'Work' },
+        { title: 'Resume' },
+        { title: "Let's chat" },
+    ];
 
     useEffect(() => {
         if (menuOpen) {

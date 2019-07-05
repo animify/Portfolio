@@ -3,6 +3,14 @@ nav {
     flex-direction: column;
     position: relative;
 
+    > .container {
+        margin-top: 112px;
+    }
+
+    a.logo {
+        font-family: 'DM Serif Text', serif;
+    }
+
     .menu {
         @extend .white100\@text;
         background-color: #000;
@@ -51,14 +59,6 @@ nav {
                 margin-top: 48px;
             }
         }
-    }
-
-    > .container {
-        margin-top: 112px;
-    }
-
-    a.logo {
-        font-family: 'DM Serif Text', serif;
     }
 
     .menutoggle,

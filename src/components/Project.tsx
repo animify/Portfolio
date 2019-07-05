@@ -4,7 +4,7 @@ import Figicons, { Icon } from 'figicons';
 
 interface IProps {
     mode: 'light' | 'dark';
-    project: 'blossom' | 'figicons' | 'colorbook' | 'framecss' | 'overflow' | 'minicons';
+    project: 'blossom' | 'figicons' | 'colorbook' | 'framecss' | 'overflow' | 'minicons' | 'carpo';
     title: string;
     description: string;
     image?: string;
@@ -12,7 +12,7 @@ interface IProps {
 
 Figicons.setAttributes(Figicons.attributes.default);
 
-export default function Project({ mode, title, description, project }: IProps) {
+export default function Project({ mode, title, description, project, image }: IProps) {
     const classes = classNames('project r3', mode, { [`${project}100@bg`]: project });
 
     return (
@@ -26,6 +26,8 @@ export default function Project({ mode, title, description, project }: IProps) {
                         <Icon name="launch" /> <p className="ml2 fw-book">Visit website</p>
                     </a>
                 </div>
+
+                {image && <div className="image" style={{ backgroundImage: `url(${image})` }} />}
             </div>
         </div>
     );

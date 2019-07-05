@@ -1,3 +1,47 @@
 footer {
-    margin: 124px 0 64px 0;
+    .talk {
+        padding: 200px 0;
+    }
+
+    .links {
+        margin: 64px 0;
+    }
+
+    h4 span {
+        position: relative;
+
+        &::before,
+        &::after {
+            @extend .primary\@bg;
+            content: ' ';
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            display: flex;
+            position: absolute;
+            bottom: 11px;
+            right: -8px;
+        }
+
+        &::after {
+            animation: pulseDot 3s cubic-bezier(0.47, -0.2, 0.13, 1.35) infinite;
+            transform-origin: center;
+        }
+    }
+
+    .status {
+        font-family: 'DM Serif Text', serif;
+    }
+}
+
+@keyframes pulseDot {
+    0% {
+        transform: scale(1);
+        opacity: 0.4;
+    }
+
+    100% {
+        transform: scale(5);
+        opacity: 0;
+    }
 }

@@ -1,5 +1,6 @@
 .project {
     padding: 80px;
+    position: relative;
 
     .info {
         max-width: 440px;
@@ -45,5 +46,17 @@
 
     + .project {
         margin-top: 32px;
+    }
+
+    .image {
+        position: absolute;
+        content: ' ';
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 44%;
+        background-size: cover;
+        background-position: left center;
+        background-repeat: no-repeat;
     }
 }

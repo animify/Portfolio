@@ -11,12 +11,4 @@
         margin-right: 24px;
         font-weight: 300;
     }
-
-    hr {
-        @extend .gray20\@bg;
-        border: none;
-        height: 1px;
-        width: 100%;
-        margin: 0;
-    }
 }
