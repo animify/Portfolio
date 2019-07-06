@@ -1,0 +1,29 @@
+.opensource {
+    margin-top: 124px;
+
+    section > * {
+        max-width: 780px;
+    }
+
+    .heart {
+        animation: heartPulse 580ms linear infinite;
+    }
+}
+
+@keyframes heartPulse {
+    0% {
+        transform: scale(1);
+    }
+
+    60% {
+        transform: scale(1.14);
+    }
+
+    80% {
+        transform: scale(0.94);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

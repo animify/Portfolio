@@ -23,7 +23,9 @@ export default function Projects() {
                 project="carpo"
             />
 
-            <ProjectSection title="Self-made work" className="mb6 mt12" />
+            <div className="mt12">
+                <ProjectSection title="Self-made work" className="mb6 mt6" />
+            </div>
             <Project
                 title="Figicons"
                 description="Beautiful, customizable React SVG icons, based on a 24px grid. Completely open source, MIT licensed and designed in Figma."
