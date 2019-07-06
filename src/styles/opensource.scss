@@ -1,12 +1,20 @@
 .opensource {
     margin-top: 124px;
 
+    section {
+        margin-bottom: 24px;
+    }
+
     section > * {
         max-width: 780px;
     }
 
     .heart {
         animation: heartPulse 580ms linear infinite;
+    }
+
+    .split {
+        margin-top: 48px;
     }
 }
 
