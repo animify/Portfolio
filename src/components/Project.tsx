@@ -10,10 +10,10 @@ interface IProps {
     image?: string;
 }
 
-Figicons.setAttributes(Figicons.attributes.default);
-
 export default function Project({ mode, title, description, project, image }: IProps) {
     const classes = classNames('project r3', mode, { [`${project}100@bg`]: project });
+
+    console.log(Figicons.icons);
 
     return (
         <div className={classes}>

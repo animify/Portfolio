@@ -10,12 +10,7 @@ export default function SwappingText({ text }: IProps) {
     const [nextIndex, setNextIndex] = useState(1);
     const previousText = text[currentIndex];
     const currentText = text[nextIndex];
-
-    useEffect(() => {
-        doAnimate();
-    }, [currentIndex]);
-
-    const doAnimate = useCallback(() => {
+    const beginTimer = useCallback(() => {
         if (!text[currentIndex + 1]) return;
 
         setTimeout(() => {
@@ -28,6 +23,8 @@ export default function SwappingText({ text }: IProps) {
             }
         }, 3000);
     }, []);
+
+    useEffect(beginTimer, [currentIndex]);
 
     return (
         <div className="swapping">

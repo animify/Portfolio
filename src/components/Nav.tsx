@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import classNames from 'classnames';
 import SwappingText from './SwappingText';
+import SocialIcons from './SocialIcons';
 
 export default function Nav() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -34,10 +35,12 @@ export default function Nav() {
                     <p className="split">Contents</p>
 
                     {options.map((option, index) => (
-                        <a href="" style={{ transitionDelay: `${200 * (index + 1) + 240}ms` }}>
+                        <a href="" style={{ transitionDelay: `${140 * (index + 1) + 200}ms` }}>
                             {option.title}
                         </a>
                     ))}
+
+                    <SocialIcons />
                 </div>
             </div>
             <div className="container flex justify-between">

@@ -1,0 +1,15 @@
+.social {
+    a {
+        .icon {
+            @extend .gray60\@text;
+        }
+
+        &:hover .icon {
+            @extend .black100\@text;
+        }
+
+        + a {
+            margin-left: 32px;
+        }
+    }
+}

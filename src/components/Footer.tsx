@@ -1,5 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
+import SocialIcons from './SocialIcons';
 
 export default function Footer() {
     const footerClasses = classNames('footer');
@@ -18,7 +19,7 @@ export default function Footer() {
                 <hr />
                 <div className="links flex justify-between">
                     <div className="status">The End.</div>
-                    Footer
+                    <SocialIcons />
                 </div>
             </div>
         </footer>
