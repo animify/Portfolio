@@ -40,12 +40,6 @@ export default function Projects() {
                 image={ImageColorbook}
             />
             <Project
-                title="Frame CSS"
-                description="Create fast, readable and performant websites using a super simple, functional &amp; responsive SCSS utility belt."
-                mode="dark"
-                project="framecss"
-            />
-            <Project
                 title="Minicons"
                 description="Over 85+ aesthetic SVG icons designed on a 24x24 grid, swapped dynamically via observers or programmatically the API."
                 mode="light"

@@ -1,6 +1,10 @@
 footer {
     .talk {
-        padding: 200px 0;
+        margin-top: 124px;
+        padding: 80px;
+        @extend .primary\@bg;
+        @extend .white100\@text;
+        border-radius: 12px;
     }
 
     .links {
@@ -12,7 +16,7 @@ footer {
 
         &::before,
         &::after {
-            @extend .primary\@bg;
+            @extend .white100\@bg;
             content: ' ';
             width: 6px;
             height: 6px;

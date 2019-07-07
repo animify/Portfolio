@@ -35,6 +35,10 @@ export default function OpenSource() {
                     description="The Figicons CLI provides the right tooling to easily fetch, parse &amp; optimize your Figma-designed icons in minutes."
                 />
                 <OpenSourceProject
+                    title="Frame CSS"
+                    description="A super simple, functional &amp; responsive SCSS utility belt for fast and responsive websites."
+                />
+                <OpenSourceProject
                     title="Switcher"
                     description="The most simple light x dark theme switcher boilerplate for any modern website, using Javascript &amp; CSS variables."
                 />

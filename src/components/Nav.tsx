@@ -25,7 +25,7 @@ export default function Nav() {
         { title: 'About me' },
         { title: 'Work' },
         { title: 'Resume' },
-        { title: "Let's chat" },
+        { title: "Let's talk" },
     ];
 
     const toggleMenu = () => {

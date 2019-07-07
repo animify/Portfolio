@@ -4,7 +4,7 @@ import Figicons, { Icon } from 'figicons';
 
 interface IProps {
     mode: 'light' | 'dark';
-    project: 'blossom' | 'figicons' | 'colorbook' | 'framecss' | 'overflow' | 'minicons' | 'carpo';
+    project: 'blossom' | 'figicons' | 'colorbook' | 'overflow' | 'minicons' | 'carpo';
     title: string;
     description: string;
     image?: string;
