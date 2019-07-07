@@ -14,8 +14,8 @@ export default function OpenSource() {
                     </div>
                 </h3>
                 <p className="mt6">
-                    We all love open source. Giving back to the community in any way is something I
-                    value greatly. Here are a couple of tools I've worked on.
+                    We all love open source. Giving back to the community in any way is rewarding.
+                    Here are a couple of useful tools I've built &amp; released.
                 </p>
             </section>
 
@@ -27,7 +27,7 @@ export default function OpenSource() {
                 />
                 <OpenSourceProject
                     title="useCopy"
-                    description="A React Hook that provides an easy interface to copy textual data, compatible with nearly all browsers."
+                    description="A React Hook that provides an easy API to copy and manage textual data, compatible with all browsers."
                 />
                 <ProjectSection title="Others" />
                 <OpenSourceProject
@@ -36,7 +36,7 @@ export default function OpenSource() {
                 />
                 <OpenSourceProject
                     title="Switcher"
-                    description="The most simple light x dark theme switcher for any modern website, using Javascript &amp; CSS variables."
+                    description="The most simple light x dark theme switcher boilerplate for any modern website, using Javascript &amp; CSS variables."
                 />
             </div>
         </div>
