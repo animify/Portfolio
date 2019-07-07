@@ -8,7 +8,7 @@ import Footer from './components/Footer';
 
 const App: React.FC = () => {
     return (
-        <div>
+        <div className="page">
             <Nav />
             <Intro />
             <main>

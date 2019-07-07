@@ -1,10 +1,20 @@
 nav {
     display: flex;
     flex-direction: column;
-    position: relative;
+    background-color: rgba(255, 255, 255, 0.96);
+    padding: 32px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1800;
+    transition: transform 320ms ease;
+    width: 100%;
 
-    > .container {
-        margin-top: 112px;
+    &.visible {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    }
+
+    &.away {
+        transform: translateY(-90px);
     }
 
     a.logo {
@@ -24,7 +34,7 @@ nav {
         width: 100%;
         will-change: auto;
         z-index: 2000;
-        top: 0;
+        top: -100%;
 
         > .container {
             .split {
@@ -69,9 +79,8 @@ nav {
 
     .toggle {
         position: absolute;
-        transition: right 800ms step-end;
-        transition-delay: 800ms;
-        top: 112px;
+        transition: right 800ms step-end, top 300ms ease;
+        top: 32px;
         z-index: 3000;
 
         &::before,
@@ -123,7 +132,6 @@ nav {
 }
 
 nav .menu {
-    top: -100%;
     transform: translateZ(0);
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
@@ -150,6 +158,11 @@ nav .menu {
 
     a {
         transform: translateY(-8px) translateZ(0);
+    }
+
+    &.exited {
+        visibility: hidden;
+        pointer-events: none;
     }
 
     &.entering,
