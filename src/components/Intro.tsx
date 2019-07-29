@@ -1,14 +1,19 @@
 import React from 'react';
 
-export default function Intro() {
+interface IProps {
+    title: string;
+    description?: string;
+    avatar?: string;
+}
+
+export default function Intro({ title, description, avatar }: IProps) {
     return (
         <section className="container">
             <div className="intro w100">
-                <h3>Indie maker, coffee addict, traveller, pixel admirer &amp; labrador owner.</h3>
-                <p className="mt6">
-                    Currently getting up in the morning to engineer the next gen of user flow tools
-                    at Overflow. Always working on designing &amp; building something new.
-                </p>
+                <h3>
+                    {avatar && <img className="avatar gray20@border" src={avatar} />} {title}
+                </h3>
+                {description && <p className="mt6">{description}</p>}
             </div>
         </section>
     );

@@ -4,6 +4,8 @@ import ProjectSection from './ProjectSection';
 import ImageOverflow from '../images/project-overflow.png';
 import ImageColorbook from '../images/project-colorbook.png';
 import ImageBlossom from '../images/project-blossom.png';
+import ImageCarpo from '../images/project-carpo.svg';
+import ImageFigicons from '../images/project-figicons.png';
 
 export default function Projects() {
     return (
@@ -18,9 +20,10 @@ export default function Projects() {
             />
             <Project
                 title="Carpo"
-                description="The first full featured design system created for Overflow."
+                description="The first fully featured design system, created for the Overflow ecosystem."
                 mode="light"
                 project="carpo"
+                image={ImageCarpo}
             />
 
             <div className="mt12">
@@ -31,6 +34,7 @@ export default function Projects() {
                 description="Beautiful, customizable React SVG icons, based on a 24px grid. Completely open source, MIT licensed and designed in Figma."
                 mode="light"
                 project="figicons"
+                image={ImageFigicons}
             />
             <Project
                 title="The Colorbook"

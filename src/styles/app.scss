@@ -1,9 +1,11 @@
 @import './variables.scss';
 @import 'framecss/src/index.scss';
 @import 'nav.scss';
+@import 'intro.scss';
 @import 'split.scss';
 @import 'swapping.scss';
 @import 'project.scss';
+@import 'mentions.scss';
 @import 'osproject.scss';
 @import 'opensource.scss';
 @import 'social.scss';
@@ -55,11 +57,6 @@ body {
     width: 100%;
 }
 
-section .intro {
-    margin: 140px 0 172px 0;
-    max-width: 780px;
-}
-
 a {
     @extend .fw-book;
     color: inherit;
@@ -68,6 +65,10 @@ a {
     &:hover {
         @extend .primary\@text;
     }
+}
+
+strong {
+    font-weight: 600;
 }
 
 .page {

@@ -1,0 +1,11 @@
+.mentions {
+    margin-top: 32px;
+}
+
+.mention {
+    padding: 40px 0;
+
+    + .mention {
+        border-top: 1px solid map-get($colors, 'gray20');
+    }
+}
