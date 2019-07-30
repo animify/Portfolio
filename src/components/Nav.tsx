@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import SwappingText from './SwappingText';
 import SocialIcons from './SocialIcons';
 import { CSSTransition } from 'react-transition-group';
+import { Link } from 'react-router-dom';
 
 export default function Nav() {
     const dims = {
@@ -22,7 +23,7 @@ export default function Nav() {
         away: navStickyAway,
     });
     const options = [
-        { title: 'About me' },
+        { title: 'About me', path: '/about' },
         { title: 'Work' },
         { title: 'Resume' },
         { title: "Let's talk" },
@@ -96,13 +97,14 @@ export default function Nav() {
                             <p className="split">Contents</p>
 
                             {options.map((option, index) => (
-                                <a
+                                <Link
                                     key={option.title}
-                                    href=""
+                                    to={option.path || ''}
                                     style={{ transitionDelay: `${140 * (index + 1) + 200}ms` }}
+                                    onClick={toggleMenu}
                                 >
                                     {option.title}
-                                </a>
+                                </Link>
                             ))}
 
                             <SocialIcons />

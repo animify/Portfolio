@@ -1,10 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
 import Figicons from 'figicons';
 import './styles/app.scss';
-import About from './About';
+import App from './App';
 
 Figicons.setAttributes(Figicons.attributes.default);
 

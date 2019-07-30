@@ -1,14 +1,11 @@
 import React from 'react';
 import Intro from './components/Intro';
-import Nav from './components/Nav';
-import Footer from './components/Footer';
 import Avatar from './images/avatar.png';
 import Mentions from './components/Mentions';
 
 const About: React.FC = () => {
     return (
-        <div className="page">
-            <Nav />
+        <>
             <Intro
                 title="About me"
                 avatar={Avatar}
@@ -23,8 +20,7 @@ const About: React.FC = () => {
                 </p>
                 <Mentions />
             </section>
-            <Footer />
-        </div>
+        </>
     );
 };
 

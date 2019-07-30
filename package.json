@@ -7,6 +7,7 @@
     "@types/node": "12.0.10",
     "@types/react": "16.8.22",
     "@types/react-dom": "16.8.4",
+    "@types/react-router": "^5.0.3",
     "classnames": "^2.2.6",
     "figicons": "^1.2.5",
     "framecss": "^1.1.6",
@@ -14,6 +15,8 @@
     "react": "^16.8.6",
     "react-addons-css-transition-group": "^15.6.2",
     "react-dom": "^16.8.6",
+    "react-router": "^5.0.1",
+    "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
     "react-transition-group": "^4.2.1",
     "typescript": "3.5.2"
@@ -42,6 +45,7 @@
   "devDependencies": {
     "@types/classnames": "^2.2.9",
     "@types/react-addons-css-transition-group": "^15.0.5",
+    "@types/react-router-dom": "^4.3.4",
     "@types/react-transition-group": "^2.9.2",
     "prettier-stylelint": "^0.4.2",
     "tslint-react": "^4.0.0"
