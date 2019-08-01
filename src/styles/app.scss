@@ -27,6 +27,7 @@ body {
     color: #000;
     font-size: map-get($fontSize, 'p');
     overflow-x: hidden;
+    cursor: default;
 
     @each $name, $value in $fontSize {
         #{$name},

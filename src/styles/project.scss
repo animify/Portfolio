@@ -2,6 +2,8 @@
     padding: 80px;
     position: relative;
     overflow: hidden;
+    transform: scale(1);
+    transition: 140ms ease transform;
 
     &::after {
         @extend .r3;
@@ -79,8 +81,6 @@
     }
 
     &:hover {
-        .image {
-            height: 128%;
-        }
+        transform: scale(1.014);
     }
 }

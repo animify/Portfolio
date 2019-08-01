@@ -6,6 +6,7 @@ import ImageColorbook from '../images/project-colorbook.png';
 import ImageBlossom from '../images/project-blossom.png';
 import ImageCarpo from '../images/project-carpo.svg';
 import ImageFigicons from '../images/project-figicons.png';
+import ImageMinicons from '../images/project-minicons.png';
 
 export default function Projects() {
     return (
@@ -52,6 +53,7 @@ export default function Projects() {
                 description="Over 85+ aesthetic SVG icons designed on a 24x24 grid, swapped dynamically via observers or programmatically the API."
                 mode="light"
                 project="minicons"
+                image={ImageMinicons}
                 url="https://github.com/animify/Minicons"
             />
             <Project
