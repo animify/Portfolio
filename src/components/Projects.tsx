@@ -17,6 +17,7 @@ export default function Projects() {
                 mode="dark"
                 project="overflow"
                 image={ImageOverflow}
+                url="https://overflow.io"
             />
             <Project
                 title="Carpo"
@@ -24,6 +25,7 @@ export default function Projects() {
                 mode="light"
                 project="carpo"
                 image={ImageCarpo}
+                url="https://carpo.animify.now.sh"
             />
 
             <div className="mt12">
@@ -35,6 +37,7 @@ export default function Projects() {
                 mode="light"
                 project="figicons"
                 image={ImageFigicons}
+                url="https://github.com/Figicons/Figicons"
             />
             <Project
                 title="The Colorbook"
@@ -42,12 +45,14 @@ export default function Projects() {
                 mode="dark"
                 project="colorbook"
                 image={ImageColorbook}
+                url="https://github.com/animify/colorbook"
             />
             <Project
                 title="Minicons"
                 description="Over 85+ aesthetic SVG icons designed on a 24x24 grid, swapped dynamically via observers or programmatically the API."
                 mode="light"
                 project="minicons"
+                url="https://github.com/animify/Minicons"
             />
             <Project
                 title="Blossom"
@@ -55,6 +60,7 @@ export default function Projects() {
                 mode="light"
                 project="blossom"
                 image={ImageBlossom}
+                url="https://github.com/humanstack/Blossom"
             />
         </div>
     );

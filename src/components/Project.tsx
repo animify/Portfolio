@@ -8,9 +8,10 @@ interface IProps {
     title: string;
     description: string;
     image?: string;
+    url?: string;
 }
 
-export default function Project({ mode, title, description, project, image }: IProps) {
+export default function Project({ mode, title, description, project, image, url }: IProps) {
     const classes = classNames('project r3', mode, { [`${project}100@bg`]: project });
 
     console.log(Figicons.icons);
@@ -21,10 +22,19 @@ export default function Project({ mode, title, description, project, image }: IP
                 <div className="info">
                     <h5>{title}</h5>
                     <p className="mt6">{description}</p>
-                    <hr />
-                    <a href="" className="flex items-center links">
-                        <Icon name="launch" /> <p className="ml3 fw-book">Visit website</p>
-                    </a>
+                    {url && (
+                        <>
+                            <hr />
+                            <a
+                                href={url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center links"
+                            >
+                                <Icon name="launch" /> <p className="ml3 fw-book">Visit website</p>
+                            </a>
+                        </>
+                    )}
                 </div>
 
                 {image && <div className="image" style={{ backgroundImage: `url(${image})` }} />}

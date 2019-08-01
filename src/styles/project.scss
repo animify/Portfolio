@@ -13,10 +13,12 @@
         height: 100%;
         width: 100%;
         box-shadow: 0 0 0 1px inset rgba(0, 0, 0, 0.08);
+        pointer-events: none;
     }
 
     .info {
         max-width: 420px;
+        pointer-events: auto;
     }
 
     hr {
@@ -72,6 +74,8 @@
         background-position: left -48px;
         background-repeat: no-repeat;
         transition: 400ms ease height;
+        user-select: none;
+        pointer-events: none;
     }
 
     &:hover {
