@@ -23,7 +23,7 @@ export default function Project({ mode, title, description, project, image }: IP
                     <p className="mt6">{description}</p>
                     <hr />
                     <a href="" className="flex items-center links">
-                        <Icon name="launch" /> <p className="ml2 fw-book">Visit website</p>
+                        <Icon name="launch" /> <p className="ml3 fw-book">Visit website</p>
                     </a>
                 </div>
 

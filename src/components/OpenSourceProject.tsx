@@ -17,7 +17,7 @@ export default function OpenSourceProject({ title, description }: IProps) {
 
                 <a href="" className="flex items-center mt6">
                     <Icon name="github" fill="currentColor" strokeWidth={0} />{' '}
-                    <span className="ml2">View on GitHub</span>
+                    <span className="ml3">View on GitHub</span>
                 </a>
             </div>
         </div>
