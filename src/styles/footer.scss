@@ -2,9 +2,9 @@ footer {
     .talk {
         margin-top: 112px;
         padding: 80px;
-        @extend .primary\@bg;
+        @extend .black100\@bg;
         @extend .white100\@text;
-        border-radius: 12px;
+        @extend .r1;
     }
 
     .links {

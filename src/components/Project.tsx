@@ -12,7 +12,7 @@ interface IProps {
 }
 
 export default function Project({ mode, title, description, project, image, url }: IProps) {
-    const classes = classNames('project r3', mode, { [`${project}100@bg`]: project });
+    const classes = classNames('project r1', mode, { [`${project}100@bg`]: project });
 
     return (
         <div className={classes}>

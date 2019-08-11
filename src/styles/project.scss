@@ -6,7 +6,7 @@
     transition: 140ms ease transform;
 
     &::after {
-        @extend .r3;
+        @extend .r1;
         content: ' ';
         display: flex;
         position: absolute;
