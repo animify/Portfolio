@@ -14,8 +14,6 @@ interface IProps {
 export default function Project({ mode, title, description, project, image, url }: IProps) {
     const classes = classNames('project r3', mode, { [`${project}100@bg`]: project });
 
-    console.log(Figicons.icons);
-
     return (
         <div className={classes}>
             <div className="flex justify-between">
@@ -23,17 +21,14 @@ export default function Project({ mode, title, description, project, image, url 
                     <h5>{title}</h5>
                     <p className="mt6">{description}</p>
                     {url && (
-                        <>
-                            <hr />
-                            <a
-                                href={url}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="flex items-center links"
-                            >
-                                <Icon name="launch" /> <p className="ml3 fw-book">Go to website</p>
-                            </a>
-                        </>
+                        <a
+                            href={url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={`flex items-center itemlink ${mode} mt8`}
+                        >
+                            <Icon name="launch" /> <p className="ml3 fw-book">Go to website</p>
+                        </a>
                     )}
                 </div>
 
