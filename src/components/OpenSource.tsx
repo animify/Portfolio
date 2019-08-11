@@ -15,7 +15,7 @@ export default function OpenSource() {
                 </h3>
                 <p className="mt6">
                     We all love open source. Giving back to the community in any way is rewarding.
-                    Here are a couple of useful tools I've built &amp; released.
+                    Here are a couple of useful tools I've built and released.
                 </p>
             </section>
 

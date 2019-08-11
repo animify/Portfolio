@@ -9,7 +9,7 @@ const Home: React.FC = () => {
             <Intro
                 title="Indie maker, coffee addict, traveller, pixel admirer &amp; labrador owner."
                 description="Currently getting up in the morning to engineer the next gen of user flow tools
-                    at Overflow. Always working on designing &amp; building something new."
+                    at Overflow. Always working on designing and building something new."
             />
             <main>
                 <Projects />
