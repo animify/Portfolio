@@ -2,6 +2,9 @@ footer {
     .talk {
         margin-top: 112px;
         padding: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
         @extend .black100\@bg;
         @extend .white100\@text;
         @extend .r1;

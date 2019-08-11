@@ -138,12 +138,50 @@ nav .menu {
     transition: all 450ms ease-in-out;
     transition-property: border-radius, top;
 
+    .container > a {
+        position: relative;
+        width: fit-content;
+        color: #fff;
+        display: flex;
+
+        > span {
+            position: relative;
+            transition: left 140ms ease-in-out;
+            left: 0px;
+        }
+
+        .arrow {
+            display: flex;
+            position: relative;
+            bottom: 4px;
+            padding-left: 24px;
+            bottom: -4px;
+            transform: scale(0.6);
+            transition: all 140ms ease-in-out;
+            transition-property: transform, padding-left, opacity;
+            opacity: 0.4;
+        }
+
+        &:hover {
+            > span {
+                transition: left 140ms ease-in-out;
+                left: 24px;
+            }
+
+            .arrow {
+                transform: scale(1);
+                padding-left: 48px;
+                opacity: 1;
+            }
+        }
+    }
+
     .social,
     .split,
     a {
         opacity: 0;
         transition: all 400ms ease;
-        transition-property: transform, opacity;
+        transition-property: transform, opacity, left;
     }
 
     .social {

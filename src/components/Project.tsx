@@ -25,7 +25,7 @@ export default function Project({ mode, title, description, project, image, url 
                             href={url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className={`flex items-center itemlink ${mode} mt8`}
+                            className={`flex items-center button ${mode} mt8`}
                         >
                             <Icon name="launch" /> <p className="ml3 fw-book">Go to website</p>
                         </a>

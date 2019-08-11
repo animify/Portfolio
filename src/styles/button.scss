@@ -1,4 +1,4 @@
-.itemlink {
+.button {
     position: relative;
     width: fit-content;
     color: #000;
@@ -15,6 +15,16 @@
     &.light {
         color: #fff;
         background-color: rgba(255, 255, 255, 0.16);
+
+        &:hover {
+            color: #fff;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+    }
+
+    &.pink {
+        color: #fff;
+        @extend .primary\@bg;
 
         &:hover {
             color: #fff;

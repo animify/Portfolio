@@ -12,6 +12,7 @@
     }
 
     img {
+        @extend .r1;
         height: 180px;
     }
 
@@ -23,7 +24,6 @@
 
         img {
             height: 240px;
-            border-radius: 0px;
         }
     }
 }

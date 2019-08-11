@@ -4,6 +4,7 @@ import SwappingText from './SwappingText';
 import SocialIcons from './SocialIcons';
 import { CSSTransition } from 'react-transition-group';
 import { Link } from 'react-router-dom';
+import { Icon } from 'figicons';
 
 export default function Nav() {
     const dims = {
@@ -23,10 +24,10 @@ export default function Nav() {
         away: navStickyAway,
     });
     const options = [
+        { title: 'Work & Projects', path: '/' },
         { title: 'About me', path: '/about' },
-        { title: 'Work' },
-        { title: 'Resume' },
-        { title: "Let's talk" },
+        { title: 'Résumé' },
+        { title: "Let's chat" },
     ];
 
     const toggleMenu = () => {
@@ -103,7 +104,11 @@ export default function Nav() {
                                     style={{ transitionDelay: `${140 * (index + 1) + 200}ms` }}
                                     onClick={toggleMenu}
                                 >
-                                    {option.title}
+                                    <span>{option.title}</span>
+
+                                    <div className="arrow">
+                                        <Icon name="arrow-right" width={32} height={32} />
+                                    </div>
                                 </Link>
                             ))}
 
@@ -113,7 +118,9 @@ export default function Nav() {
                 )}
             </CSSTransition>
             <div className="container flex justify-between">
-                <SwappingText text={["Hi, I'm Stefan.", 'Stefan Mansson']} />
+                <Link to="/">
+                    <SwappingText text={["Hi, I'm Stefan.", 'Stefan Mansson']} />
+                </Link>
                 <div className="menutoggle">
                     <div
                         className={toggleClasses}
