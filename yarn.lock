@@ -4314,10 +4314,10 @@ figgy-pudding@^3.5.1:
   resolved "https://registry.npmjs.org/figgy-pudding/-/figgy-pudding-3.5.1.tgz#862470112901c727a0e495a80744bd5baa1d6790"
   integrity sha512-vNKxJHTEKNThjfrdJwHc7brvM6eVevuO5nTj6ez8ZQ1qbXTvGthucRF7S4vf2cr71QVnT70V34v0S1DyQsti0w==
 
-figicons@^1.2.5:
-  version "1.2.5"
-  resolved "https://registry.npmjs.org/figicons/-/figicons-1.2.5.tgz#14f7771190f90aafc3a4cdbc858d2be4c1603d04"
-  integrity sha512-27fbTfv2BpLYrfHyekoBZ6fR5qK502g0KxVOWfMEe/WHXfw0yWMstiJYfwabJfcli+y0VxgezaZJ2cKgdvHIpw==
+figicons@^1.2.7:
+  version "1.2.7"
+  resolved "https://registry.npmjs.org/figicons/-/figicons-1.2.7.tgz#aec72470c194c28bbb3ff5d050a1d360eb61b6a6"
+  integrity sha512-qWD5kHuC3GD582S/s+OS1oBuEv86Chy6vOhh5qznHUwlTQXBdbVeWWzodPKaPSJiQI2IJGZ2uVu0UaVSKDylQw==
   dependencies:
     camelcase "^5.3.1"
 
@@ -4543,10 +4543,10 @@ fragment-cache@^0.2.1:
   dependencies:
     map-cache "^0.2.2"
 
-framecss@^1.1.6:
-  version "1.1.6"
-  resolved "https://registry.npmjs.org/framecss/-/framecss-1.1.6.tgz#0fdf52f6ade024e053a983c2ff29fd63b146465a"
-  integrity sha512-LFU+15sM9oANP+YM4rXqS/NJDjl79qUpcqEB9X7Syt49CNKlsNf50pr8+xChKzTQeelypC0JM4aJX6XGN7pkdQ==
+framecss@^1.1.7:
+  version "1.1.7"
+  resolved "https://registry.npmjs.org/framecss/-/framecss-1.1.7.tgz#d0ac858d2b771965f9bc350d2a9121b0f1bcd432"
+  integrity sha512-1nT+5GVmGDQuhLOnjco1EFaQ6CjrjE9N8hCqwqQfvqexRGkc6NM4uzH8cSiJm66Guej5WwzMpGyPLOEmUY/YWA==
 
 fresh@0.5.2:
   version "0.5.2"

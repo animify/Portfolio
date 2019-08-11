@@ -37,10 +37,10 @@ const About: React.FC = () => {
                 <section className="container flex-column">
                     <p className="mt6">
                         Apart from tinkering with my own projects daily and keeping up with the
-                        latest design &amp; software trends, I usually spend my free time taking
-                        drives to explore new places and travelling to countries I've never been to
-                        before. And of course since I'm staying in such a sunny island, you'll
-                        usually find me kayaking and at the sea.
+                        latest design &amp; software trends, I usually spend my free time driving to
+                        explore new places and travelling to countries I've never been to before.
+                        And of course as I'm staying on such a sunny island, you'll likely find me
+                        kayaking and at the sea.
                     </p>
                     <div className="images">
                         <img src={About1} />

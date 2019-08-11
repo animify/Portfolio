@@ -58,7 +58,7 @@ export default function Projects() {
             />
             <Project
                 title="Blossom"
-                description="A simply beautiful, themeable design framework built from the ground up in Stylus with performance in mind."
+                description="A simply beautiful, themeable design framework built with Stylus."
                 mode="light"
                 project="blossom"
                 image={ImageBlossom}

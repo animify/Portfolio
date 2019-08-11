@@ -31,7 +31,7 @@ export default function Project({ mode, title, description, project, image, url 
                                 rel="noopener noreferrer"
                                 className="flex items-center links"
                             >
-                                <Icon name="launch" /> <p className="ml3 fw-book">Visit website</p>
+                                <Icon name="launch" /> <p className="ml3 fw-book">Go to website</p>
                             </a>
                         </>
                     )}

@@ -5,8 +5,6 @@ import Figicons from 'figicons';
 import './styles/app.scss';
 import App from './App';
 
-Figicons.setAttributes(Figicons.attributes.default);
-
 Figicons.setIcons({
     ...Figicons.icons,
     github: {
