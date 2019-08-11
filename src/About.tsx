@@ -1,5 +1,4 @@
 import React from 'react';
-import Intro from './components/Intro';
 import Avatar from './images/avatar.jpg';
 import About1 from './images/about-1.png';
 import About2 from './images/about-2.png';
