@@ -90,3 +90,24 @@ hr {
     width: 100%;
     margin: 0;
 }
+
+@include below('md') {
+    h3 {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    h4 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    h5 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .page {
+        padding-top: 0;
+    }
+}

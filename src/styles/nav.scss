@@ -62,19 +62,24 @@ nav {
         }
 
         a {
-            font-size: map-get($fontSize, 'h4');
+            @extend h4;
             font-family: 'DM Serif Text', serif;
 
             + a {
-                margin-top: 48px;
+                margin-top: 40px;
             }
         }
     }
 
-    .menutoggle,
     .toggle {
         width: 24px;
         height: 24px;
+    }
+
+    .menutoggle {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
     }
 
     .toggle {
@@ -82,6 +87,15 @@ nav {
         transition: right 800ms step-end, top 300ms ease;
         top: 32px;
         z-index: 3000;
+
+        .toucharea {
+            position: absolute;
+            top: -12px;
+            width: 48px;
+            height: 48px;
+            left: -12px;
+            content: ' ';
+        }
 
         &::before,
         &::after {

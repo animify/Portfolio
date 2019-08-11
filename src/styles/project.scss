@@ -83,4 +83,20 @@
     &:hover {
         transform: scale(1.014);
     }
+
+    @include below('md') {
+        margin-left: -32px;
+        padding: 48px 32px;
+        width: calc(100% + 64px);
+        border-radius: 0;
+        transform: scale(1) !important;
+
+        .image {
+            display: none;
+        }
+
+        + .project {
+            margin-top: 0;
+        }
+    }
 }

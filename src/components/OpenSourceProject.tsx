@@ -9,11 +9,11 @@ interface IProps {
 
 export default function OpenSourceProject({ title, description, url }: IProps) {
     return (
-        <div className="osproject">
-            <div className="w40">
+        <div className="osproject grid">
+            <div className="col12@xs col5@sm mb4">
                 <h6>{title}</h6>
             </div>
-            <div className="w60">
+            <div className="col12@xs col7@sm">
                 <p>{description}</p>
 
                 <a

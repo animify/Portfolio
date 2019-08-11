@@ -10,14 +10,14 @@ export default function Footer() {
             <div className="container flex-column">
                 <div className="talk">
                     <div>
-                        <h4>
+                        <h5>
                             Got a project? <span>Let's chat</span>
-                        </h4>
+                        </h5>
                         <p className="mt4">Have an idea or concept that really excites you?</p>
                         <p>Tell me everything.</p>
                     </div>
 
-                    <a href="" className="button light">
+                    <a href="mailto:st.mansson@icloud.com" className="button light mt6">
                         Send an email
                     </a>
                 </div>

@@ -15,6 +15,7 @@ const About: React.FC = () => {
                     <div className="short">
                         <h3 className="mb6">About me.</h3>
                         <p>Hello there. My name is Stefan Mansson.</p>
+                        <img className="mobileavatar" src={Avatar} />
                         <p>
                             I'm a Swedish / Cypriot softare maker with a keen passion for design
                             &amp; development, living in Cyprus.

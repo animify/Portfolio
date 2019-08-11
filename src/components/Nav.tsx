@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import SwappingText from './SwappingText';
 import SocialIcons from './SocialIcons';
 import { CSSTransition } from 'react-transition-group';
-import { Link } from 'react-router-dom';
+import { Link, LinkProps } from 'react-router-dom';
 import { Icon } from 'figicons';
 
 export default function Nav() {
@@ -26,12 +26,16 @@ export default function Nav() {
     const options = [
         { title: 'Work & Projects', path: '/' },
         { title: 'About me', path: '/about' },
-        { title: 'Résumé' },
-        { title: "Let's chat" },
+        { title: 'Résumé', path: 'https://www.linkedin.com/in/smansson' },
+        { title: "Let's chat", path: 'mailto:st.mansson@icloud.com' },
     ];
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
+    };
+
+    const getDefaultTop = () => {
+        return window.innerWidth <= 768 ? 32 : 112;
     };
 
     const getOffsetTop = () => {
@@ -89,6 +93,21 @@ export default function Nav() {
         };
     }, []);
 
+    const NavLink = (props: LinkProps) => {
+        if ((props.to as string).startsWith('/')) {
+            return <Link {...props} />;
+        } else {
+            return (
+                <a
+                    href={props.to as string}
+                    target={(props.to as string).startsWith('mailto') ? undefined : 'blank'}
+                    rel="noopener noreferrer"
+                    {...props}
+                />
+            );
+        }
+    };
+
     return (
         <nav ref={navRef} className={navClasses} key="nav">
             <CSSTransition in={menuOpen} timeout={450}>
@@ -98,7 +117,7 @@ export default function Nav() {
                             <p className="split">Contents</p>
 
                             {options.map((option, index) => (
-                                <Link
+                                <NavLink
                                     key={option.title}
                                     to={option.path || ''}
                                     style={{ transitionDelay: `${140 * (index + 1) + 200}ms` }}
@@ -109,7 +128,7 @@ export default function Nav() {
                                     <div className="arrow">
                                         <Icon name="arrow-right" width={32} height={32} />
                                     </div>
-                                </Link>
+                                </NavLink>
                             ))}
 
                             <SocialIcons />
@@ -121,12 +140,13 @@ export default function Nav() {
                 <Link to="/">
                     <SwappingText text={["Hi, I'm Stefan.", 'Stefan Mansson']} />
                 </Link>
-                <div className="menutoggle">
+                <div className="menutoggle" onClick={toggleMenu}>
                     <div
                         className={toggleClasses}
-                        onClick={toggleMenu}
-                        style={{ top: menuOpen ? 112 - offsetTop : undefined }}
-                    />
+                        style={{ top: menuOpen ? getDefaultTop() - offsetTop : undefined }}
+                    >
+                        <div className="toucharea" />
+                    </div>
                 </div>
             </div>
         </nav>

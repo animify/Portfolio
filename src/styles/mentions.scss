@@ -6,6 +6,8 @@
     display: flex;
     padding: 40px 0;
     width: 100%;
+    justify-content: space-between;
+    align-items: center;
     @extend .black100\@text;
 
     .label {
@@ -26,6 +28,15 @@
     &:hover {
         .label {
             @extend .primary\@bg;
+        }
+    }
+
+    @include below('md') {
+        align-items: flex-start;
+        flex-direction: column-reverse;
+
+        div + div {
+            margin-bottom: 12px;
         }
     }
 }
