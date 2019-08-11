@@ -1,0 +1,57 @@
+.about {
+    margin: 80px 0 112px 0;
+
+    .short {
+        display: flex;
+        flex-direction: column;
+        padding-right: 80px;
+
+        .mobileavatar {
+            display: none;
+        }
+
+        p + p {
+            margin-top: 24px;
+        }
+    }
+
+    img {
+        @extend .r1;
+        height: 180px;
+    }
+
+    .images {
+        display: flex;
+        width: 100%;
+        margin-top: 48px;
+        justify-content: space-between;
+        overflow-x: scroll;
+
+        img {
+            height: 240px;
+        }
+    }
+
+    @include below('md') {
+        .short {
+            padding-right: 0;
+
+            .mobileavatar {
+                display: block;
+                width: 100%;
+                height: auto;
+                margin: 24px 0;
+            }
+
+            + img {
+                display: none;
+            }
+        }
+
+        .images {
+            img + img {
+                margin-left: 16px;
+            }
+        }
+    }
+}

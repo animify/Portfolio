@@ -1,0 +1,42 @@
+.mentions {
+    margin-top: 32px;
+}
+
+.mention {
+    display: flex;
+    padding: 40px 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    @extend .black100\@text;
+
+    .label {
+        @extend .black100\@bg;
+        padding: 4px 6px;
+        border-radius: 2px;
+        font-weight: 800;
+        color: #fff;
+        font-size: 12px;
+        margin-right: 12px;
+        letter-spacing: 0.3px;
+    }
+
+    + .mention {
+        border-top: 1px solid map-get($colors, 'gray20');
+    }
+
+    &:hover {
+        .label {
+            @extend .primary\@bg;
+        }
+    }
+
+    @include below('md') {
+        align-items: flex-start;
+        flex-direction: column-reverse;
+
+        div + div {
+            margin-bottom: 12px;
+        }
+    }
+}

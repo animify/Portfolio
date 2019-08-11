@@ -1,0 +1,13 @@
+.split {
+    display: flex;
+    align-items: center;
+    letter-spacing: 1.4px;
+
+    > span {
+        @extend .gray80\@text;
+        display: flex;
+        flex-shrink: 0;
+        margin-right: 16px;
+        font-weight: 300;
+    }
+}

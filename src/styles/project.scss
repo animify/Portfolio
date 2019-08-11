@@ -1,0 +1,102 @@
+.project {
+    padding: 80px;
+    position: relative;
+    overflow: hidden;
+    transform: scale(1);
+    transition: 140ms ease transform;
+
+    &::after {
+        @extend .r1;
+        content: ' ';
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        box-shadow: 0 0 0 1px inset rgba(0, 0, 0, 0.08);
+        pointer-events: none;
+    }
+
+    .info {
+        max-width: 380px;
+        pointer-events: auto;
+    }
+
+    hr {
+        display: inline-flex;
+        margin: 32px 0;
+        width: 148px;
+        height: 1px;
+        border: none;
+    }
+
+    &.dark {
+        h5,
+        .links {
+            @extend .black100\@text;
+        }
+
+        .info > p {
+            color: rgba(0, 0, 0, 0.8);
+        }
+
+        hr {
+            background-color: rgba(0, 0, 0, 0.16);
+        }
+    }
+
+    &.light {
+        h5,
+        .links {
+            @extend .white100\@text;
+        }
+
+        .info > p {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        hr {
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+    }
+
+    + .project {
+        margin-top: 32px;
+    }
+
+    .image {
+        position: absolute;
+        content: ' ';
+        top: 0;
+        right: 0;
+        height: 124%;
+        width: 56%;
+        background-size: cover;
+        background-position: left -48px;
+        background-repeat: no-repeat;
+        transition: 400ms ease height;
+        user-select: none;
+        pointer-events: none;
+    }
+
+    &:hover {
+        transform: scale(1.014);
+    }
+
+    @include below('md') {
+        margin-left: -32px;
+        padding: 48px 32px;
+        width: calc(100% + 64px);
+        border-radius: 0;
+        transform: scale(1) !important;
+
+        .image {
+            display: none;
+        }
+
+        + .project {
+            margin-top: 0;
+        }
+    }
+}
