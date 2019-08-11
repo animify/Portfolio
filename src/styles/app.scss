@@ -10,6 +10,7 @@
 @import 'opensource.scss';
 @import 'social.scss';
 @import 'footer.scss';
+@import 'about.scss';
 
 * {
     box-sizing: border-box;
@@ -53,7 +54,7 @@ body {
 .container {
     display: flex;
     padding: 0 32px;
-    max-width: 1120px;
+    max-width: 1020px;
     margin: 0 auto;
     width: 100%;
 }

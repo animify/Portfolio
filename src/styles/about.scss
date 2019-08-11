@@ -1,0 +1,29 @@
+.about {
+    margin: 80px 0 112px 0;
+
+    .short {
+        display: flex;
+        flex-direction: column;
+        padding-right: 80px;
+
+        p + p {
+            margin-top: 24px;
+        }
+    }
+
+    img {
+        height: 180px;
+    }
+
+    .images {
+        display: flex;
+        width: 100%;
+        margin-top: 48px;
+        justify-content: space-between;
+
+        img {
+            height: 240px;
+            border-radius: 0px;
+        }
+    }
+}

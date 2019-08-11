@@ -14,7 +14,7 @@ export default function Projects() {
             <ProjectSection title="Professional work" className="mb6" />
             <Project
                 title="Overflow"
-                description="The world's first user flow diagramming tool tailored for designers, integrating with Figma, Sketch &amp; Adobe XD."
+                description="The worlds first user flow diagramming tool tailored for designers, integrating with Figma, Sketch &amp; Adobe XD."
                 mode="dark"
                 project="overflow"
                 image={ImageOverflow}
@@ -34,7 +34,7 @@ export default function Projects() {
             </div>
             <Project
                 title="Figicons"
-                description="Beautiful, customizable React SVG icons, based on a 24px grid. Completely open source, MIT licensed and designed in Figma."
+                description="Beautiful, customizable React SVG icons, based on a 24px grid. Completely open source and designed in Figma."
                 mode="light"
                 project="figicons"
                 image={ImageFigicons}
