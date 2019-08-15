@@ -22,12 +22,19 @@ export default function About() {
                         <p>
                             Over the past few years, I've graduated with a BSc in Computer Science
                             from the University of Hull and interned at{' '}
-                            <a href="https://ebuyer.com">Ebuyer.com</a>.
+                            <a href="https://ebuyer.com" target="_blank" rel="noopener noreferrer">
+                                Ebuyer.com
+                            </a>
+                            .
                         </p>
 
                         <p>
-                            I currently work at <a href="https://overflow.io">Overflow</a>, building
-                            and developing the worlds first user flow tool tailored for designers.
+                            I currently work at{' '}
+                            <a href="https://overflow.io" target="_blank" rel="noopener noreferrer">
+                                Overflow
+                            </a>
+                            , building and developing the worlds first user flow tool tailored for
+                            designers.
                         </p>
                     </div>
 
