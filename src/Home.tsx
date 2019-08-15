@@ -3,7 +3,7 @@ import Intro from './components/Intro';
 import Projects from './components/Projects';
 import OpenSource from './components/OpenSource';
 
-const Home: React.FC = () => {
+export default function Home() {
     return (
         <>
             <Intro
@@ -17,6 +17,4 @@ const Home: React.FC = () => {
             </main>
         </>
     );
-};
-
-export default Home;
+}

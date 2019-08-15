@@ -137,7 +137,7 @@ export default function Nav() {
                 )}
             </CSSTransition>
             <div className="container flex justify-between">
-                <Link to="/">
+                <Link className="logo" to="/">
                     <SwappingText text={["Hi, I'm Stefan.", 'Stefan Mansson']} />
                 </Link>
                 <div className="menutoggle" onClick={toggleMenu}>
