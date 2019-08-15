@@ -3,7 +3,7 @@ import Mention from './Mention';
 
 export default function Mentions() {
     return (
-        <div className="mentions">
+        <div className="mt8">
             <Mention
                 platform="Product Hunt"
                 year="2018"
