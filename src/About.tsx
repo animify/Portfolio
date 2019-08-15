@@ -8,7 +8,7 @@ import Mentions from './components/Mentions';
 
 export default function About() {
     return (
-        <>
+        <main>
             <section className="about">
                 <div className="container justify-between">
                     <div className="short">
@@ -59,6 +59,6 @@ export default function About() {
                 </p>
                 <Mentions />
             </section>
-        </>
+        </main>
     );
 }

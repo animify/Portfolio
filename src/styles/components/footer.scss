@@ -1,5 +1,5 @@
-footer {
-    .talk {
+footer.footer {
+    > .talk {
         margin-top: 112px;
         padding: 80px;
         display: flex;
@@ -10,11 +10,7 @@ footer {
         @extend .r1;
     }
 
-    .links {
-        margin: 64px 0;
-    }
-
-    h5 span {
+    > .talk h5 span {
         position: relative;
 
         &::before,
@@ -36,8 +32,12 @@ footer {
         }
     }
 
-    .status {
-        font-family: map-get($fontFamilies, 'heading');
+    > .links {
+        margin: 64px 0;
+
+        > .status {
+            font-family: map-get($fontFamilies, 'heading');
+        }
     }
 
     @include below('md') {
