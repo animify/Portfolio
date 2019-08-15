@@ -31,6 +31,10 @@ Figicons.setIcons({
 });
 
 export default function App() {
+    History.listen(() => {
+        window.scroll({ top: 0 });
+    });
+
     return (
         <Router history={History}>
             <Nav />
