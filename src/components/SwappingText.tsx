@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 interface IProps {
@@ -6,6 +6,7 @@ interface IProps {
 }
 
 export default function SwappingText({ text }: IProps) {
+    const delay = 12000;
     const [currentIndex, setCurrentIndex] = useState(0);
     const [nextIndex, setNextIndex] = useState(1);
     const previousText = text[currentIndex];
@@ -13,11 +14,11 @@ export default function SwappingText({ text }: IProps) {
     const beginTimer = useCallback(() => {
         if (!text[currentIndex + 1]) return;
 
-        setTimeout(() => {
+        window.setTimeout(() => {
             setCurrentIndex(currentIndex + 1);
 
             if (text.length !== nextIndex + 1) {
-                setTimeout(() => {
+                window.setTimeout(() => {
                     setNextIndex(nextIndex + 1);
                 }, 3000);
             }
@@ -27,26 +28,26 @@ export default function SwappingText({ text }: IProps) {
     useEffect(beginTimer, [currentIndex]);
 
     return (
-        <div className="swapping">
+        <div className="swappingtext">
             <ReactCSSTransitionGroup
                 transitionName="swapping-prev"
                 transitionEnter={true}
                 transitionLeave={true}
-                transitionEnterTimeout={12000}
-                transitionLeaveTimeout={12000}
+                transitionEnterTimeout={delay}
+                transitionLeaveTimeout={delay}
                 component={React.Fragment}
             >
-                {nextIndex !== currentIndex && <div className="absolute">{previousText}</div>}
+                {nextIndex !== currentIndex && <span className="inner">{previousText}</span>}
             </ReactCSSTransitionGroup>
             <ReactCSSTransitionGroup
                 transitionName="swapping-next"
                 transitionEnter={true}
                 transitionLeave={true}
-                transitionEnterTimeout={12000}
-                transitionLeaveTimeout={12000}
+                transitionEnterTimeout={delay}
+                transitionLeaveTimeout={delay}
                 component={React.Fragment}
             >
-                {nextIndex === currentIndex && <div className="absolute">{currentText}</div>}
+                {nextIndex === currentIndex && <span className="inner">{currentText}</span>}
             </ReactCSSTransitionGroup>
         </div>
     );

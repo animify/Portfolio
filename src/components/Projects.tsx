@@ -10,7 +10,7 @@ import ImageMinicons from '../images/project-minicons.png';
 
 export default function Projects() {
     return (
-        <div className="container flex-column">
+        <section className="container flex-column">
             <ProjectSection title="Professional work" className="mb6" />
             <Project
                 title="Overflow"
@@ -29,9 +29,7 @@ export default function Projects() {
                 url="https://carpo.animify.now.sh"
             />
 
-            <div className="mt12">
-                <ProjectSection title="Self-made work" className="mb6 mt6" />
-            </div>
+            <ProjectSection title="Self-made work" className="mb6 pt12 mt6" />
             <Project
                 title="Figicons"
                 description="Beautiful, customizable React SVG icons, based on a 24px grid. Completely open source and designed in Figma."
@@ -64,6 +62,6 @@ export default function Projects() {
                 image={ImageBlossom}
                 url="https://github.com/humanstack/Blossom"
             />
-        </div>
+        </section>
     );
 }

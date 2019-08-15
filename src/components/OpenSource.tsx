@@ -5,8 +5,8 @@ import OpenSourceProject from './OpenSourceProject';
 
 export default function OpenSource() {
     return (
-        <div className="opensource">
-            <section className="container flex-column">
+        <section className="opensource container flex-column">
+            <div className="flex flex-column">
                 <h3 className="flex items-center">
                     Open source{' '}
                     <div className="flex ml2 heart">
@@ -17,9 +17,9 @@ export default function OpenSource() {
                     We all love open source. Giving back to the community in any way is rewarding.
                     Here are a couple of useful tools I've built and released.
                 </p>
-            </section>
+            </div>
 
-            <div className="container flex-column">
+            <div className="flex flex-column">
                 <ProjectSection title="React Hooks" />
                 <OpenSourceProject
                     title="useRestate"
@@ -48,6 +48,6 @@ export default function OpenSource() {
                     url="https://github.com/animify/switcher"
                 />
             </div>
-        </div>
+        </section>
     );
 }

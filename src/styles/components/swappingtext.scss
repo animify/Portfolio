@@ -1,9 +1,10 @@
-.swapping {
+.swappingtext {
     width: fit-content;
     display: flex;
-    flex-grow: 1;
+    flex-shrink: 0;
 
-    > div {
+    > .inner {
+        position: absolute;
         transition: transform 600ms ease, opacity 600ms ease, color 80ms ease;
         transform: translateY(0);
         opacity: 1;
@@ -14,11 +15,7 @@
                 opacity: 0;
             }
 
-            &-next-leave {
-                transform: translateY(16px);
-                opacity: 0;
-            }
-
+            &-next-leave,
             &-next-enter {
                 transform: translateY(16px);
                 opacity: 0;
