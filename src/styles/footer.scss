@@ -37,7 +37,7 @@ footer {
     }
 
     .status {
-        font-family: 'DM Serif Text', serif;
+        font-family: map-get($fontFamilies, 'heading');
     }
 
     @include below('md') {

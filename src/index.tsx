@@ -1,8 +1,8 @@
+import './styles/app.scss';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
 import Figicons from 'figicons';
-import './styles/app.scss';
 import App from './App';
 
 Figicons.setIcons({

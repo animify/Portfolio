@@ -1,5 +1,6 @@
 @import './variables.scss';
 @import 'framecss/src/index.scss';
+@import 'fonts/index.scss';
 @import 'nav.scss';
 @import 'intro.scss';
 @import 'split.scss';
@@ -35,7 +36,7 @@ body {
         #{$name},
         .#{$name} {
             @if str-slice($name, 0, 1) == h {
-                font-family: 'DM Serif Text', serif;
+                font-family: map-get($fontFamilies, 'heading');
                 letter-spacing: 0.3px;
                 font-weight: map-get($fontWeight, medium);
             }
