@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import Figicons, { Icon } from 'figicons';
+import { Icon } from 'figicons';
 
 interface IProps {
     mode: 'light' | 'dark';
@@ -16,24 +16,22 @@ export default function Project({ mode, title, description, project, image, url 
 
     return (
         <div className={classes}>
-            <div className="flex justify-between">
-                <div className="info">
-                    <h5>{title}</h5>
-                    <p className="mt6">{description}</p>
-                    {url && (
-                        <a
-                            href={url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className={`flex items-center button ${mode} mt8`}
-                        >
-                            <Icon name="launch" /> <p className="ml3 fw-book">Go to website</p>
-                        </a>
-                    )}
-                </div>
-
-                {image && <div className="image" style={{ backgroundImage: `url(${image})` }} />}
+            <div className="info">
+                <h5>{title}</h5>
+                <p className="mt6">{description}</p>
+                {url && (
+                    <a
+                        href={url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`flex items-center button ${mode} mt8`}
+                    >
+                        <Icon name="launch" /> <p className="ml3 fw-book">Go to website</p>
+                    </a>
+                )}
             </div>
+
+            {image && <div className="image" style={{ backgroundImage: `url(${image})` }} />}
         </div>
     );
 }

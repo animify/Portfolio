@@ -22,7 +22,7 @@ export default function OpenSourceProject({ title, description, url }: IProps) {
                     target="_blank"
                     rel="noreferrer noopener"
                 >
-                    <Icon name="github" fill="currentColor" strokeWidth={0} />{' '}
+                    <Icon name="github" fill="currentColor" strokeWidth={0} />
                     <span className="ml3">View on GitHub</span>
                 </a>
             </div>

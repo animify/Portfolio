@@ -29,7 +29,7 @@ export default function Projects() {
                 url="https://carpo.animify.now.sh"
             />
 
-            <ProjectSection title="Self-made work" className="mb6 pt12 mt6" />
+            <ProjectSection title="Self-made work" className="mv6 pt12" />
             <Project
                 title="Figicons"
                 description="Beautiful, customizable React SVG icons, based on a 24px grid. Completely open source and designed in Figma."
