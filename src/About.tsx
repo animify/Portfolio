@@ -14,7 +14,7 @@ export default function About() {
                     <div className="short">
                         <h3 className="mb6">About me.</h3>
                         <p>Hello there. My name is Stefan Mansson.</p>
-                        <img className="mobileavatar" src={Avatar} />
+                        <img className="mobileavatar" alt="Avatar" src={Avatar} />
                         <p>
                             I'm a Swedish / Cypriot softare maker with a keen passion for design
                             &amp; development, living in Cyprus.
@@ -31,7 +31,7 @@ export default function About() {
                         </p>
                     </div>
 
-                    <img src={Avatar} />
+                    <img src={Avatar} alt="Avatar" />
                 </section>
 
                 <section className="container flex-column">
@@ -43,10 +43,10 @@ export default function About() {
                         kayaking and at the sea.
                     </p>
                     <div className="images">
-                        <img src={About1} />
-                        <img src={About2} />
-                        <img src={About3} />
-                        <img src={About4} />
+                        <img src={About1} alt="About 1" />
+                        <img src={About2} alt="About 2" />
+                        <img src={About3} alt="About 3" />
+                        <img src={About4} alt="About 4" />
                     </div>
                 </section>
             </div>
@@ -61,5 +61,4 @@ export default function About() {
             </section>
         </>
     );
-};
-
+}

@@ -86,27 +86,38 @@ export default function Nav() {
     }, [menuOpen]);
 
     useEffect(() => {
-        isNavScolled();
+        History.listen(() => isNavScolled(0));
+
         window.addEventListener('wheel', listener, { passive: true });
 
         return () => {
             window.removeEventListener('wheel', listener);
         };
-    }, [History.location.pathname]);
+    }, []);
 
     const NavLink = (props: LinkProps) => {
-        if ((props.to as string).startsWith('/')) {
-            return <Link {...props} />;
-        } else {
+        const { children, to, ...linkProps } = props;
+
+        if (!children) return null;
+
+        if ((to as string).startsWith('/')) {
             return (
-                <a
-                    href={props.to as string}
-                    target={(props.to as string).startsWith('mailto') ? undefined : 'blank'}
-                    rel="noopener noreferrer"
-                    {...props}
-                />
+                <Link to={to} {...linkProps}>
+                    {children}
+                </Link>
             );
         }
+
+        return (
+            <a
+                href={to as string}
+                target={(to as string).startsWith('mailto') ? undefined : 'blank'}
+                rel="noopener noreferrer"
+                {...linkProps}
+            >
+                {children}
+            </a>
+        );
     };
 
     return (

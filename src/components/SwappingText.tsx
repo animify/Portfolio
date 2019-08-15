@@ -23,7 +23,7 @@ export default function SwappingText({ text }: IProps) {
                 }, 3000);
             }
         }, 3000);
-    }, []);
+    }, [currentIndex, nextIndex, text]);
 
     useEffect(beginTimer, [currentIndex]);
 
