@@ -18,6 +18,28 @@
     }
 }
 
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    60% {
+        transform: scale(1.14);
+    }
+
+    80% {
+        transform: scale(0.94);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pulse {
+    animation: pulse 650ms ease-in-out infinite;
+}
+
 .fadeInDown {
     animation: fadeInDown 650ms ease forwards;
 }

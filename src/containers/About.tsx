@@ -5,6 +5,7 @@ import About2 from '../images/about-2.png';
 import About3 from '../images/about-3.png';
 import About4 from '../images/about-4.png';
 import Mention from '../components/Mention';
+import SectionHeader from '../components/SectionHeader';
 
 export default function About() {
     return (
@@ -12,8 +13,12 @@ export default function About() {
             <section className="about">
                 <div className="container justify-between">
                     <div className="short fadeInDown">
-                        <h3 className="mb6">About me.</h3>
-                        <p>Hello there. My name is Stefan Mansson.</p>
+                        <SectionHeader
+                            title="About me."
+                            description="Hello there. My name is Stefan Mansson."
+                            descriptionStyle={{ maxWidth: 600 }}
+                        />
+
                         <img className="mobileavatar" alt="Avatar" src={Avatar} />
                         <p>
                             I'm a Swedish / Cypriot softare maker with a keen passion for design
@@ -62,11 +67,12 @@ export default function About() {
             </section>
 
             <section className="container flex-column fadeInDown">
-                <h3 className="flex items-center">Mentions</h3>
-                <p className="mt6" style={{ maxWidth: 600 }}>
-                    I was lucky enough for my work to be seen &amp; recognized by some awesome
-                    people around the web.
-                </p>
+                <SectionHeader
+                    title="Mentions"
+                    description="I was lucky enough for my work to be seen &amp; recognized by some awesome
+                    people around the web."
+                    descriptionStyle={{ maxWidth: 600 }}
+                />
 
                 <Mention
                     platform="Product Hunt"
@@ -84,7 +90,7 @@ export default function About() {
                     platform="InVision Blog"
                     year="2017"
                     product="The Colorbook"
-                    url="https://www.invisionapp.com/inside-design/color-palettes/"
+                    url="https://www.invisionapp.com/inside-design/color-palettes"
                 />
             </section>
         </main>

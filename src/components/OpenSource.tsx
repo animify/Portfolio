@@ -1,23 +1,18 @@
 import React from 'react';
 import Splitter from './Splitter';
-import { Icon } from 'figicons';
 import OpenSourceProject from './OpenSourceProject';
+import SectionHeader from './SectionHeader';
 
 export default function OpenSource() {
     return (
         <section className="opensource container flex-column fadeInDown">
-            <div className="flex flex-column">
-                <h3 className="flex items-center">
-                    Open source{' '}
-                    <div className="flex ml2 heart">
-                        <Icon name="heart" strokeWidth={0} fill="red" width={48} height={48} />
-                    </div>
-                </h3>
-                <p className="mt6" style={{ maxWidth: 720 }}>
-                    We all love open source. Giving back to the community in any way is rewarding.
-                    Here are a couple of useful tools I've built and released.
-                </p>
-            </div>
+            <SectionHeader
+                title="Open source"
+                titleIcon="heart"
+                description="We all love open source. Giving back to the community in any way is rewarding.
+                    Here are a couple of useful tools I've built and released."
+                descriptionStyle={{ maxWidth: 720 }}
+            />
 
             <div className="flex flex-column">
                 <Splitter title="React Hooks" className="mt12" />
