@@ -3,9 +3,9 @@ import classNames from 'classnames';
 import SwappingText from './SwappingText';
 import SocialIcons from './SocialIcons';
 import { CSSTransition } from 'react-transition-group';
-import { Link, LinkProps } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Icon } from 'figicons';
-import History from '../History';
+import NavLink from './NavLink';
 
 export default function Nav() {
     const dims = {
@@ -82,11 +82,12 @@ export default function Nav() {
             setOffsetTop(getOffsetTop());
         } else {
             document.body.classList.remove('nooverflow');
+            setOffsetTop(getOffsetTop());
         }
     }, [menuOpen]);
 
     useEffect(() => {
-        History.listen(() => isNavScolled(0));
+        listener();
 
         window.addEventListener('wheel', listener, { passive: true });
 
@@ -94,31 +95,6 @@ export default function Nav() {
             window.removeEventListener('wheel', listener);
         };
     }, []);
-
-    const NavLink = (props: LinkProps) => {
-        const { children, to, ...linkProps } = props;
-
-        if (!children) return null;
-
-        if ((to as string).startsWith('/')) {
-            return (
-                <Link to={to} {...linkProps}>
-                    {children}
-                </Link>
-            );
-        }
-
-        return (
-            <a
-                href={to as string}
-                target={(to as string).startsWith('mailto') ? undefined : 'blank'}
-                rel="noopener noreferrer"
-                {...linkProps}
-            >
-                {children}
-            </a>
-        );
-    };
 
     return (
         <nav ref={navRef} className={navClasses} key="nav">
@@ -148,6 +124,7 @@ export default function Nav() {
                     </div>
                 )}
             </CSSTransition>
+
             <div className="container flex justify-between">
                 <Link className="logo" to="/">
                     <SwappingText text={["Hi, I'm Stefan.", 'Stefan Mansson']} />

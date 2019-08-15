@@ -211,6 +211,7 @@ nav .menu {
 
     a {
         transform: translateY(-8px) translateZ(0);
+        transition-delay: 600ms;
     }
 
     &.exited {
