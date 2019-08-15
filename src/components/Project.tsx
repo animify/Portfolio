@@ -26,7 +26,7 @@ export default function Project({ mode, title, description, project, image, url 
                         rel="noopener noreferrer"
                         className={`flex items-center button ${mode} mt8`}
                     >
-                        <Icon name="launch" /> <p className="ml3 fw-book">Go to website</p>
+                        <Icon name="launch" /> <span className="ml3">View project</span>
                     </a>
                 )}
             </div>
