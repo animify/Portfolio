@@ -32,8 +32,8 @@
         align-items: flex-start;
         flex-direction: column-reverse;
 
-        div + div {
-            margin-bottom: 12px;
+        > span + span {
+            margin-bottom: 16px;
         }
     }
 }

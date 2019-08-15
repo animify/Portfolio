@@ -8,9 +8,16 @@
 
         .mobileavatar {
             display: none;
+            margin-top: 24px;
+            width: 100%;
+            height: auto;
         }
 
         p + p {
+            margin-top: 24px;
+        }
+
+        .mobileavatar + p {
             margin-top: 24px;
         }
     }
@@ -38,9 +45,6 @@
 
             .mobileavatar {
                 display: block;
-                width: 100%;
-                height: auto;
-                margin: 24px 0;
             }
 
             + img {
