@@ -4,14 +4,14 @@ import About1 from '../images/about-1.png';
 import About2 from '../images/about-2.png';
 import About3 from '../images/about-3.png';
 import About4 from '../images/about-4.png';
-import Mentions from '../components/Mentions';
+import Mention from '../components/Mention';
 
 export default function About() {
     return (
         <main>
             <section className="about">
                 <div className="container justify-between">
-                    <div className="short">
+                    <div className="short fadeInDown">
                         <h3 className="mb6">About me.</h3>
                         <p>Hello there. My name is Stefan Mansson.</p>
                         <img className="mobileavatar" alt="Avatar" src={Avatar} />
@@ -38,17 +38,20 @@ export default function About() {
                         </p>
                     </div>
 
-                    <img src={Avatar} alt="Avatar" />
+                    <img className="fadeInUp" src={Avatar} alt="Avatar" />
                 </div>
 
-                <div className="container flex-column">
-                    <p className="mt6">
+                <div className="container flex-column mt6 fadeInDown">
+                    <p>
                         Apart from tinkering with my own projects daily and keeping up with the
                         latest design &amp; software trends, I usually spend my free time driving to
                         explore new places and travelling to countries I've never been to before.
                         And of course as I'm staying on such a sunny island, you'll likely find me
                         kayaking and at the sea.
                     </p>
+                </div>
+
+                <div className="container flex-column mt12 fadeInUp">
                     <div className="images">
                         <img src={About1} alt="About 1" />
                         <img src={About2} alt="About 2" />
@@ -58,13 +61,31 @@ export default function About() {
                 </div>
             </section>
 
-            <section className="container flex-column">
+            <section className="container flex-column fadeInDown">
                 <h3 className="flex items-center">Mentions</h3>
                 <p className="mt6" style={{ maxWidth: 600 }}>
-                    I was lucky enough for my work to be recognized by some awesome people around
-                    the web.
+                    I was lucky enough for my work to be seen &amp; recognized by some awesome
+                    people around the web.
                 </p>
-                <Mentions />
+
+                <Mention
+                    platform="Product Hunt"
+                    year="2018"
+                    product="Overflow"
+                    url="https://www.producthunt.com/posts/overflow"
+                />
+                <Mention
+                    platform="Product Hunt"
+                    year="2017"
+                    product="The Colorbook"
+                    url="https://www.producthunt.com/posts/the-colorbook"
+                />
+                <Mention
+                    platform="InVision Blog"
+                    year="2017"
+                    product="The Colorbook"
+                    url="https://www.invisionapp.com/inside-design/color-palettes/"
+                />
             </section>
         </main>
     );

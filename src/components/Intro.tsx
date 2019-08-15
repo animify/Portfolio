@@ -7,7 +7,7 @@ interface IProps {
 
 export default function Intro({ title, description }: IProps) {
     return (
-        <section className="container">
+        <section className="container fadeInDown">
             <div className="intro w100">
                 <h3>{title}</h3>
                 {description && <p className="mt6">{description}</p>}

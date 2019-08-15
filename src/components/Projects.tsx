@@ -10,7 +10,7 @@ import ImageMinicons from '../images/project-minicons.png';
 
 export default function Projects() {
     return (
-        <section className="container flex-column">
+        <section className="container flex-column fadeInUp">
             <Splitter title="Professional work" className="mb6" />
             <Project
                 title="Overflow"

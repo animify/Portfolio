@@ -7,7 +7,7 @@ export default function Footer() {
 
     return (
         <footer className={footerClasses}>
-            <div className="talk">
+            <div className="talk fadeInUp">
                 <div className="flex flex-column">
                     <h5>
                         Got a project? <span>Let's chat</span>
@@ -20,7 +20,7 @@ export default function Footer() {
                     Send an email
                 </a>
             </div>
-            <div className="links flex justify-between">
+            <div className="links flex justify-between fadeInDown">
                 <div className="status">The End.</div>
                 <SocialIcons />
             </div>

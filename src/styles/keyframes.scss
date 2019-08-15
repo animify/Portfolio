@@ -1,0 +1,27 @@
+@keyframes fadeInDown {
+    0% {
+        transform: translateY(-24px) scale(1);
+    }
+
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(24px) scale(1);
+    }
+
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}
+
+.fadeInDown {
+    animation: fadeInDown 650ms ease forwards;
+}
+
+.fadeInUp {
+    animation: fadeInUp 650ms ease forwards;
+}

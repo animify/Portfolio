@@ -5,7 +5,7 @@ import OpenSourceProject from './OpenSourceProject';
 
 export default function OpenSource() {
     return (
-        <section className="opensource container flex-column">
+        <section className="opensource container flex-column fadeInDown">
             <div className="flex flex-column">
                 <h3 className="flex items-center">
                     Open source{' '}
