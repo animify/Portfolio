@@ -3,7 +3,7 @@ import { Icon } from 'figicons';
 
 export default function SocialIcons() {
     return (
-        <div className="social">
+        <div className="socialicons">
             <a href="https://dribbble.com/animify" target="_blank" rel="noreferrer noopener">
                 <Icon name="dribbble" fill="currentColor" strokeWidth={0} />
             </a>

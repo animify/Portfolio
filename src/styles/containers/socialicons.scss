@@ -1,10 +1,10 @@
-.social {
-    a {
-        .icon {
+.socialicons {
+    > a {
+        > .icon {
             @extend .gray60\@text;
         }
 
-        &:hover .icon {
+        &:hover > .icon {
             @extend .black100\@text;
         }
 

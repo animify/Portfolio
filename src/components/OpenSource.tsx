@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjectSection from './ProjectSection';
+import Splitter from './Splitter';
 import { Icon } from 'figicons';
 import OpenSourceProject from './OpenSourceProject';
 
@@ -13,14 +13,14 @@ export default function OpenSource() {
                         <Icon name="heart" strokeWidth={0} fill="red" width={48} height={48} />
                     </div>
                 </h3>
-                <p className="mt6">
+                <p className="mt6" style={{ maxWidth: 720 }}>
                     We all love open source. Giving back to the community in any way is rewarding.
                     Here are a couple of useful tools I've built and released.
                 </p>
             </div>
 
             <div className="flex flex-column">
-                <ProjectSection title="React Hooks" />
+                <Splitter title="React Hooks" className="mt12" />
                 <OpenSourceProject
                     title="useRestate"
                     description="A React Hook that subscribes your state selector to the store and memoizes your action dispatchers."
@@ -31,7 +31,7 @@ export default function OpenSource() {
                     description="A React Hook that provides an easy API to copy and manage textual data, compatible with all browsers."
                     url="https://github.com/animify/useCopy"
                 />
-                <ProjectSection title="Others" />
+                <Splitter title="Others" className="mt12" />
                 <OpenSourceProject
                     title="Figicons CLI"
                     description="The Figicons CLI provides the right tooling to easily fetch, parse &amp; optimize your Figma-designed icons in minutes."

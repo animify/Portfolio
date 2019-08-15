@@ -8,11 +8,9 @@ import History from './History';
 export default function App() {
     return (
         <Router history={History}>
-            <div className="page">
-                <Nav />
-                <Routes />
-                <Footer />
-            </div>
+            <Nav />
+            <Routes />
+            <Footer />
         </Router>
     );
 }

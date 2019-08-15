@@ -37,7 +37,7 @@ nav {
         top: -100%;
 
         > .container {
-            .split {
+            .splitter {
                 margin-bottom: 48px;
                 position: relative;
                 color: rgba(255, 255, 255, 0.6);
@@ -53,7 +53,7 @@ nav {
             }
         }
 
-        .social {
+        .socialicons {
             margin-top: 64px;
 
             a:hover .icon {
@@ -191,20 +191,20 @@ nav .menu {
         }
     }
 
-    .social,
-    .split,
+    .socialicons,
+    .splitter,
     a {
         opacity: 0;
         transition: all 400ms ease;
         transition-property: transform, opacity, left;
     }
 
-    .social {
+    .socialicons {
         transform: translateY(24px) translateZ(0);
         transition-delay: 600ms;
     }
 
-    .split {
+    .splitter {
         transform: translateY(24px) translateZ(0);
         transition-delay: 400ms;
     }
@@ -223,12 +223,12 @@ nav .menu {
         top: 0;
         border-radius: 0px;
 
-        .social {
+        .socialicons {
             opacity: 1;
             transform: translateY(0) translateZ(0);
         }
 
-        .split {
+        .splitter {
             opacity: 1;
             transform: translateY(0) translateZ(0);
         }
@@ -240,8 +240,8 @@ nav .menu {
     }
 
     &.exiting {
-        .social,
-        .split,
+        .socialicons,
+        .splitter,
         a {
             transition-duration: 140ms !important;
             transition-delay: 0ms !important;

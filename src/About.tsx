@@ -6,7 +6,7 @@ import About3 from './images/about-3.png';
 import About4 from './images/about-4.png';
 import Mentions from './components/Mentions';
 
-const About: React.FC = () => {
+export default function About() {
     return (
         <>
             <div className="about">
@@ -63,4 +63,3 @@ const About: React.FC = () => {
     );
 };
 
-export default About;

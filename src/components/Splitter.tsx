@@ -6,8 +6,8 @@ interface IProps {
     className?: string;
 }
 
-export default function ProjectSection({ title, className }: IProps) {
-    const classes = classNames('split', className);
+export default function Splitter({ title, className }: IProps) {
+    const classes = classNames('splitter', className);
 
     return (
         <div className={classes}>

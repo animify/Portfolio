@@ -1,6 +1,6 @@
 import React from 'react';
 import Project from './Project';
-import ProjectSection from './ProjectSection';
+import Splitter from './Splitter';
 import ImageOverflow from '../images/project-overflow.png';
 import ImageColorbook from '../images/project-colorbook.png';
 import ImageBlossom from '../images/project-blossom.png';
@@ -11,7 +11,7 @@ import ImageMinicons from '../images/project-minicons.png';
 export default function Projects() {
     return (
         <section className="container flex-column">
-            <ProjectSection title="Professional work" className="mb6" />
+            <Splitter title="Professional work" className="mb6" />
             <Project
                 title="Overflow"
                 description="The worlds first user flow diagramming tool tailored for designers, integrating with Figma, Sketch &amp; Adobe XD."
@@ -29,7 +29,7 @@ export default function Projects() {
                 url="https://carpo.animify.now.sh"
             />
 
-            <ProjectSection title="Self-made work" className="mv6 pt12" />
+            <Splitter title="Self-made work" className="mv6 pt12" />
             <Project
                 title="Figicons"
                 description="Beautiful, customizable React SVG icons, based on a 24px grid. Completely open source and designed in Figma."

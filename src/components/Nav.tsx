@@ -5,6 +5,7 @@ import SocialIcons from './SocialIcons';
 import { CSSTransition } from 'react-transition-group';
 import { Link, LinkProps } from 'react-router-dom';
 import { Icon } from 'figicons';
+import History from '../History';
 
 export default function Nav() {
     const dims = {
@@ -91,7 +92,7 @@ export default function Nav() {
         return () => {
             window.removeEventListener('wheel', listener);
         };
-    }, []);
+    }, [History.location.pathname]);
 
     const NavLink = (props: LinkProps) => {
         if ((props.to as string).startsWith('/')) {
@@ -114,7 +115,7 @@ export default function Nav() {
                 {classes => (
                     <div className={classNames('menu', classes)} key="menu">
                         <div className="container flex flex-column">
-                            <p className="split">Contents</p>
+                            <p className="splitter">Contents</p>
 
                             {options.map((option, index) => (
                                 <NavLink

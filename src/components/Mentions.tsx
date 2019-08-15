@@ -3,7 +3,7 @@ import Mention from './Mention';
 
 export default function Mentions() {
     return (
-        <div className="mt8">
+        <>
             <Mention
                 platform="Product Hunt"
                 year="2018"
@@ -22,6 +22,6 @@ export default function Mentions() {
                 product="The Colorbook"
                 url="https://www.invisionapp.com/inside-design/color-palettes/"
             />
-        </div>
+        </>
     );
 }
