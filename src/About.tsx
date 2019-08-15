@@ -9,8 +9,8 @@ import Mentions from './components/Mentions';
 export default function About() {
     return (
         <>
-            <div className="about">
-                <section className="container justify-between">
+            <section className="about">
+                <div className="container justify-between">
                     <div className="short">
                         <h3 className="mb6">About me.</h3>
                         <p>Hello there. My name is Stefan Mansson.</p>
@@ -32,9 +32,9 @@ export default function About() {
                     </div>
 
                     <img src={Avatar} alt="Avatar" />
-                </section>
+                </div>
 
-                <section className="container flex-column">
+                <div className="container flex-column">
                     <p className="mt6">
                         Apart from tinkering with my own projects daily and keeping up with the
                         latest design &amp; software trends, I usually spend my free time driving to
@@ -48,8 +48,8 @@ export default function About() {
                         <img src={About3} alt="About 3" />
                         <img src={About4} alt="About 4" />
                     </div>
-                </section>
-            </div>
+                </div>
+            </section>
 
             <section className="container flex-column">
                 <h3 className="flex items-center">Mentions</h3>

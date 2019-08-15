@@ -7,19 +7,6 @@
     transform: scale(1);
     transition: 140ms ease transform;
 
-    &::after {
-        @extend .r1;
-        content: ' ';
-        display: flex;
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        box-shadow: 0 0 0 1px inset rgba(0, 0, 0, 0.08);
-        pointer-events: none;
-    }
-
     > .info {
         max-width: 380px;
         pointer-events: auto;
@@ -46,7 +33,7 @@
         }
 
         p {
-            color: rgba(0, 0, 0, 0.8);
+            color: rgba(0, 0, 0, 0.88);
         }
     }
 
@@ -56,16 +43,29 @@
         }
 
         p {
-            color: rgba(255, 255, 255, 0.8);
+            color: rgba(255, 255, 255, 0.88);
         }
     }
 
-    + .project {
-        margin-top: 32px;
+    &::after {
+        @extend .r1;
+        content: ' ';
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        box-shadow: 0 0 0 1px inset rgba(0, 0, 0, 0.08);
+        pointer-events: none;
     }
 
     &:hover {
         transform: scale(1.02);
+    }
+
+    + .project {
+        margin-top: 32px;
     }
 
     @include below('md') {
