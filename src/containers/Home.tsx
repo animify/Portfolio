@@ -1,7 +1,7 @@
 import React from 'react';
-import Intro from './components/Intro';
-import Projects from './components/Projects';
-import OpenSource from './components/OpenSource';
+import Intro from '../components/Intro';
+import Projects from '../components/Projects';
+import OpenSource from '../components/OpenSource';
 
 export default function Home() {
     return (

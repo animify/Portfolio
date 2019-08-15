@@ -1,10 +1,10 @@
 import React from 'react';
-import Avatar from './images/avatar.jpg';
-import About1 from './images/about-1.png';
-import About2 from './images/about-2.png';
-import About3 from './images/about-3.png';
-import About4 from './images/about-4.png';
-import Mentions from './components/Mentions';
+import Avatar from '../images/avatar.jpg';
+import About1 from '../images/about-1.png';
+import About2 from '../images/about-2.png';
+import About3 from '../images/about-3.png';
+import About4 from '../images/about-4.png';
+import Mentions from '../components/Mentions';
 
 export default function About() {
     return (
