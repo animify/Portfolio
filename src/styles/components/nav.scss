@@ -64,6 +64,7 @@ nav {
         a {
             @extend h4;
             font-family: map-get($fontFamilies, 'heading');
+            white-space: nowrap;
 
             + a {
                 margin-top: 40px;
@@ -167,13 +168,16 @@ nav .menu {
         .arrow {
             display: flex;
             position: relative;
-            bottom: 4px;
             padding-left: 24px;
-            bottom: -4px;
+            bottom: -6px;
             transform: scale(0.6);
             transition: all 140ms ease-in-out;
             transition-property: transform, padding-left, opacity, bottom;
             opacity: 0.4;
+
+            @include below('md') {
+                bottom: -2px;
+            }
         }
 
         &:hover {
@@ -187,6 +191,15 @@ nav .menu {
                 bottom: -8px;
                 padding-left: 48px;
                 opacity: 1;
+            }
+
+            @include below('md') {
+                .arrow {
+                    transform: scale(1);
+                    bottom: -3px;
+                    padding-left: 48px;
+                    opacity: 1;
+                }
             }
         }
     }
