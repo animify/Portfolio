@@ -33,7 +33,7 @@ Figicons.setIcons({
 
 export default function App() {
     useEffect(() => {
-        ReactGA.initialize('UA-123791717-1');
+        ReactGA.initialize('UA-146368352-1');
     }, []);
 
     History.listen(location => {
