@@ -32,6 +32,10 @@ Figicons.setIcons({
 });
 
 export default function App() {
+    useEffect(() => {
+        ReactGA.pageview(History.location.pathname);
+    }, []);
+
     History.listen(location => {
         window.scroll({ top: 0 });
         ReactGA.pageview(location.pathname);
