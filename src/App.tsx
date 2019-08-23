@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import ReactGA from 'react-ga';
 import Routes from './Routes';
 import Nav from './components/Nav';
 import { Router } from 'react-router';
@@ -31,8 +32,13 @@ Figicons.setIcons({
 });
 
 export default function App() {
-    History.listen(() => {
+    useEffect(() => {
+        ReactGA.initialize('UA-123791717-1');
+    }, []);
+
+    History.listen(location => {
         window.scroll({ top: 0 });
+        ReactGA.pageview(location.pathname);
     });
 
     return (

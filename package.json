@@ -15,6 +15,7 @@
     "react": "^16.8.6",
     "react-addons-css-transition-group": "^15.6.2",
     "react-dom": "^16.8.6",
+    "react-ga": "^2.6.0",
     "react-router": "^5.0.1",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
@@ -45,6 +46,7 @@
   "devDependencies": {
     "@types/classnames": "^2.2.9",
     "@types/react-addons-css-transition-group": "^15.0.5",
+    "@types/react-ga": "^2.3.0",
     "@types/react-router-dom": "^4.3.4",
     "@types/react-transition-group": "^2.9.2",
     "prettier-stylelint": "^0.4.2",
