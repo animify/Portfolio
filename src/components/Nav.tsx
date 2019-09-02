@@ -27,7 +27,7 @@ export default function Nav() {
     const options = [
         { title: 'Work & Projects', path: '/' },
         { title: 'About me', path: '/about' },
-        { title: 'Résumé', path: 'https://www.linkedin.com/in/smansson' },
+        { title: 'Résumé', path: '/images/resume.pdf' },
         { title: "Let's chat", path: 'mailto:st.mansson@icloud.com' },
     ];
 

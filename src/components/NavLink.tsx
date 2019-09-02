@@ -6,7 +6,7 @@ export default function NavLink(props: LinkProps) {
 
     if (!children) return null;
 
-    if ((to as string).startsWith('/')) {
+    if ((to as string).startsWith('/') && !(to as string).startsWith('/images')) {
         return (
             <Link to={to} {...linkProps}>
                 {children}
