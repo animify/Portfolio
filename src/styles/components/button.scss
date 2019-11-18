@@ -37,9 +37,11 @@
         user-select: none;
         background-color: transparent;
         border: 2px solid rgba(0, 0, 0, 0.12);
+        color: rgba(0, 0, 0, 0.72);
 
         &.light {
             border-color: rgba(255, 255, 255, 0.16);
+            color: rgba(255, 255, 255, 0.72);
         }
     }
 }

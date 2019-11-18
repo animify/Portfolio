@@ -34,7 +34,7 @@ export default function Project({
                         rel="noopener noreferrer"
                         className={`flex items-center button ${mode} mt8 disabled`}
                     >
-                        <span className="ml3">Private project</span>
+                        <span>Private project</span>
                     </a>
                 )}
                 {url && !isPrivate && (
