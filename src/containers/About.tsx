@@ -21,25 +21,28 @@ export default function About() {
 
                         <img className="mobileavatar" alt="Avatar" src={Avatar} />
                         <p>
-                            I'm a Swedish / Cypriot softare maker with a keen passion for design
-                            &amp; development, living in Cyprus.
+                            I'm a Swedish / Cypriot software maker with a keen passion for design
+                            &amp; development, living in Amsterdam.
                         </p>
                         <p>
-                            Over the past few years, I've graduated with a BSc in Computer Science
-                            from the University of Hull and interned at{' '}
+                            Over the past few years, I graduated with a BSc in Computer Science from
+                            the University of Hull, interned at{' '}
                             <a href="https://ebuyer.com" target="_blank" rel="noopener noreferrer">
                                 Ebuyer.com
+                            </a>{' '}
+                            and engineered the worlds first user flow tool tailored for designers at
+                            <a href="https://overflow.io" target="_blank" rel="noopener noreferrer">
+                                Overflow
                             </a>
                             .
                         </p>
 
                         <p>
                             I currently work at{' '}
-                            <a href="https://overflow.io" target="_blank" rel="noopener noreferrer">
-                                Overflow
+                            <a href="https://framer.com" target="_blank" rel="noopener noreferrer">
+                                Framer
                             </a>
-                            , building and developing the worlds first user flow tool tailored for
-                            designers.
+                            , building and developing the next generation of design tools.
                         </p>
                     </div>
 
