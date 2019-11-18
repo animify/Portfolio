@@ -18,7 +18,7 @@
 
         &:hover {
             color: #fff;
-            background-color: rgba(255, 255, 255, 0.2);
+            background-color: rgba(155, 146, 146, 0.2);
         }
     }
 
@@ -29,6 +29,17 @@
         &:hover {
             color: #fff;
             background-color: rgba(255, 255, 255, 0.2);
+        }
+    }
+
+    &.disabled {
+        pointer-events: none;
+        user-select: none;
+        background-color: transparent;
+        border: 2px solid rgba(0, 0, 0, 0.12);
+
+        &.light {
+            border-color: rgba(255, 255, 255, 0.16);
         }
     }
 }

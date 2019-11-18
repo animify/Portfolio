@@ -27,6 +27,7 @@ export default function Projects() {
                 project="carpo"
                 image={ImageCarpo}
                 url="https://carpo.animify.now.sh"
+                isPrivate={true}
             />
 
             <Splitter title="Self-made work" className="mv6 pt12" />

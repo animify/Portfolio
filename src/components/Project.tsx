@@ -9,9 +9,18 @@ interface IProps {
     description: string;
     image?: string;
     url?: string;
+    isPrivate?: boolean;
 }
 
-export default function Project({ mode, title, description, project, image, url }: IProps) {
+export default function Project({
+    mode,
+    title,
+    description,
+    project,
+    image,
+    url,
+    isPrivate,
+}: IProps) {
     const classes = classNames('project r1', mode, { [`${project}100@bg`]: project });
 
     return (
@@ -19,7 +28,16 @@ export default function Project({ mode, title, description, project, image, url 
             <div className="info">
                 <h5>{title}</h5>
                 <p className="mt6">{description}</p>
-                {url && (
+                {isPrivate && (
+                    <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`flex items-center button ${mode} mt8 disabled`}
+                    >
+                        <span className="ml3">Private project</span>
+                    </a>
+                )}
+                {url && !isPrivate && (
                     <a
                         href={url}
                         target="_blank"

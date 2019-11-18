@@ -30,7 +30,7 @@ export default function About() {
                             <a href="https://ebuyer.com" target="_blank" rel="noopener noreferrer">
                                 Ebuyer.com
                             </a>{' '}
-                            and engineered the worlds first user flow tool tailored for designers at
+                            and engineered the worlds first user flow tool tailored for designers at{' '}
                             <a href="https://overflow.io" target="_blank" rel="noopener noreferrer">
                                 Overflow
                             </a>
