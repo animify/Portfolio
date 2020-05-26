@@ -4,12 +4,13 @@ import { Icon } from 'figicons';
 
 interface IProps {
     mode: 'light' | 'dark';
-    project: 'blossom' | 'figicons' | 'colorbook' | 'overflow' | 'minicons' | 'carpo';
+    project: 'framer' | 'campfire' | 'blossom' | 'figicons' | 'colorbook' | 'overflow' | 'minicons' | 'carpo';
     title: string;
     description: string;
     image?: string;
     url?: string;
     isPrivate?: boolean;
+    product?: boolean;
 }
 
 export default function Project({
@@ -20,21 +21,24 @@ export default function Project({
     image,
     url,
     isPrivate,
+    product = false
 }: IProps) {
-    const classes = classNames('project r1', mode, { [`${project}100@bg`]: project });
+    const classes = classNames('project r2', mode, { [`${project}100@bg`]: project });
 
     return (
         <div className={classes}>
             <div className="info">
-                <h5>{title}</h5>
-                <p className="mt6">{description}</p>
+                <h4>{title}</h4>
+                <p className="mt5">{description}</p>
                 {isPrivate && (
                     <a
+                        href="#"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={`flex items-center button ${mode} mt8 disabled`}
+                        className={classNames('button mt8 disabled', mode)}
+
                     >
-                        <span>Private project</span>
+                        <span>Private {product ? 'Product' : 'Project'}</span>
                     </a>
                 )}
                 {url && !isPrivate && (
@@ -42,9 +46,9 @@ export default function Project({
                         href={url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={`flex items-center button ${mode} mt8`}
+                        className={classNames('button mt8', mode, `${project}100@text`)}
                     >
-                        <Icon name="launch" /> <span className="ml3">View project</span>
+                         <span className="mr3">Explore {product ? 'Product' : 'Project'}</span> <Icon name="arrow-right" strokeWidth={3}/>
                     </a>
                 )}
             </div>

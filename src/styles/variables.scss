@@ -1,8 +1,10 @@
 $colors: (
     primary: #0085ff,
     gray80: #555,
+    gray70: #757575,
     gray60: #959595,
     gray20: #d8d8d8,
+    gray10: #efefef,
     white100: #fff,
     black100: #000,
     blossom100: #1f3046,
@@ -10,32 +12,34 @@ $colors: (
     colorbook100: #f5ee14,
     carpo100: #000,
     overflow100: #eaf4f4,
-    minicons100: #ff0060
+    minicons100: #ff0060,
+    campfire100: #ff6151,
+    framer100: #0055ff
 );
 
 $fontFamilies: (
-    body: 'Inter',
-    heading: 'DM Serif Text'
+    body: 'Calibre',
+    heading: 'Calibre'
 );
 
 $fontSize: (
     h1: 96px,
     h2: 80px,
-    h3: 48px,
-    h4: 36px,
+    h3: 64px,
+    h4: 44px,
     h5: 32px,
-    h6: 24px,
-    p: 18px,
+    h6: 26px,
+    p: 22px,
     small: 10px
 );
 
 $lineHeight: (
     h1: 112px,
     h2: 92px,
-    h3: 56px,
-    h4: 48px,
+    h3: 68px,
+    h4: 52px,
     h5: 32px,
-    h6: 24px,
-    p: 28px,
+    h6: 36px,
+    p: 32px,
     small: 16px
 );

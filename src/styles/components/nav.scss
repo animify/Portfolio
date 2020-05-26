@@ -9,16 +9,12 @@ nav {
     transition: transform 320ms ease;
     width: 100%;
 
-    &.visible {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-    }
-
     &.away {
         transform: translateY(-90px);
     }
 
     a.logo {
-        font-family: map-get($fontFamilies, 'heading');
+        font-weight: 500;;
     }
 
     .menu {
@@ -46,8 +42,8 @@ nav {
                     content: ' ';
                     margin-right: 12px;
                     display: flex;
-                    width: 20px;
-                    height: 1px;
+                    width: 24px;
+                    height: 2px;
                     background-color: rgba(255, 255, 255, 0.3);
                 }
             }
@@ -62,8 +58,7 @@ nav {
         }
 
         a {
-            @extend h4;
-            font-family: map-get($fontFamilies, 'heading');
+            @extend h3;
             white-space: nowrap;
 
             + a {
@@ -104,11 +99,11 @@ nav {
             content: ' ';
             display: flex;
             width: 100%;
-            height: 2px;
+            height: 3px;
             position: absolute;
             right: 0;
             top: 7px;
-            border-radius: 2px;
+            border-radius: 10px;
             transform-origin: center center;
             transition: all 450ms ease;
         }
@@ -168,15 +163,15 @@ nav .menu {
         .arrow {
             display: flex;
             position: relative;
-            padding-left: 24px;
-            bottom: -6px;
-            transform: scale(0.6);
+            padding-left: 16px;
+            bottom: -12px;
+            transform: scale(0.8);
             transition: all 140ms ease-in-out;
             transition-property: transform, padding-left, opacity, bottom;
-            opacity: 0.4;
+            opacity: 0.32;
 
             @include below('md') {
-                bottom: -2px;
+                bottom: 1px;
             }
         }
 
@@ -188,16 +183,16 @@ nav .menu {
 
             .arrow {
                 transform: scale(1);
-                bottom: -8px;
+                bottom: -14px;
                 padding-left: 48px;
                 opacity: 1;
             }
 
             @include below('md') {
                 .arrow {
-                    transform: scale(1);
-                    bottom: -3px;
-                    padding-left: 48px;
+                    transform: scale(0.8);
+                    bottom: 1px;
+                    padding-left: 32px;
                     opacity: 1;
                 }
             }

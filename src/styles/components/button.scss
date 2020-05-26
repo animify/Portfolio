@@ -1,25 +1,48 @@
 .button {
+    display: flex;
+    align-items: center;
     position: relative;
+    flex-shrink: 0;
     width: fit-content;
-    color: #000;
-    padding: 12px 16px;
-    border-radius: 3px;
-    transition: background-color 80ms ease;
-    background-color: rgba(0, 0, 0, 0.12);
+    padding: 16px 24px 17px 24px;
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    font-weight: 500;
+    border-radius: 6px;
+    transform: translateY(0);
+    appearance: none;
+    -webkit-appearance: none;
+
+    &.link {
+        padding: 0;
+        color: #181818;
+        transition: color 100ms ease;
+
+        &:hover {
+            @extend .primary\@text;
+        }
+    }
+
+    > svg {
+        margin-left: 0;
+        margin-right: -4px;
+        transition: all 100ms ease;
+        transition-property: margin-left, transform;
+    }
 
     &:hover {
-        color: #000;
-        background-color: rgba(0, 0, 0, 0.16);
+        > svg {
+            margin-left: 4px;
+            transform: rotate(-45deg);
+        }
     }
 
     &.light {
-        color: #fff;
-        background-color: rgba(255, 255, 255, 0.16);
+        background-color: #fff;
+    }
 
-        &:hover {
-            color: #fff;
-            background-color: rgba(155, 146, 146, 0.2);
-        }
+    &.dark {
+        background-color: #181818;
     }
 
     &.pink {
@@ -36,12 +59,11 @@
         pointer-events: none;
         user-select: none;
         background-color: transparent;
-        border: 2px solid rgba(0, 0, 0, 0.12);
-        color: rgba(0, 0, 0, 0.72);
+        background-color: rgba(0, 0, 0, 0.12);
 
         &.light {
-            border-color: rgba(255, 255, 255, 0.16);
-            color: rgba(255, 255, 255, 0.72);
+            background-color: rgba(255, 255, 255, 0.16);
+            color: rgba(255, 255, 255, 0.48);
         }
     }
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import SocialIcons from './SocialIcons';
+import { Icon } from 'figicons';
 
 export default function Footer() {
     const footerClasses = classNames('footer container flex-column');
@@ -16,9 +17,12 @@ export default function Footer() {
                     <p>Tell me everything.</p>
                 </div>
 
-                <a href="mailto:st.mansson@icloud.com" className="button light mt6">
-                    Send an email
-                </a>
+                <div className="group mt6">
+                    <a href="mailto:st.mansson@icloud.com" className="button dark">
+                        <span className="mr3">Email me</span>
+                        <Icon name="arrow-right" strokeWidth={3} />
+                    </a>
+                </div>
             </div>
             <div className="links flex justify-between fadeInDown">
                 <div className="status">The End.</div>

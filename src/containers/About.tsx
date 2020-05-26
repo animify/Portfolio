@@ -14,9 +14,7 @@ export default function About() {
                 <div className="container justify-between">
                     <div className="short fadeInDown">
                         <SectionHeader
-                            title="About me."
-                            description="Hello there. My name is Stefan Mansson."
-                            descriptionStyle={{ maxWidth: 600 }}
+                            title="Hey, I'm Stefan."
                         />
 
                         <img className="mobileavatar" alt="Avatar" src={Avatar} />
@@ -75,6 +73,13 @@ export default function About() {
                     description="I was lucky enough for my work to be seen &amp; recognized by some awesome
                     people around the web."
                     descriptionStyle={{ maxWidth: 600 }}
+                />
+
+                <Mention
+                    platform="Product Hunt"
+                    year="2020"
+                    product="Framer Web"
+                    url="https://www.producthunt.com/posts/framer-for-web"
                 />
 
                 <Mention

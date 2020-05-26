@@ -13,11 +13,11 @@ export default function Mention({ platform, product, url, year }: IProps) {
         <a className="mention" href={url} target="_blank" rel="noopener noreferrer">
             <span className="flex items-center">
                 <span className="label">{year}</span>
-                <strong>{platform}</strong>
+                <strong>{product}</strong>
             </span>
             <span className="flex items-center">
-                {product}
-                <Icon className="ml3" name="arrow-right" />
+                <strong>{platform}</strong>
+                <Icon className="ml3" name="arrow-right" strokeWidth={3} />
             </span>
         </a>
     );

@@ -7,14 +7,14 @@ export default function OpenSource() {
     return (
         <section className="opensource container flex-column fadeInDown">
             <SectionHeader
-                title="Open source"
+                title="Open Source"
                 titleIcon="heart"
                 description="We all love open source. Giving back to the community in any way is rewarding.
                     Here are a couple of useful tools I've built and released."
-                descriptionStyle={{ maxWidth: 720 }}
+                descriptionStyle={{ maxWidth: 820 }}
             />
 
-            <div className="flex flex-column">
+            <div className="flex flex-column mt6">
                 <Splitter title="React Hooks" className="mt12" />
                 <OpenSourceProject
                     title="useRestate"

@@ -8,18 +8,18 @@
 
     .label {
         @extend .black100\@bg;
-        padding: 4px 6px;
-        border-radius: 2px;
-        font-weight: 800;
+        padding: 4px 8px 5px;
+        border-radius: 4px;
+        font-weight: 500;
         color: #fff;
-        font-size: 12px;
+        font-size: 14px;
         margin-right: 12px;
         letter-spacing: 0.3px;
         transition: background-color 80ms ease;
     }
 
     + .mention {
-        border-top: 1px solid map-get($colors, 'gray20');
+        border-top: 1px solid map-get($colors, gray10);
     }
 
     &:hover {

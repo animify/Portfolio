@@ -1,42 +1,17 @@
 @font-face {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 300;
-    font-display: swap;
-    src: url('fonts/Inter-Light-BETA.woff2') format('woff2'),
-        url('fonts/Inter-Light-BETA.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Inter';
-    font-style: medium;
-    font-weight: 500;
-    font-display: swap;
-    src: url('fonts/Inter-Medium.woff2') format('woff2'),
-        url('fonts/Inter-Medium.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Inter';
-    font-style: bold;
-    font-weight: 600;
-    font-display: swap;
-    src: url('fonts/Inter-Bold.woff2') format('woff2'), url('fonts/Inter-Bold.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Inter';
-    font-style: black;
-    font-weight: 800;
-    font-display: swap;
-    src: url('fonts/Inter-Black.woff2') format('woff2'),
-        url('fonts/Inter-Black.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'DM Serif Text';
+    font-family: 'Calibre';
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url('fonts/DMSerifText-Regular.ttf');
+    src: url('fonts/calibre-web-regular.woff2') format('woff2'),
+        url('fonts/calibre-web-regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Calibre';
+    font-style: medium;
+    font-weight: 500;
+    font-display: swap;
+    src: url('fonts/calibre-web-semibold.woff2') format('woff2'),
+        url('fonts/calibre-web-semibold.woff') format('woff');
 }

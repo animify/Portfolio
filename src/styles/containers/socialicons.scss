@@ -1,11 +1,24 @@
 .socialicons {
     > a {
+        @extend .gray60\@text;
+
         > .icon {
-            @extend .gray60\@text;
+            transition: transform 80ms ease;
+            transform: scale(1);
         }
 
-        &:hover > .icon {
+        &:hover {
             @extend .black100\@text;
+
+            > .icon {
+                transform: scale(1.2);
+            }
+        }
+
+        &:active {
+            > .icon {
+                transform: scale(1);
+            }
         }
 
         + a {

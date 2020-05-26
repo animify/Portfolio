@@ -102,7 +102,7 @@ export default function Nav() {
                 {classes => (
                     <div className={classNames('menu', classes)} key="menu">
                         <div className="container flex flex-column">
-                            <p className="splitter">Contents</p>
+                            <div className="splitter"><span>Contents</span></div>
 
                             {options.map((option, index) => (
                                 <NavLink
@@ -114,7 +114,7 @@ export default function Nav() {
                                     <span>{option.title}</span>
 
                                     <div className="arrow">
-                                        <Icon name="arrow-right" width={32} height={32} />
+                                        <Icon name="arrow-right" width={48} height={48} />
                                     </div>
                                 </NavLink>
                             ))}

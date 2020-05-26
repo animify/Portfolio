@@ -11,19 +11,19 @@ export default function OpenSourceProject({ title, description, url }: IProps) {
     return (
         <div className="osproject grid">
             <div className="col12@xs col5@sm mb4">
-                <h6>{title}</h6>
+                <h5>{title}</h5>
             </div>
             <div className="col12@xs col7@sm">
-                <p>{description}</p>
+                <p className="mb6">{description}</p>
 
                 <a
                     href={url}
-                    className="flex items-center mt6"
+                    className="button link"
                     target="_blank"
                     rel="noreferrer noopener"
                 >
-                    <Icon name="github" fill="currentColor" strokeWidth={0} />
-                    <span className="ml3">View on GitHub</span>
+                    <span className="mr3">Explore on GitHub</span>
+                    <Icon name="arrow-right" strokeWidth={3} />
                 </a>
             </div>
         </div>

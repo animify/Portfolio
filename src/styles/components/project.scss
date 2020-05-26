@@ -5,7 +5,7 @@
     padding: 80px;
     overflow: hidden;
     transform: scale(1);
-    transition: 140ms ease transform;
+    transition: 180ms ease transform;
 
     > .info {
         max-width: 380px;
@@ -22,13 +22,14 @@
         background-size: cover;
         background-position: left -48px;
         background-repeat: no-repeat;
-        transition: 400ms ease height;
+        transition: 180ms ease height;
         user-select: none;
         pointer-events: none;
+        transform-origin: bottom right;
     }
 
     &.dark > .info {
-        h5 {
+        h4 {
             @extend .black100\@text;
         }
 
@@ -38,7 +39,7 @@
     }
 
     &.light > .info {
-        h5 {
+        h4 {
             @extend .white100\@text;
         }
 
@@ -47,21 +48,14 @@
         }
     }
 
-    &::after {
-        @extend .r1;
-        content: ' ';
-        display: flex;
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        box-shadow: 0 0 0 1px inset rgba(0, 0, 0, 0.08);
-        pointer-events: none;
-    }
+
 
     &:hover {
         transform: scale(1.02);
+
+        > .image {
+            height: 128%;
+        }
     }
 
     + .project {
@@ -69,6 +63,7 @@
     }
 
     @include below('md') {
+        flex-direction: column;
         margin-left: -32px;
         padding: 48px 32px;
         width: calc(100% + 64px);
