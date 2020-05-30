@@ -18,7 +18,7 @@ export default function Footer() {
                 </div>
 
                 <div className="group mt6">
-                    <a href="mailto:st.mansson@icloud.com" className="button dark">
+                    <a href="mailto:st.mansson@icloud.com" className="button light black100@text">
                         <span className="mr3">Email me</span>
                         <Icon name="arrow-right" strokeWidth={3} />
                     </a>
