@@ -22,6 +22,6 @@ Build a production version into `./build`
 #### `yarn serve`
 Serve the latest production build on *localhost*
 
-### License
+## License
 
 ##### MIT Licensed
