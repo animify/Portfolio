@@ -1,8 +1,8 @@
-## About
+# About
 
 My personal portfolio on mansson.io
 
-### Development
+## Development
 
 Runs the development server with hot reloading.
 
@@ -12,7 +12,7 @@ Install the dependencies
 #### `yarn start`
 Start the local server
 
-### Production
+## Production
 
 Pushing to `master` will build and deploy the site to Netlify.
 
