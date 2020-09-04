@@ -11,7 +11,7 @@
     "classnames": "^2.2.6",
     "figicons": "^1.2.7",
     "framecss": "^1.1.7",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "react": "^16.8.6",
     "react-addons-css-transition-group": "^15.6.2",
     "react-dom": "^16.8.6",
