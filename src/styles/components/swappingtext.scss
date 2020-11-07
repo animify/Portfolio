@@ -1,31 +1,9 @@
 .swappingtext {
-    width: fit-content;
-    display: flex;
-    flex-shrink: 0;
+  width: fit-content;
+  display: flex;
+  flex-shrink: 0;
 
-    > .inner {
-        position: absolute;
-        transition: transform 600ms ease, opacity 600ms ease, color 80ms ease;
-        transform: translateY(0);
-        opacity: 1;
-
-        &.swapping {
-            &-prev-leave {
-                transform: translateY(-16px);
-                opacity: 0;
-            }
-
-            &-next-leave,
-            &-next-enter {
-                transform: translateY(16px);
-                opacity: 0;
-            }
-
-            &-next-enter-active {
-                transition-delay: 200ms;
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-    }
+  > .inner {
+    position: absolute;
+  }
 }
