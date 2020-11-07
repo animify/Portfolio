@@ -26,7 +26,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "NODE_VERSION=12.13.1 react-scripts build",
     "test": "react-scripts test"
   },
   "eslintConfig": {
