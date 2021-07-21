@@ -1,19 +1,29 @@
-import React from 'react';
-import Project from './Project';
-import Splitter from './Splitter';
-import ImageOverflow from '../images/project-overflow.png';
-import ImageColorbook from '../images/project-colorbook.png';
-import ImageBlossom from '../images/project-blossom.png';
-import ImageCarpo from '../images/project-carpo.svg';
-import ImageFigicons from '../images/project-figicons.png';
-import ImageMinicons from '../images/project-minicons.png';
-import ImageCampfire from '../images/project-campfire.png';
-import ImageFramer from '../images/project-framer.png';
+import React from "react";
+import Project from "./Project";
+import Splitter from "./Splitter";
+import ImageOverflow from "../images/project-overflow.png";
+import ImageColorbook from "../images/project-colorbook.png";
+import ImageBlossom from "../images/project-blossom.png";
+import ImageCarpo from "../images/project-carpo.svg";
+import ImageFigicons from "../images/project-figicons.png";
+import ImageMinicons from "../images/project-minicons.png";
+import ImageCampfire from "../images/project-campfire.png";
+import ImageFramer from "../images/project-framer.png";
+import ImageAmie from "../images/project-amie.png";
 
 export default function Projects() {
     return (
         <section className="container flex-column fadeInUp">
             <Splitter title="Professional work" className="mb6" />
+            <Project
+                title="Amie"
+                description="The joyful productivity app. Everything you need, and nothing that could get in the way."
+                mode="light"
+                project="amie"
+                image={ImageAmie}
+                url="https://amie.so"
+                product={true}
+            />
             <Project
                 title="Framer"
                 description="The best prototyping tool for teams, empowering designers &amp; developers to create immsersive prototypes with no code."

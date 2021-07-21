@@ -2,27 +2,28 @@
   "name": "portfolio",
   "version": "0.2.0",
   "private": true,
-  "engines" : { "node" : ">=12.0.0" },
+  "engines": {
+    "node": ">=12.0.0"
+  },
   "dependencies": {
     "@types/classnames": "^2.2.9",
     "@types/node": "^12.0.0",
-    "@types/react": "^16.9.0",
-    "@types/react-dom": "^16.9.0",
-    "@types/react-router": "^5.0.3",
-    "@types/react-router-dom": "^4.3.4",
+    "@types/react": "^17.0.14",
+    "@types/react-dom": "^17.0.9",
+    "@types/react-router": "^5.1.16",
+    "@types/react-router-dom": "^5.1.8",
     "classnames": "^2.2.6",
     "figicons": "^1.2.7",
     "framecss": "^1.1.7",
     "framer-motion": "^2.9.4",
-    "invariant": "^2.2.4",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-router-ga": "^1.2.3",
     "react-scripts": "^4.0.0",
     "sass": "^1.26.3",
-    "typescript": "^4.0.3"
+    "typescript": "^4.3.5"
   },
   "scripts": {
     "start": "react-scripts start",
