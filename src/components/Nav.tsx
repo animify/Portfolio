@@ -279,7 +279,7 @@ export default function Nav() {
                                 }}
                             />{" "}
                             <small className="ml1 gray70@text">
-                                Nicosia, Cyprus
+                                Remote
                             </small>
                         </motion.div>
                     </div>
