@@ -21,7 +21,7 @@ export default function About() {
                             src={Avatar}
                         />
                         <p>
-                            I'm a Swedish / Cypriot software maker with a keen
+                            I'm a software maker with a keen
                             passion for design &amp; development, now working
                             remotely.
                         </p>
