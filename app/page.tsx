@@ -7,6 +7,7 @@ import logoOverflow from "../public/images/logo-Overflow.png";
 import logoFramer from "../public/images/logo-Framer.png";
 import logoAmie from "../public/images/logo-Amie.png";
 import imageBaby from "../public/images/baby.jpg";
+import Cursors from "../components/Cursors";
 
 const messages: IMessages = [
   {
@@ -108,6 +109,7 @@ export default function Page() {
         </div>
       </div>
       <Messages messages={messages} />
+      <Cursors />
     </div>
   );
 }

@@ -3,9 +3,12 @@
   "version": "0.2.0",
   "private": true,
   "dependencies": {
+    "@supabase/supabase-js": "^2.26.0",
+    "clientjs": "^0.2.1",
     "clsx": "^2.0.0",
     "framer-motion": "^10.13.0",
     "next": "^13.4.10",
+    "perfect-cursors": "^1.0.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -17,6 +20,7 @@
     "lint": "tsc"
   },
   "devDependencies": {
+    "@types/clientjs": "^0.2.0",
     "@types/node": "20.4.2",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
