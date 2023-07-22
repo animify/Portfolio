@@ -2,6 +2,10 @@ import Image from "next/image";
 import React from "react";
 import { IMessages } from "./types";
 import Messages from "../components/Messages";
+import imageTape from "../public/images/tape.png";
+import logoOverflow from "../public/images/logo-Overflow.png";
+import logoFramer from "../public/images/logo-Framer.png";
+import logoAmie from "../public/images/logo-Amie.png";
 
 const messages: IMessages = [
   {
@@ -33,9 +37,7 @@ const messages: IMessages = [
         <span className="inline-flex items-center justify-center w-4 h-4 ml-0.5 mr-0.5">
           <Image
             className="relative top-[3px] -rotate-6 rounded shadow"
-            src="/images/logo-Amie.png"
-            width={80}
-            height={80}
+            src={logoAmie}
             alt="Amie logo"
           />
         </span>{" "}
@@ -51,9 +53,7 @@ const messages: IMessages = [
         <span className="inline-flex items-center justify-center w-4 h-4 ml-0.5 mr-0.5">
           <Image
             className="relative top-[3px] rotate-6 rounded shadow"
-            src="/images/logo-Framer.png"
-            width={80}
-            height={80}
+            src={logoFramer}
             alt="Framer logo"
           />
         </span>{" "}
@@ -61,9 +61,7 @@ const messages: IMessages = [
         <span className="inline-flex items-center justify-center w-4 h-4 ml-0.5 mr-0.5">
           <Image
             className="relative top-[3px] -rotate-6 rounded shadow"
-            src="/images/logo-Overflow.png"
-            width={80}
-            height={80}
+            src={logoOverflow}
             alt="Overflow logo"
           />
         </span>{" "}
@@ -102,7 +100,7 @@ export default function Page() {
     <div className="mx-auto max-w-lg py-20 px-6">
       <div className="flex -mt-12 mb-8">
         <div className="flex items-center pointer-events-none select-none justify-center -rotate-12 opacity-100 transition-opacity h-16 w-16">
-          <Image src="/images/tape.png" width={140} height={140} alt="Tape" />
+          <Image src={imageTape} alt="Tape" />
         </div>
       </div>
       <Messages messages={messages} />
