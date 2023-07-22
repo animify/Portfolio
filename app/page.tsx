@@ -3,10 +3,6 @@ import React from "react";
 import { IMessages } from "./types";
 import Messages from "../components/Messages";
 
-interface Props {
-  children: React.ReactNode;
-}
-
 const messages: IMessages = [
   {
     label: "Hey, I'm Stefan 👋",
@@ -101,7 +97,7 @@ const messages: IMessages = [
   },
 ];
 
-export default function Page({ children }: Props) {
+export default function Page() {
   return (
     <div className="mx-auto max-w-lg py-20 px-6">
       <div className="flex -mt-12 mb-8">
