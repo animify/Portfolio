@@ -8,6 +8,7 @@ import logoFramer from "../public/images/logo-Framer.png";
 import logoAmie from "../public/images/logo-Amie.png";
 import imageBaby from "../public/images/baby.jpg";
 import Cursors from "../components/Cursors";
+import Link from "next/link";
 
 const messages: IMessages = [
   {
@@ -90,7 +91,18 @@ const messages: IMessages = [
     type: "me",
   },
   {
-    label: `Is this you on GitHub? https://github.com/animify`,
+    label: (
+      <>
+        Is this you on GitHub? 🤔{" "}
+        <Link
+          href="https://github.com/animify"
+          target="_blank"
+          className="underline-offset-[5px] hover:underline-offset-[6px] underline decoration-white/20 decoration-1 hover:decoration-white/40 transition-all"
+        >
+          github.com/animify
+        </Link>
+      </>
+    ),
     type: "other",
   },
   {
@@ -102,7 +114,7 @@ const messages: IMessages = [
 
 export default function Page() {
   return (
-    <div className="mx-auto max-w-lg py-20 px-6">
+    <div className="mx-auto max-w-xl py-20 px-12">
       <div className="flex -mt-12 mb-8">
         <div className="flex items-center pointer-events-none select-none justify-center -rotate-12 opacity-100 transition-opacity h-16 w-16">
           <Image src={imageTape} alt="Tape" priority />
