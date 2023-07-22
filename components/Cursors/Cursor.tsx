@@ -1,10 +1,10 @@
-import * as React from "react";
+import { useCallback, useLayoutEffect, useRef } from "react";
 import { usePerfectCursor } from "./usePerfectCursor";
 
 export function Cursor({ point }: { point: number[] }) {
-  const rCursor = React.useRef<SVGSVGElement>(null);
+  const rCursor = useRef<SVGSVGElement>(null);
 
-  const animateCursor = React.useCallback((point: number[]) => {
+  const animateCursor = useCallback((point: number[]) => {
     const elm = rCursor.current;
     if (!elm) return;
     elm.style.setProperty(
@@ -15,7 +15,7 @@ export function Cursor({ point }: { point: number[] }) {
 
   const onPointMove = usePerfectCursor(animateCursor);
 
-  React.useLayoutEffect(() => onPointMove(point), [onPointMove, point]);
+  useLayoutEffect(() => onPointMove(point), [onPointMove, point]);
 
   return (
     <svg

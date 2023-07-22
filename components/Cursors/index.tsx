@@ -25,7 +25,7 @@ export default function Cursors() {
   const channel = useMemo(() => {
     return supabase
       .channel("live")
-      .on("broadcast", { event: "cursor-pos" }, (event) => {
+      .on("broadcast", { event: "cursor" }, (event) => {
         setCursors((cursors) => ({
           ...cursors,
           [event.payload.client]: {
@@ -44,7 +44,7 @@ export default function Cursors() {
   const handleCursorChange = useCallback((event: MouseEvent) => {
     channel.send({
       type: "broadcast",
-      event: "cursor-pos",
+      event: "cursor",
       payload: {
         client: fingerprint,
         x: event.clientX,
@@ -60,12 +60,13 @@ export default function Cursors() {
     };
   }, [handleCursorChange]);
 
+  console.log("cursors", cursors);
+
   return (
     <div className="fixed inset-0 w-full h-full pointer-events-none z-50">
       {Object.entries(cursors).map(([userId, cursor]) => {
-        const { x, y } = cursor;
-
-        return <Cursor point={[x, y]} />;
+        if (userId === fingerprint) return null;
+        return <Cursor point={[cursor.x, cursor.y]} />;
       })}
     </div>
   );
