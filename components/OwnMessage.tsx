@@ -27,6 +27,7 @@ export default function OwnMessage({ message }: Props) {
             width={200}
             height={200}
             alt={""}
+            priority
           />
         ) : (
           <p>{message.label}</p>
