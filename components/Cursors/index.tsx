@@ -1,9 +1,9 @@
 "use client";
 
-import { RealtimeChannel, createClient } from "@supabase/supabase-js";
+import { createClient } from "@supabase/supabase-js";
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { ClientJS } from "clientjs/dist/client.base.min.js";
 import { Cursor } from "./Cursor";
+import FingerprintJS from "@fingerprintjs/fingerprintjs";
 
 // Create a single supabase client for interacting with your database
 const supabase = createClient(
@@ -17,9 +17,17 @@ export default function Cursors() {
     Record<string, { x: number; y: number }>
   >({});
 
-  const fingerprint = useMemo(() => {
-    const client = new ClientJS();
-    return client.getFingerprint();
+  const [fingerprint, setFingerprint] = useState("");
+
+  useEffect(() => {
+    const setFp = async () => {
+      const fp = await FingerprintJS.load();
+      const { visitorId } = await fp.get();
+
+      setFingerprint(visitorId);
+    };
+
+    setFp();
   }, []);
 
   const channel = useMemo(() => {

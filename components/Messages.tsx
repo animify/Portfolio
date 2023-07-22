@@ -9,12 +9,12 @@ interface Props {
 export default function Messages({ messages }: Props) {
   return (
     <div className="flex flex-col w-full">
-      {messages.map((message) => {
+      {messages.map((message, index) => {
         if (message.type === "me") {
-          return <OwnMessage message={message} />;
+          return <OwnMessage key={index} message={message} />;
         }
 
-        return <OtherMessage message={message} />;
+        return <OtherMessage key={index} message={message} />;
       })}
     </div>
   );
