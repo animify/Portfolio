@@ -1,6 +1,8 @@
+import type { StaticImageData } from "next/image";
+
 export interface IMessage {
   label: string | React.ReactNode;
-  image?: string;
+  image?: StaticImageData;
   type: "me" | "other";
 }
 

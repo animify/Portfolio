@@ -6,6 +6,7 @@ import imageTape from "../public/images/tape.png";
 import logoOverflow from "../public/images/logo-Overflow.png";
 import logoFramer from "../public/images/logo-Framer.png";
 import logoAmie from "../public/images/logo-Amie.png";
+import imageBaby from "../public/images/baby.jpg";
 
 const messages: IMessages = [
   {
@@ -19,7 +20,7 @@ const messages: IMessages = [
   },
   {
     label: "But what do you do?",
-    image: "/images/baby.jpg",
+    image: imageBaby,
     type: "me",
   },
   {
@@ -39,6 +40,7 @@ const messages: IMessages = [
             className="relative top-[3px] -rotate-6 rounded shadow"
             src={logoAmie}
             alt="Amie logo"
+            priority
           />
         </span>{" "}
         <strong>Amie</strong>.
@@ -55,6 +57,7 @@ const messages: IMessages = [
             className="relative top-[3px] rotate-6 rounded shadow"
             src={logoFramer}
             alt="Framer logo"
+            priority
           />
         </span>{" "}
         <strong>Framer</strong> and{" "}
@@ -63,6 +66,7 @@ const messages: IMessages = [
             className="relative top-[3px] -rotate-6 rounded shadow"
             src={logoOverflow}
             alt="Overflow logo"
+            priority
           />
         </span>{" "}
         <strong>Overflow</strong>, building the best creative tools in the
@@ -100,7 +104,7 @@ export default function Page() {
     <div className="mx-auto max-w-lg py-20 px-6">
       <div className="flex -mt-12 mb-8">
         <div className="flex items-center pointer-events-none select-none justify-center -rotate-12 opacity-100 transition-opacity h-16 w-16">
-          <Image src={imageTape} alt="Tape" />
+          <Image src={imageTape} alt="Tape" priority />
         </div>
       </div>
       <Messages messages={messages} />
