@@ -2,47 +2,28 @@
   "name": "portfolio",
   "version": "0.2.0",
   "private": true,
-  "engines": {
-    "node": ">=12.0.0"
-  },
   "dependencies": {
-    "@types/classnames": "^2.2.9",
-    "@types/node": "^12.0.0",
-    "@types/react": "^17.0.14",
-    "@types/react-dom": "^17.0.9",
-    "@types/react-router": "^5.1.16",
-    "@types/react-router-dom": "^5.1.8",
-    "classnames": "^2.2.6",
-    "figicons": "^1.2.7",
-    "framecss": "^1.1.7",
-    "framer-motion": "^2.9.4",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-router": "^5.2.0",
-    "react-router-dom": "^5.2.0",
-    "react-router-ga": "^1.2.3",
-    "react-scripts": "^4.0.0",
-    "sass": "^1.26.3",
-    "typescript": "^4.3.5"
+    "clsx": "^2.0.0",
+    "framer-motion": "^10.13.0",
+    "next": "^13.4.10",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "NODE_VERSION=12.13.1 react-scripts build",
-    "test": "react-scripts test"
+    "dev": "next dev --turbo",
+    "start": "next start",
+    "build": "next build",
+    "build:dev": "ANALYZE=true yarn build",
+    "lint": "tsc"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "@types/node": "20.4.2",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "postcss": "^8.4.26",
+    "tailwindcss": "^3.3.3",
+    "tailwindcss-radix": "^2.8.0",
+    "typescript": "^5.1.6",
+    "yarn": "^1.22.19"
   }
 }

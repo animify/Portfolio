@@ -1,0 +1,72 @@
+@tailwind components;
+
+@layer components {
+  [cmdk-dialog] {
+    z-index: 50;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  [cmdk-item] {
+    content-visibility: auto;
+    @apply pointer-events-none m-1.5 flex select-none;
+  }
+
+  [cmdk-item] > div {
+    font-variation-settings: "wght" 500;
+    @apply pointer-events-auto my-1.5 flex grow cursor-pointer select-none items-center gap-2 rounded-lg px-2 py-3;
+  }
+
+  [cmdk-item] > div > .icon {
+    @apply flex h-5 w-5 items-center justify-center text-gray-500 dark:text-gray-400;
+  }
+
+  [cmdk-item]:hover > div,
+  [cmdk-item][aria-selected="true"] > div {
+    @apply bg-gray-100 dark:bg-gray-750;
+  }
+
+  [cmdk-item] + [cmdk-item] {
+    @apply -mt-4;
+  }
+
+  [cmdk-list] {
+    height: min(328px, var(--cmdk-list-height));
+    will-change: height;
+    max-height: 400px;
+  }
+
+  [cmdk-list] [cmdk-item]:last-of-type {
+    @apply !mb-0;
+  }
+
+  [cmdk-input] {
+    font-variation-settings: "wght" 500;
+    @apply w-full cursor-text border-b border-black/[6%] bg-transparent pl-4 pr-5 pb-5 pt-4 text-xl outline-none dark:border-white/[6%];
+  }
+
+  [cmdk-numerals-badge] {
+    font-variation-settings: "wght" 700;
+
+    @apply flex h-5 scale-100 cursor-pointer items-center justify-center rounded bg-gray-100 px-1.5 text-[11px] capitalize text-gray-600 transition-all transition-colors duration-75 hover:bg-gray-150 active:scale-95 dark:bg-gray-700 dark:text-gray-200 dark:hover:bg-gray-600;
+  }
+
+  [cmdk-group-heading] {
+    font-variation-settings: "wght" 800;
+    text-transform: uppercase;
+    @apply -mb-2.5 flex items-center px-4 text-[11px] tracking-wider text-gray-400;
+  }
+
+  [cmdk-group]:first-of-type {
+    @apply mt-3;
+  }
+
+  [cmdk-group] {
+    @apply mt-1;
+  }
+}
