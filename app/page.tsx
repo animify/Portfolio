@@ -13,6 +13,7 @@ import avatar3 from "../public/images/avatar3.png";
 import imageBaby from "../public/images/baby.jpg";
 import Cursors from "../components/Cursors";
 import Link from "next/link";
+import ExternalLink from "../components/ExternalLink";
 
 const messages: IMessages = [
   {
@@ -53,15 +54,20 @@ const messages: IMessages = [
     label: (
       <>
         Hm, I'm currently a Design Engineer at{" "}
-        <span className="inline-flex items-center justify-center w-4 h-4 ml-0.5 mr-0.5">
-          <Image
-            className="relative top-[3px] -rotate-6 rounded shadow"
-            src={logoAmie}
-            alt="Amie logo"
-            priority
-          />
-        </span>{" "}
-        <strong>Amie</strong>.
+        <ExternalLink
+          href="https://amie.so"
+          icon={
+            <Image
+              className="relative top-[3px] -rotate-6 rounded shadow group-hover/link:rotate-2 transition-transform"
+              src={logoAmie}
+              alt="Amie logo"
+              priority
+            />
+          }
+        >
+          Amie
+        </ExternalLink>
+        .
       </>
     ),
     type: "me",
@@ -71,27 +77,36 @@ const messages: IMessages = [
     label: (
       <>
         Used to be a Product Engineer at{" "}
-        <span className="inline-flex items-center justify-center w-4 h-4 ml-0.5 mr-0.5">
-          <Image
-            className="relative top-[3px] rotate-6 rounded shadow"
-            src={logoFramer}
-            alt="Framer logo"
-            placeholder="blur"
-            priority
-          />
-        </span>{" "}
-        <strong>Framer</strong> and{" "}
-        <span className="inline-flex items-center justify-center w-4 h-4 ml-0.5 mr-0.5">
-          <Image
-            className="relative top-[3px] -rotate-6 rounded shadow"
-            src={logoOverflow}
-            alt="Overflow logo"
-            placeholder="blur"
-            priority
-          />
-        </span>{" "}
-        <strong>Overflow</strong>, building the best creative tools in the
-        industry.
+        <ExternalLink
+          href="https://framer.com"
+          icon={
+            <Image
+              className="relative top-[3px] rotate-6 rounded shadow group-hover/link:-rotate-2 transition-transform"
+              src={logoFramer}
+              alt="Framer logo"
+              placeholder="blur"
+              priority
+            />
+          }
+        >
+          Framer
+        </ExternalLink>{" "}
+        and
+        <ExternalLink
+          href="https://overflow.io"
+          icon={
+            <Image
+              className="relative top-[3px] -rotate-6 rounded shadow group-hover/link:rotate-2 transition-transform"
+              src={logoOverflow}
+              alt="Overflow logo"
+              placeholder="blur"
+              priority
+            />
+          }
+        >
+          Overflow
+        </ExternalLink>
+        , building the best creative tools in the industry.
       </>
     ),
     type: "me",
@@ -124,13 +139,9 @@ const messages: IMessages = [
     label: (
       <>
         Is this you on GitHub? 🤔{" "}
-        <Link
-          href="https://github.com/animify"
-          target="_blank"
-          className="underline-offset-[5px] hover:underline-offset-[6px] underline decoration-white/20 decoration-1 hover:decoration-white/40 transition-all"
-        >
+        <ExternalLink href="https://github.com/animify">
           github.com/animify
-        </Link>
+        </ExternalLink>
       </>
     ),
     type: "other",
