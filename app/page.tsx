@@ -6,6 +6,9 @@ import imageTape from "../public/images/tape.png";
 import logoOverflow from "../public/images/logo-Overflow.png";
 import logoFramer from "../public/images/logo-Framer.png";
 import logoAmie from "../public/images/logo-Amie.png";
+import avatar1 from "../public/images/avatar1.png";
+import avatar2 from "../public/images/avatar2.png";
+import avatar3 from "../public/images/avatar3.png";
 import imageBaby from "../public/images/baby.jpg";
 import Cursors from "../components/Cursors";
 import Link from "next/link";
@@ -14,24 +17,29 @@ const messages: IMessages = [
   {
     label: "Hey, I'm Stefan 👋",
     type: "me",
+    avatar: avatar3,
   },
   {
     label:
       "Here's a random baby pic that you didn't ask for. You'll sometimes see me use this across social media.",
     type: "me",
+    avatar: avatar3,
   },
   {
     label: "But what do you do?",
     image: imageBaby,
     type: "me",
+    avatar: avatar3,
   },
   {
     label: "Uhm hi, and thanks?",
     type: "other",
+    avatar: avatar1,
   },
   {
     label: "Is there something maybe more interesting I should know about you?",
     type: "other",
+    avatar: avatar2,
   },
   {
     label: (
@@ -49,6 +57,7 @@ const messages: IMessages = [
       </>
     ),
     type: "me",
+    avatar: avatar3,
   },
   {
     label: (
@@ -76,19 +85,23 @@ const messages: IMessages = [
       </>
     ),
     type: "me",
+    avatar: avatar3,
   },
   {
     label: "Design Engineer? What's that?",
     type: "other",
+    avatar: avatar1,
   },
   {
     label: "When I found out, I'll write a blog post about it.",
     type: "me",
+    avatar: avatar3,
   },
   {
     label:
       "But to have you know, what we're building at Amie is... pretty next level.",
     type: "me",
+    avatar: avatar3,
   },
   {
     label: (
@@ -104,11 +117,13 @@ const messages: IMessages = [
       </>
     ),
     type: "other",
+    avatar: avatar1,
   },
   {
     label:
       "Yup! I'm a big fan of creating helpful tools for the community, and also where I keep my latest experiments.",
     type: "me",
+    avatar: avatar3,
   },
 ];
 

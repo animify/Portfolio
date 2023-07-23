@@ -1,6 +1,5 @@
 import { IMessages } from "../app/types";
-import OtherMessage from "./OtherMessage";
-import OwnMessage from "./OwnMessage";
+import Message from "./Message";
 
 interface Props {
   messages: IMessages;
@@ -9,13 +8,9 @@ interface Props {
 export default function Messages({ messages }: Props) {
   return (
     <div className="flex flex-col w-full">
-      {messages.map((message, index) => {
-        if (message.type === "me") {
-          return <OwnMessage key={index} message={message} />;
-        }
-
-        return <OtherMessage key={index} message={message} />;
-      })}
+      {messages.map((message, index) => (
+        <Message key={index} message={message} />
+      ))}
     </div>
   );
 }
