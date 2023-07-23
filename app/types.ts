@@ -7,4 +7,12 @@ export interface IMessage {
   avatar: StaticImageData;
 }
 
-export type IMessages = IMessage[];
+export interface IDate {
+  dateDiff: {
+    day?: number;
+    minute?: number;
+    hour?: number;
+  };
+}
+
+export type IMessages = (IMessage | IDate)[];

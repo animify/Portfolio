@@ -1,3 +1,5 @@
+"use client";
+
 import clsx from "clsx";
 import { IMessage } from "../app/types";
 import IconBubbleTick from "./icons/IconBubbleTick";

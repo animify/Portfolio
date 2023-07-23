@@ -16,6 +16,13 @@ import Link from "next/link";
 
 const messages: IMessages = [
   {
+    dateDiff: {
+      minute: -5,
+      hour: -2,
+      day: -2,
+    },
+  },
+  {
     label: "Hey, I'm Stefan 👋",
     type: "me",
     avatar: avatarMe,
@@ -91,6 +98,13 @@ const messages: IMessages = [
     avatar: avatarMe,
   },
   {
+    dateDiff: {
+      minute: -24,
+      hour: -4,
+      day: -1,
+    },
+  },
+  {
     label: "Design Engineer? What's that?",
     type: "other",
     avatar: avatar3,
@@ -123,6 +137,12 @@ const messages: IMessages = [
     avatar: avatar1,
   },
   {
+    dateDiff: {
+      minute: 14,
+      hour: -6,
+    },
+  },
+  {
     label:
       "Yup! I'm a big fan of creating helpful tools for the community, and also where I keep my latest experiments.",
     type: "me",
@@ -132,8 +152,8 @@ const messages: IMessages = [
 
 export default function Page() {
   return (
-    <div className="mx-auto max-w-xl py-20 px-[52px]">
-      <div className="flex -mt-12 mb-8">
+    <div className="mx-auto max-w-xl pt-8 pb-20 px-[52px]">
+      <div className="flex mb-2 justify-center">
         <div className="flex items-center pointer-events-none select-none justify-center -rotate-12 opacity-100 transition-opacity h-16 w-16">
           <Image src={imageTape} alt="Tape" priority placeholder="blur" />
         </div>

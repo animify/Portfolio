@@ -6,6 +6,7 @@
     "@fingerprintjs/fingerprintjs": "^3.4.2",
     "@supabase/supabase-js": "^2.26.0",
     "clsx": "^2.0.0",
+    "dayjs": "^1.11.9",
     "framer-motion": "^10.13.0",
     "next": "^13.4.10",
     "perfect-cursors": "^1.0.5",
