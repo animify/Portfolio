@@ -1,5 +1,3 @@
-"use client";
-
 import clsx from "clsx";
 import { IDate } from "../app/types";
 import dayjs, { ManipulateType } from "dayjs";
