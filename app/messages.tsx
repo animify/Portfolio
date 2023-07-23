@@ -163,8 +163,7 @@ export const messages: IMessages = [
     },
   },
   {
-    label:
-      "Yup! I'm a big fan of creating helpful tools for the community, and also where I keep my latest experiments.",
+    label: "More content coming soon!",
     type: "me",
     avatar: avatarMe,
   },
