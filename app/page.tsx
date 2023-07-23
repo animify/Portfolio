@@ -68,6 +68,7 @@ const messages: IMessages = [
             className="relative top-[3px] rotate-6 rounded shadow"
             src={logoFramer}
             alt="Framer logo"
+            placeholder="blur"
             priority
           />
         </span>{" "}
@@ -77,6 +78,7 @@ const messages: IMessages = [
             className="relative top-[3px] -rotate-6 rounded shadow"
             src={logoOverflow}
             alt="Overflow logo"
+            placeholder="blur"
             priority
           />
         </span>{" "}
@@ -129,10 +131,10 @@ const messages: IMessages = [
 
 export default function Page() {
   return (
-    <div className="mx-auto max-w-xl py-20 px-12">
+    <div className="mx-auto max-w-xl py-20 px-[52px]">
       <div className="flex -mt-12 mb-8">
         <div className="flex items-center pointer-events-none select-none justify-center -rotate-12 opacity-100 transition-opacity h-16 w-16">
-          <Image src={imageTape} alt="Tape" priority />
+          <Image src={imageTape} alt="Tape" priority placeholder="blur" />
         </div>
       </div>
       <Messages messages={messages} />

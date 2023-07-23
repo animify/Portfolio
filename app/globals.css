@@ -83,6 +83,10 @@ body,
   backface-visibility: hidden;
 }
 
+img {
+  user-select: none;
+  pointer-events: none;
+}
 
 
 button,

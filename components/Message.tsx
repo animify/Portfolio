@@ -30,6 +30,7 @@ export default function Message({ message }: Props) {
           <Image
             src={message.image}
             className="rounded-2xl"
+            placeholder="blur"
             width={200}
             height={200}
             alt={""}
@@ -46,7 +47,9 @@ export default function Message({ message }: Props) {
             <Image
               src={message.avatar}
               className="rounded-full"
+              placeholder="blur"
               alt={"Someone"}
+              priority
             />
           </div>
         )}
