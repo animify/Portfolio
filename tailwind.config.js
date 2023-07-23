@@ -178,6 +178,15 @@ module.exports = {
             transform: `translateX(calc(100% + 1rem))`,
           },
         },
+
+        bounceZero: {
+          "0%, 100%": {
+            transform: "none",
+          },
+          "50%": {
+            transform: `translateY(-10%)`,
+          },
+        },
       },
       animation: {
         // Dropdown menu
@@ -206,6 +215,8 @@ module.exports = {
         "toast-slide-in-bottom":
           "toast-slide-in-bottom 150ms cubic-bezier(0.16, 1, 0.3, 1)",
         "toast-swipe-out": "toast-swipe-out 100ms ease-out forwards",
+        bounceZero:
+          "bounceZero 1.2s cubic-bezier(.59,1.38,.82,.97) infinite forwards",
       },
     },
   },
