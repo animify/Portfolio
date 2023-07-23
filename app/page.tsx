@@ -6,6 +6,7 @@ import imageTape from "../public/images/tape.png";
 import logoOverflow from "../public/images/logo-Overflow.png";
 import logoFramer from "../public/images/logo-Framer.png";
 import logoAmie from "../public/images/logo-Amie.png";
+import avatarMe from "../public/images/avatarMe.png";
 import avatar1 from "../public/images/avatar1.png";
 import avatar2 from "../public/images/avatar2.png";
 import avatar3 from "../public/images/avatar3.png";
@@ -17,19 +18,19 @@ const messages: IMessages = [
   {
     label: "Hey, I'm Stefan 👋",
     type: "me",
-    avatar: avatar3,
+    avatar: avatarMe,
   },
   {
     label:
       "Here's a random baby pic that you didn't ask for. You'll sometimes see me use this across social media.",
     type: "me",
-    avatar: avatar3,
+    avatar: avatarMe,
   },
   {
     label: "But what do you do?",
     image: imageBaby,
     type: "me",
-    avatar: avatar3,
+    avatar: avatarMe,
   },
   {
     label: "Uhm hi, and thanks?",
@@ -57,7 +58,7 @@ const messages: IMessages = [
       </>
     ),
     type: "me",
-    avatar: avatar3,
+    avatar: avatarMe,
   },
   {
     label: (
@@ -87,23 +88,23 @@ const messages: IMessages = [
       </>
     ),
     type: "me",
-    avatar: avatar3,
+    avatar: avatarMe,
   },
   {
     label: "Design Engineer? What's that?",
     type: "other",
-    avatar: avatar1,
+    avatar: avatar3,
   },
   {
     label: "When I found out, I'll write a blog post about it.",
     type: "me",
-    avatar: avatar3,
+    avatar: avatarMe,
   },
   {
     label:
       "But to have you know, what we're building at Amie is... pretty next level.",
     type: "me",
-    avatar: avatar3,
+    avatar: avatarMe,
   },
   {
     label: (
@@ -125,7 +126,7 @@ const messages: IMessages = [
     label:
       "Yup! I'm a big fan of creating helpful tools for the community, and also where I keep my latest experiments.",
     type: "me",
-    avatar: avatar3,
+    avatar: avatarMe,
   },
 ];
 
