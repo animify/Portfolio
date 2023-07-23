@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@fingerprintjs/fingerprintjs": "^3.4.2",
+    "@radix-ui/react-portal": "^1.0.3",
     "@supabase/supabase-js": "^2.26.0",
     "clsx": "^2.0.0",
     "dayjs": "^1.11.9",

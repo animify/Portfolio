@@ -72,7 +72,7 @@ module.exports = {
         menu: "rgb(0 0 0 / 10%) 0px 0.5px 2px, rgb(0 0 0 / 5%) 0px 8px 40px",
         thumbnail:
           "rgb(0 0 0 / 10%) 0px 0.5px 2px, rgb(0 0 0 / 5%) 0px 6px 12px",
-        test: "0px 1px 1px 0px #00000012, 0px 2px 6px 0px #0000000F, 0px 1px 3px 0px #0000001A",
+        test: "0px 0px 0px 1px #ffffff12 inset, 0px 2px 16px 12px #00000020, 0px 1px 8px 0px #00000040",
         highlightWhite: "inset 0 1px 0 0 rgba(255, 255, 255, 0.05)",
         highlightBlack: "inset 0 1px 0 0 rgba(0, 0, 0, 0.05)",
         outline: "inset 0 0 0 1px var(--tw-shadow-color)",

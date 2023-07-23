@@ -97,3 +97,7 @@ button,
 }
 
 
+.fade-bg {
+  -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 75%);
+  mask-image: linear-gradient(to bottom, black 0%, transparent 75%);
+}

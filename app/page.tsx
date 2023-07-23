@@ -12,7 +12,6 @@ import avatar2 from "../public/images/avatar2.png";
 import avatar3 from "../public/images/avatar3.png";
 import imageBaby from "../public/images/baby.jpg";
 import Cursors from "../components/Cursors";
-import Link from "next/link";
 import ExternalLink from "../components/ExternalLink";
 
 const messages: IMessages = [
@@ -56,6 +55,7 @@ const messages: IMessages = [
         Hm, I'm currently a Design Engineer at{" "}
         <ExternalLink
           href="https://amie.so"
+          preview="amie"
           icon={
             <Image
               className="relative top-[3px] -rotate-6 rounded shadow group-hover/link:rotate-2 transition-transform"
@@ -79,6 +79,7 @@ const messages: IMessages = [
         Used to be a Product Engineer at{" "}
         <ExternalLink
           href="https://framer.com"
+          preview="framer"
           icon={
             <Image
               className="relative top-[3px] rotate-6 rounded shadow group-hover/link:-rotate-2 transition-transform"
@@ -94,6 +95,7 @@ const messages: IMessages = [
         and
         <ExternalLink
           href="https://overflow.io"
+          preview="overflow"
           icon={
             <Image
               className="relative top-[3px] -rotate-6 rounded shadow group-hover/link:rotate-2 transition-transform"
@@ -139,7 +141,7 @@ const messages: IMessages = [
     label: (
       <>
         Is this you on GitHub? 🤔{" "}
-        <ExternalLink href="https://github.com/animify">
+        <ExternalLink href="https://github.com/animify" preview="github">
           github.com/animify
         </ExternalLink>
       </>

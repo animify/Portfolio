@@ -22,7 +22,7 @@ export default function Message({ message }: Props) {
     >
       <div
         className={clsx(
-          `group-data-[type="me"]:bg-gray-750 group-data-[type="me"]:text-gray-100 group-data-[type="other"]:bg-blue-500 group-data-[type="other"]:text-blue-50 rounded-2xl relative`,
+          `group-data-[type="me"]:bg-gray-850 group-data-[type="me"]:text-gray-100 group-data-[type="other"]:bg-blue-500 group-data-[type="other"]:text-blue-50 rounded-2xl relative`,
           {
             "px-3.5 py-2": !message.image,
           }
@@ -58,7 +58,7 @@ export default function Message({ message }: Props) {
 
         {!message.image && (
           <div
-            className={`absolute group-data-[type="other"]:-bottom-[6px] group-data-[type="other"]:-right-[10px] group-data-[type="other"]:text-blue-500 group-data-[type="me"]:text-gray-750 group-data-[type="me"]:-left-[10px] group-data-[type="me"]:-bottom-[6px]`}
+            className={`absolute group-data-[type="other"]:-bottom-[6px] group-data-[type="other"]:-right-[10px] group-data-[type="other"]:text-blue-500 group-data-[type="me"]:text-gray-850 group-data-[type="me"]:-left-[10px] group-data-[type="me"]:-bottom-[6px]`}
           >
             <div className={`group-data-[type="other"]:-scale-x-100`}>
               <IconBubbleTick />
