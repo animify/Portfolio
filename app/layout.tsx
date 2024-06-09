@@ -11,8 +11,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Stefan =)",
+  title: "Stefan Mansson",
   description: "Portfolio of Stefan Mansson",
+  icons: "/images/favicon.png",
 };
 
 interface Props {
