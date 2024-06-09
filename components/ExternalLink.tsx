@@ -11,6 +11,7 @@ import metaFramer from "../public/images/metaFramer.png";
 import metaOverflow from "../public/images/metaOverflow.png";
 import metaAmie from "../public/images/metaAmie.png";
 import metaGitHub from "../public/images/metaGitHub.png";
+import metaTwitter from "../public/images/metaTwitter.png";
 
 var relativeTime = require("dayjs/plugin/relativeTime");
 dayjs.extend(relativeTime);
@@ -18,7 +19,7 @@ dayjs.extend(relativeTime);
 interface Props {
   href: string;
   className?: string;
-  preview?: "overflow" | "framer" | "amie" | "github";
+  preview?: "overflow" | "framer" | "amie" | "github" | "twitter";
   icon?: React.ReactNode;
   children: React.ReactNode;
 }
@@ -111,6 +112,8 @@ function getPreviewName(preview: Props["preview"]) {
       return "Amie - Joyful productivity";
     case "github":
       return "animify (Stefan Mansson)";
+    case "twitter":
+      return "Stefan (@_animify)";
   }
 }
 
@@ -124,6 +127,8 @@ function getPreviewDescription(preview: Props["preview"]) {
       return "Meet the all-in-one calendar. Schedule time for todos, events, and contacts with joy. Try it for free!";
     case "github":
       return "Design Engineer @amieso. animify has 88 repositories available. Follow their code on GitHub.";
+    case "twitter":
+      return "Design Engineer @tryamie • Previously @framer @overflowapp • Building @meetcampfire";
   }
 }
 
@@ -137,5 +142,7 @@ function getPreviewSrc(preview: Props["preview"]) {
       return metaAmie;
     case "github":
       return metaGitHub;
+    case "twitter":
+      return metaTwitter;
   }
 }

@@ -8,14 +8,7 @@
   user-select: none;
 }
 
-*,
-* > *,
-button,
-.cursor-default {
-  cursor: url("/images/arrow.png") 2 2 default;
-  cursor: -webkit-image-set(url("/images/arrow.png") 1x, url("/images/arrow@2x.png") 2x) 2 2,
-    default;
-}
+
 
 html,
 body,
@@ -48,6 +41,10 @@ body,
     --sidebar-right-width: 0px;
     --sidebar-top-height: 40px;
     --sidebar-bottom-height: 0px;
+  }
+
+  body.grabbing, body.grabbing *, body.grabbing * > * {
+    cursor: grabbing !important;
   }
 
   small {

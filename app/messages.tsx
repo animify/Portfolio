@@ -163,7 +163,21 @@ export const messages: IMessages = [
     },
   },
   {
-    label: "This is still WIP - more to come soon! 🚧",
+    label: (
+      <>
+        Oh no more questions? Okie, here's my Twitter{" "}
+        <ExternalLink href="https://x.com/_animify" preview="twitter">
+          @_animify
+        </ExternalLink>
+        . Check it out for any fun stuff I've been building!
+      </>
+    ),
+    type: "me",
+    avatar: avatarMe,
+  },
+  {
+    label:
+      "Been quite busy lately so this is still WIP - more to come soon! 👋",
     type: "me",
     avatar: avatarMe,
   },
