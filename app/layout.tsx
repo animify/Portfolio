@@ -3,6 +3,8 @@ import { Metadata } from "next";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import clsx from "clsx";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -25,6 +27,8 @@ export default function Layout({ children }: Props) {
     <html lang="en" className={clsx(inter.variable)}>
       <body className="font-sans font-normal text-gray-200 bg-[#161616]">
         {children}
+        <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
